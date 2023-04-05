@@ -1,0 +1,38 @@
+site_name: Destrix
+
+theme:
+  name: material
+  logo: /cdn/logo.png
+  favicon: /favicon.ico
+  language: en
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+  
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny #material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-night #material/brightness-4
+        name: Switch to light mode
+
+  extra:
+    homepage: /
+    version:
+      default: stable
+      provider: wolfite
