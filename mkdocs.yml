@@ -6,10 +6,22 @@ theme:
   favicon: /favicon.ico
   language: en
   custom_dir: overrides
+  copyright: Copyright &copy; 2023 - 2023 Wolfite
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - content.code.copy
+    - content.code.annotate
+
+  markdown_extensions:
+  - pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   
   palette:
 
@@ -33,6 +45,11 @@ theme:
 
   extra:
     homepage: /
+    # generator: false
+    social:
+    - icon: fontawesome/brands/twitter
+      link: https://destrix.app/t/twitter
+      name: Destrix on Twitter
     version:
       default: stable
       provider: wolfite
