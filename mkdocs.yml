@@ -1,11 +1,36 @@
 site_name: Destrix
 
+extra:
+  # homepage: /
+  social:
+    - icon: fontawesome/brands/github
+      link: https://destrix.app/t/github
+      name: Destrix on Github
+    - icon: fontawesome/brands/twitter
+      link: https://destrix.app/t/twitter
+      name: Destrix on Twitter
+    - icon: fontawesome/brands/discord
+      link: https://destrix.app/t/discord
+      name: Destrix on Discord
+    - icon: fontawesome/brands/trello
+      link: https://destrix.app/t/trello
+      name: Destrix on Trello
+    - icon: fontawesome/brands/youtube
+      link: https://destrix.app/t/youtube
+      name: Wolfite on YouTube
+    - icon: fontawesome/brands/patreon
+      link: https://destrix.app/t/patreon
+      name: Wolfite on Patreon
+copyright: Copyright &copy; 2023 - 2023 <a href="//wolfite.net/r/twitter">@Wolfite_</a>
+# plugins:
+  # - tags: true
+# tags plugin seems to be removing the search tool somehow.
+
 theme:
   name: material
-  logo: /cdn/logo.png
+  logo: /cdn/Destrix.png
   favicon: /favicon.ico
   language: en
-  copyright: Copyright &copy; 2023 - 2023 Wolfite
   features:
     - navigation.tabs
     - navigation.sections
@@ -28,7 +53,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
-      accent: deep purple
+      accent: blue
       toggle:
         icon: material/weather-sunny #material/brightness-7
         name: Switch to dark mode
@@ -37,18 +62,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: deep purple
+      accent: blue
       toggle:
         icon: material/weather-night #material/brightness-4
         name: Switch to light mode
-
-  extra:
-    # homepage: /
-    generator: false
-    social:
-      - icon: fontawesome/brands/twitter
-        link: https://destrix.app/t/twitter
-        name: Destrix on Twitter
-    version:
-      default: stable
-      provider: wolfite

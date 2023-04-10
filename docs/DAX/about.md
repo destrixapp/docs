@@ -1,3 +1,8 @@
+---
+tags:
+    - DAX
+    - Security
+---
 # About DAX
 
 ## What is it?
