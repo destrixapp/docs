@@ -5,7 +5,6 @@ theme:
   logo: /cdn/logo.png
   favicon: /favicon.ico
   language: en
-  custom_dir: overrides
   copyright: Copyright &copy; 2023 - 2023 Wolfite
   features:
     - navigation.tabs
@@ -13,6 +12,7 @@ theme:
     - navigation.top
     - content.code.copy
     - content.code.annotate
+    - navigation.footer
 
   markdown_extensions:
   - pymdownx.highlight:
@@ -24,7 +24,6 @@ theme:
   - pymdownx.superfences
   
   palette:
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -44,12 +43,12 @@ theme:
         name: Switch to light mode
 
   extra:
-    homepage: /
-    # generator: false
+    # homepage: /
+    generator: false
     social:
-    - icon: fontawesome/brands/twitter
-      link: https://destrix.app/t/twitter
-      name: Destrix on Twitter
+      - icon: fontawesome/brands/twitter
+        link: https://destrix.app/t/twitter
+        name: Destrix on Twitter
     version:
       default: stable
       provider: wolfite
