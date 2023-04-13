@@ -2,6 +2,10 @@
 tags:
     - DAX
     - Security
+title: About
+description: About the Destrix API Module (DAX), what it does, what it can't, and what it is.
+search:
+  boost: 2
 ---
 # About DAX
 

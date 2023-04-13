@@ -6,22 +6,22 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Destrix is a developer-focused admin system on Roblox, making it easier for developers who want a flexible and non-disruptive admin/moderation system in their game, for free.">
+        <meta name="description" content="All the command types in Destrix that are used for DAX.">
       
       
       
       
-        <link rel="prev" href="../disabling-commands/">
+        <link rel="prev" href="../../Introduction/interfacing-with-the-panel/">
       
       
-        <link rel="next" href="../../Reference/CommandTypes/">
+        <link rel="next" href="../Functions/DisableEXEType/">
       
       <link rel="icon" href="/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Interfacing - Destrix</title>
+        <title>Command Types - Destrix</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interfacing" class="md-skip">
+        <a href="#command-types" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interfacing
+              Command Types
             
           </span>
         </div>
@@ -349,18 +349,16 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
       
       
       
@@ -369,7 +367,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           Introduction
@@ -382,13 +380,65 @@
   
   
     <li class="md-nav__item">
-      <a href="../disabling-commands/" class="md-nav__link">
+      <a href="../../Introduction/disabling-commands/" class="md-nav__link">
         Disabling commands
       </a>
     </li>
   
 
             
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Introduction/interfacing-with-the-panel/" class="md-nav__link">
+        Interfacing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
               
@@ -406,59 +456,9 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Interfacing
-      </a>
-      
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
-          Reference
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_3">
-          <span class="md-nav__icon md-icon"></span>
-          Reference
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Reference/CommandTypes/" class="md-nav__link">
         Command Types
       </a>
+      
     </li>
   
 
@@ -497,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Reference/Functions/DisableEXEType/" class="md-nav__link">
+      <a href="../Functions/DisableEXEType/" class="md-nav__link">
         DAX:DisableEXEType
       </a>
     </li>
@@ -558,7 +558,123 @@
                   
 
 
-<h1 id="interfacing">Interfacing</h1>
+<h1 id="command-types">Command Types</h1>
+<p>Please note that these are not final and maybe be further changed.</p>
+<p>This page contains all the command types used in Destrix. Command types are a more accurate label of commands, they are not categories.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Examples</th>
+<th>Description</th>
+<th>Added</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ui-interference</code></td>
+<td>/hideui, /showui</td>
+<td>Commands that interfere with other game UI.</td>
+<td><em>2 Jan, 2022</em></td>
+<td><em>None</em></td>
+</tr>
+<tr>
+<td><code>character-interference-2</code></td>
+<td>/kill, /fling, /sit</td>
+<td>Commands that can move, damage/kill, morph, or add animations to characters.</td>
+<td><em>10 Apr, 2023</em></td>
+<td><em>None</em></td>
+</tr>
+<tr>
+<td><code>character-interference-1</code></td>
+<td>/paint, /bighead</td>
+<td>Commands that change the appearance of characters in a small way.</td>
+<td><em>10 Apr, 2023</em></td>
+<td><em>None</em></td>
+</tr>
+<tr>
+<td><code>moderation-2</code></td>
+<td>/softban</td>
+<td>Small moderation commands like /softban (server bans).</td>
+<td><em>10 Apr, 2023</em></td>
+<td><em>None</em></td>
+</tr>
+<tr>
+<td><code>moderation-1</code></td>
+<td>/kick, /ban</td>
+<td>Moderation commands. Can only be disabled by the Destrix system to prevent attacks.</td>
+<td><em>10 Apr, 2023</em></td>
+<td><em>0 seconds</em> <strong style = "color: #0388FC;">^</strong></td>
+</tr>
+<tr>
+<td><code>server-interference</code></td>
+<td>/shutdown</td>
+<td>Commands that may stop servers or reboot them.</td>
+<td><em>10 Apr, 2023</em></td>
+<td><em>60 <br>seconds</em><strong style = "color: #F00;"> *</strong></td>
+</tr>
+<tr>
+<td><code>software</code></td>
+<td>/admins, /cmds</td>
+<td>Commands that are for using Destrix easier. Can only be disabled by the Destrix system.</td>
+<td><em>10 Apr, 2023</em></td>
+<td><em>0 seconds</em> <strong style = "color: #0388FC;">^</strong></td>
+</tr>
+<tr>
+<td><code>contact</code></td>
+<td>/modcall</td>
+<td>Commands that allow players to interact with moderators/admins.</td>
+<td><em>10 Apr, 2023</em></td>
+<td><em>30 minutes</em></td>
+</tr>
+<tr>
+<td><code>workplace-interference</code></td>
+<td>/reloadmap, /reloadworkplace</td>
+<td>Commands that interfere with the workplace.</td>
+<td><em>12 Apr, 2023</em></td>
+<td><em>None</em></td>
+</tr>
+<tr>
+<td><code>prompt</code></td>
+<td>/promptgamepass, promptasset</td>
+<td>Commands that prompt users.</td>
+<td><em>12 Apr, 2023</em></td>
+<td><em>None</em></td>
+</tr>
+<tr>
+<td><code>teleport</code></td>
+<td>/fplace, /rejoin, /reconnect</td>
+<td>Commands that use TeleportService.</td>
+<td><em>12 Apr, 2023</em></td>
+<td><em>60 <br>seconds</em><strong style = "color: #F00;"> *</strong></td>
+</tr>
+<tr>
+<td><code>fun</code></td>
+<td>/fire, /sit, /stratosphere</td>
+<td>Commands in the category 'fun'.</td>
+<td><em>12 Apr, 2023</em></td>
+<td><em>None</em></td>
+</tr>
+<tr>
+<td><code>danger</code></td>
+<td>/stopmods <strong style = "color: #000;">*</strong></td>
+<td>Commands that can stop admin commands. Can only be disabled by the Destrix system.</td>
+<td><em>12 Apr, 2023</em></td>
+<td><em>0 seconds</em> <strong style = "color: #0388FC;">^</strong></td>
+</tr>
+<tr>
+<td><code>dev</code></td>
+<td><em>None</em></td>
+<td>Hidden developer commands. Can only be disabled by the Destrix system.</td>
+<td><em>12 Apr, 2023</em></td>
+<td><em>0 seconds</em> <strong style = "color: #0388FC;">^</strong></td>
+</tr>
+</tbody>
+</table>
+<p><small><strong style="color: #F00;">*</strong> Cannot be interacted with for 30 seconds after limit expires.</small>
+<br>
+<small><strong style="color: #0388FC;">^</strong> Can only be interacted with by Destrix.</small></p>
 
 
   
@@ -629,7 +745,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../disabling-commands/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Disabling commands" rel="prev">
+          <a href="../../Introduction/interfacing-with-the-panel/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Interfacing" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -638,20 +754,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Disabling commands
+                Interfacing
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../Reference/CommandTypes/" class="md-footer__link md-footer__link--next" aria-label="Next: Command Types" rel="next">
+          <a href="../Functions/DisableEXEType/" class="md-footer__link md-footer__link--next" aria-label="Next: DAX:DisableEXEType" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Command Types
+                DAX:DisableEXEType
               </div>
             </div>
             <div class="md-footer__button md-icon">

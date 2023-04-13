@@ -1,4 +1,5 @@
 site_name: Destrix
+site_description: Destrix is a developer-focused admin system on Roblox, making it easier for developers who want a flexible and non-disruptive admin/moderation system in their game, for free.
 
 extra:
   # homepage: /
@@ -21,8 +22,49 @@ extra:
     - icon: fontawesome/brands/patreon
       link: https://destrix.app/t/patreon
       name: Wolfite on Patreon
-copyright: Copyright &copy; 2023 - 2023 <a href="//wolfite.net/r/twitter">@Wolfite_</a>
-# plugins:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    # - name: Español
+    #   link: /es/
+    #   lang: es
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage
+      - reject
+    cookies:
+      analytics: Analytics
+  analytics:
+    provider: google
+    property: G-3PNP6MZLFT
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="//destrix.app/feedback/docs/" target="_blank" rel="noopener">feedback form</a>.
+copyright: >
+  Copyright &copy; 2023 - 2023 <a href="//wolfite.net/r/twitter">@Wolfite_</a>
+  <br><a href="#__consent">Change cookie settings</a>
+plugins:
+  - search:
+      lang: en
   # - tags: true
 # tags plugin seems to be removing the search tool somehow.
 
@@ -38,6 +80,9 @@ theme:
     - content.code.copy
     - content.code.annotate
     - navigation.footer
+    - content.tabs.link
+    - search.suggest
+    - search.share
 
   markdown_extensions:
   - pymdownx.highlight:
