@@ -1,8 +1,6 @@
 # DAX:DisableEXEType
 
-DisableEXEType is the function responsible for disable commands by type. Rather than disabling individual commands, you can disable them by codes. These are not the same as categories. All the codes are:
-
-`ui-interference` `example` `example`
+DisableEXEType is the function responsible for disable commands by type. Rather than disabling individual commands, you can disable them by [type](/DAX/Reference/CommandTypes/). These are not the same as categories.
 
 ## Try it
 #### Parameters

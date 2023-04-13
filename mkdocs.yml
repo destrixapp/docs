@@ -92,6 +92,9 @@ theme:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - abbr
+  - attr_list
+  - pymdownx.snippets
   
   palette:
     # Palette toggle for light mode
