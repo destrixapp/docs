@@ -5,4 +5,4 @@ Destrix is a developer-focused admin system on Roblox, making it easier for deve
 ## How to get Destrix
 "__How do you get Destrix for your game?__"
 
-You can grab the Destrix model from [this link](https://create.roblox.com/404), or download the loader [here](/404.html).
+Getting Destrix for your game is very easy. You can grab the Destrix model from [this link](https://create.roblox.com/404), or download the loader [here](https://destrix.app/download/basic).

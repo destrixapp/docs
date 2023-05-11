@@ -5,7 +5,7 @@ tags:
 title: About
 description: About the Destrix API Module (DAX), what it does, what it can't, and what it is.
 search:
-  boost: 2
+  boost: 10
 ---
 # About DAX
 
