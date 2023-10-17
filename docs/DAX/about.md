@@ -7,23 +7,37 @@ description: About the Destrix API Module (DAX), what it does, what it can't, an
 search:
   boost: 10
 ---
-# About DAX
+# Destrix API Module (DAX) Overview
 
-## What is it?
-The **Destrix API Module** (DAX, also referred to as DAXM) is module that helps scripts to easily interact with and control Destrix from the server side. Not to be confused with **DXCA**, the Destrix Client API Module.
+## Introduction
 
-## What can it do?
-**DAX** can do basic tasks like disabling commands for certain permission levels, hiding the panel temporarily, etc.
-### However, it can't...
-* Modify user settings or data
-* Listen to requests made by the client
-* Modify settings that you have set in Configurations
+The Destrix API Module, abbreviated as DAX (or DAXM), is a specialized module designed to facilitate effortless server-side interaction and control over Destrix for scripts. DAXM is distinct from DXCA (Destrix Client API Module) and should not be conflated with it.
 
-## What should it be used for?
-DAX should be used for UX (User Experience) improvements (i.e., hiding panels during loading screens and cutscenes, disabling commands that may break other scripts, etc.). You can also use DAX to get things like bans or command logs from it.
+## Core Functionalities
 
-## Security (on your end)
-It is highly encouraged that you minimise interactions with DAX through remote events fired by a client. Try detecting when a user is in an event on the server's side (i.e. when they enter a portal). If a remote event is required, then you can, but __never__ have a remote event that can disable anything for other players. Also delete any remote events interfacing with DAX if they are no longer fired by the client.
+DAXM is instrumental in performing elementary tasks including but not limited to:
 
-## Security (on our end)
-Having DAX in your game is low-risk due to the fact that it mainly only interferes with itself and Destrix. If there are any bugs at all, please report them at [destrix.app/report](https://destrix.app/report?a=DAX) at your earliest convenience.
+* Disabling specific commands for designated permission levels,
+* Temporarily concealing the panel for enhanced user engagement.
+
+However, there are explicit limitations to DAXM's capabilities. It is not designed to:
+
+* Alter user settings or data,
+* Monitor client-generated requests,
+* Modify pre-established settings in Configurations.
+
+## Recommended Applications
+DAXM is optimized for enhancing User Experience (UX). Typical use cases encompass:
+
+* Concealing panels during transitional phases like loading screens and cinematic cutscenes to ensure uninterrupted user engagement,
+* Deactivating commands that potentially conflict with other scripts, maintaining the game’s functional integrity.
+
+Additionally, DAXM can be employed to retrieve specific data including bans or command logs.
+
+## Security Protocols
+### Your Responsibility
+We advocate for a conservative approach in utilizing DAXM via remote events triggered by a client. It’s advisable to initiate detection of user involvement in an event server-side, for instance, during portal entry.
+
+In instances where the deployment of a remote event is indispensable, exercise caution to prevent any potential disablement impacts on other players. Ensure the prompt elimination of remote events associated with DAXM that are rendered obsolete or inactive.
+### Our Assurance
+The incorporation of DAXM in your game is characterized by minimal risk, attributed to its confined interference with Destrix. We are committed to ensuring a seamless, secure experience. Any identified bugs or vulnerabilities can be promptly reported through [destrix.app/report]() for expedited resolution.

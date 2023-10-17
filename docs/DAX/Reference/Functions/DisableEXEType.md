@@ -7,7 +7,7 @@ search:
   boost: 2
 ---
 
-# DAX:DisableEXEType
+# <p style="color:rgb(220,220,220); display:inline;">DAX</p>:DisableEXEType
 
 DisableEXEType is the function responsible for disable commands by type. Rather than disabling individual commands, you can disable them by [type](/DAX/Reference/CommandTypes/). These are not the same as categories.
 

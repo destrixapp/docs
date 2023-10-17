@@ -6,11 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="DisableEXEType is the function responsible for disable commands by type. Rather than disabling individual commands, you can disable them by type.">
+        <meta name="description" content="Destrix is a developer-focused admin system on Roblox, making it easier for developers who want a flexible and non-disruptive admin/moderation system in their game, for free.">
       
       
       
-        <link rel="canonical" href="https://docs.destrix.app/DAX/Reference/Functions/DisableEXEType/">
+        <link rel="canonical" href="https://docs.destrix.app/Commands/specifics/serverlock/">
       
       
       
@@ -20,14 +20,14 @@
     
     
       
-        <title>DisableEXEType - Destrix</title>
+        <title>/serverlock | Commands - Destrix</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#daxdisableexetype" class="md-skip">
+        <a href="#serverlock-serverlock" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="Destrix" class="md-header__button md-logo" aria-label="Destrix" data-md-component="logo">
+    <a href="../../.." title="Destrix" class="md-header__button md-logo" aria-label="Destrix" data-md-component="logo">
       
   <img src="https://docs.destrix.app/cdn/Destrix.png" alt="logo">
 
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DisableEXEType
+              /serverlock | Commands
             
           </span>
         </div>
@@ -249,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -376,7 +376,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -387,7 +389,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Destrix" class="md-nav__button md-logo" aria-label="Destrix" data-md-component="logo">
+    <a href="../../.." title="Destrix" class="md-nav__button md-logo" aria-label="Destrix" data-md-component="logo">
       
   <img src="https://docs.destrix.app/cdn/Destrix.png" alt="logo">
 
@@ -415,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -644,7 +646,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -655,41 +659,6 @@
   
     
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#try-it" class="md-nav__link">
-    Try it
-  </a>
-  
-    <nav class="md-nav" aria-label="Try it">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -707,45 +676,18 @@
   
 
 
-<h1 id="daxdisableexetype">DAX:DisableEXEType</h1>
-<p>DisableEXEType is the function responsible for disable commands by type. Rather than disabling individual commands, you can disable them by <a href="/DAX/Reference/CommandTypes/">type</a>. These are not the same as categories.</p>
-<h2 id="try-it">Try it</h2>
-<h4 id="parameters">Parameters</h4>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Command Type</td>
-<td>string</td>
-<td>Required</td>
-<td>The type of commands you want disabled.</td>
-</tr>
-<tr>
-<td>Players</td>
-<td>table?</td>
-<td>nil</td>
-<td>The players you want the commands to be disabled for. If blank, they will be disabled for all players.</td>
-</tr>
-</tbody>
-</table>
-<h4 id="examples">Examples</h4>
-<p>The example below will disable all of the commands that interfere with user interface not from Destrix, for all players.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">DAX</span><span class="p">:</span><span class="n">DisableEXEType</span><span class="p">(</span><span class="s2">&quot;ui-interference&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<p>The example below disables all of the commands that interfere with user interface not from Destrix just for just 1 player, @WWolfite (game.Players.WWolfite).</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">DAX</span><span class="p">:</span><span class="n">DisableEXEType</span><span class="p">(</span><span class="s2">&quot;ui-interference&quot;</span><span class="p">,</span> <span class="p">{</span><span class="n">game</span><span class="p">.</span><span class="n">Players</span><span class="p">.</span><span class="n">WWolfite</span><span class="p">})</span>
-</span></code></pre></div>
+<h1 id="serverlock-serverlock"><p style="color: rgb(220,220,220); display: inline;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M9 5h1V3H9v2m0 8h1v-2H9v2m0 8h1v-2H9v2M5 3v2h2V3H5m0 8v2h2v-2H5m0 8v2h2v-2H5Z"/></svg></span> Serverlock</p> (/serverlock)</h1>
+<div style="display:inline;">
+<p style="color: #7F5F02; display: inline;">Utility</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.0.1</p> | serverlock, slock
+</div>
+<p>/serverlock (or /slock) locks the server for players that are not the specified rank or higher, so /serverlock 4 would lock the server so anyone other than permission level 4 or higher will be disconnected when they try to join.</p>
+<p>Arguments: <em>rank : number</em></p>
 
 
   
 
+
+  
 
 
   <form class="md-feedback" name="feedback" hidden>
@@ -963,10 +905,10 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.code.copy", "content.code.annotate", "navigation.footer", "content.tabs.link", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.code.copy", "content.code.annotate", "navigation.footer", "content.tabs.link", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>

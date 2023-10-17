@@ -1,7 +1,42 @@
 site_name: Destrix
 site_description: Destrix is a developer-focused admin system on Roblox, making it easier for developers who want a flexible and non-disruptive admin/moderation system in their game, for free.
-repo_url: https://github.com/DestrixApp/docs
-repo_name: DestrixApp/docs
+site_url: https://docs.destrix.app
+repo_url: https://github.com/DestrixApp
+repo_name: DestrixApp
+
+markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - abbr
+    - attr_list
+    - pymdownx.snippets
+
+nav:
+  - index.md
+  - Getting Started:
+    - Installation Guide: /Getting_Started
+  - Commands:
+    - Introduction: /Commands
+  - DAX:
+    - About: /DAX/about
+    - Introduction:
+      - DisableEXEType: /DAX/Introduction/disabling-commands
+    - API Reference:
+      - Command Types: /DAX/Reference/CommandTypes
+      - Functions:
+        - DisableEXEType: /DAX/Reference/Functions/DisableEXEType
+        - FireCommand: /DAX/Reference/Functions/FireCommand
+  - DAXI: /DAXI/about
+  - Extenstions: /Extenstions
+  - Features: /Features
 
 extra:
   # homepage: /
@@ -61,9 +96,9 @@ extra:
           data: 0
           note: >- 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="//destrix.app/feedback/docs/" target="_blank" rel="noopener">feedback form</a>.
+            using our <a href="//destrix.app/?feedback=docs" target="_blank" rel="noopener">feedback form</a>.
 copyright: >
-  Copyright &copy; 2023 - 2023 <a href="//wolfite.net/r/twitter">@Wolfite_</a>
+  Copyright &copy; 2022 - 2024 <a href="//wolfite.dev?to=twitter">@Wolfite_</a>
   <br><a href="#__consent">Change cookie settings</a>
 plugins:
   - search:
@@ -71,11 +106,17 @@ plugins:
   # - tags: true
 # tags plugin seems to be removing the search tool somehow.
 
+extra_css:
+    - stylesheets/extra.css
+
 theme:
   name: material
-  logo: /cdn/Destrix.png
-  favicon: /favicon.ico
+  logo: https://storage.googleapis.com/figmotion-renderer/videos/render-836-4-standalone-vDmQn8oXcrFu.gif?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=cloud-run-frames-handler%40figmotion.iam.gserviceaccount.com%2F20231017%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20231017T071541Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=8c11328f4cd3b49e24b90571a355c16cb321b26971cc41e6a08022a936dd924afe18ee8ee638dc6e0e7b62a018483d0d05ab18277cbf35c371d1e1f53dfca61ed0a1eb5c7b4b2f32c9dfd9abead997f891de0b892c11fcd0c49d9eb66675b8ad5716f91c9d72dee8c131691a49db1ccbea817ffc0716cea389303a9b248b379a23770f6b939ebf4edce2ba4c66fc9f228534cf18e3294e89b74755380c2e5a45a488b9583b787b021adc6411c0685c68d368ddf454e22371d2e7e96a7c364b137b910db48f72e3b1f083b67c5dea623e560b8ece697ff54586588a172a2f8b1fe8da7236785473085fb0aa3a2109ad6b3c11df044b5919ddd8d195e8f1da5244
+  favicon: https://docs.destrix.app/favicon.ico
   language: en
+
+  
+
   features:
     - navigation.tabs
     - navigation.sections
@@ -89,17 +130,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-  markdown_extensions:
-  - pymdownx.highlight:
-    anchor_linenums: true
-    line_spans: __span
-    pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - abbr
-  - attr_list
-  - pymdownx.snippets
+  
   
   palette:
     # Palette toggle for light mode
