@@ -13,7 +13,7 @@ hide:
     - navigation
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:fontawesome-solid-magnifying-glass: Inspect Avatar</p> (/view)
+# <p style="color: rgb(220,220,220); display: inline;">:fontawesome-solid-magnifying-glass: Inspect Avatar</p> (/inspect)
 <div style="display:inline;">
 <p style="color: #7F5F02; display: inline;">Utility</p> | <p style="color: rgb(220,220,220); display: inline;">0</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | inspect, inspect-avatar
 </div>

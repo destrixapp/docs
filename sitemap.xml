@@ -26,12 +26,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.destrix.app/Commands/specifics/hint/</loc>
+         <lastmod>2023-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.destrix.app/Commands/specifics/inspect-avatar/</loc>
          <lastmod>2023-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/kick/</loc>
+         <lastmod>2023-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/message/</loc>
          <lastmod>2023-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>

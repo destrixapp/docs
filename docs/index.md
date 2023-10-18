@@ -3,6 +3,8 @@ title: Introduction
 hide:
     - navigation
 ---
+:octicons-info-16: Destrix is not created yet. This documentation is more of a concept, and shown demos are POC's.
+
 # Welcome to Destrix Documentation
 
 Welcome, developers! We’re thrilled to have you here. Destrix is your ultimate admin and moderation companion, specifically crafted with developers in mind. We understand the intricacies and challenges faced in building immersive, engaging, and safe gaming environments. That's why Destrix is engineered to be flexible, seamless, and non-disruptive, ensuring your game’s integrity while enhancing the user experience.
