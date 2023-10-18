@@ -1,2 +1,7 @@
 User-agent: *
 Disallow: /
+
+Disallow: /cdn
+Disallow: /stylesheets
+
+Sitemap: https://docs.destrix.app/sitemap.xml

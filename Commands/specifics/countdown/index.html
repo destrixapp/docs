@@ -6,11 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="All the command types in Destrix that are used for DAX.">
+        <meta name="description" content="Destrix is a developer-focused admin system on Roblox, making it easier for developers who want a flexible and non-disruptive admin/moderation system in their game, for free.">
       
       
       
-        <link rel="canonical" href="https://docs.destrix.app/DAX/Reference/CommandTypes/">
+        <link rel="canonical" href="https://docs.destrix.app/Commands/specifics/countdown/">
       
       
       
@@ -19,7 +19,7 @@
     
     
       
-        <title>Command Types - Destrix</title>
+        <title>/countdown | Commands - Destrix</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#command-types" class="md-skip">
+        <a href="#countdown-countdown" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Command Types
+              /countdown | Commands
             
           </span>
         </div>
@@ -339,7 +339,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -748,7 +750,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -777,134 +781,25 @@
     
       
     
-    <a href="https://github.com/DestrixApp/raw/master/docs/DAX/Reference/CommandTypes.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/DestrixApp/raw/master/docs/Commands/specifics/countdown.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="command-types">Command Types</h1>
-<p>Please note that these are not final and maybe be further changed.</p>
-<p>This page contains all the command types used in Destrix. Command types are a more accurate label of commands, they are not categories.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Examples</th>
-<th>Description</th>
-<th>Added</th>
-<th>Limit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>ui-interference</code></td>
-<td>/hideui, /showui</td>
-<td>Commands that interfere with other game UI.</td>
-<td><em>2 Jan, 2023</em></td>
-<td><em>None</em></td>
-</tr>
-<tr>
-<td><code>character-interference-2</code></td>
-<td>/kill, /fling, /sit</td>
-<td>Commands that can move, damage/kill, morph, or add animations to characters.</td>
-<td><em>10 Apr, 2023</em></td>
-<td><em>None</em></td>
-</tr>
-<tr>
-<td><code>character-interference-1</code></td>
-<td>/paint, /bighead</td>
-<td>Commands that change the appearance of characters in a small way.</td>
-<td><em>10 Apr, 2023</em></td>
-<td><em>None</em></td>
-</tr>
-<tr>
-<td><code>moderation-2</code></td>
-<td>/softban</td>
-<td>Small moderation commands like /softban (server bans).</td>
-<td><em>10 Apr, 2023</em></td>
-<td><em>None</em></td>
-</tr>
-<tr>
-<td><code>moderation-1</code></td>
-<td>/kick, /ban</td>
-<td>Moderation commands. Can only be disabled by the Destrix system to prevent attacks.</td>
-<td><em>10 Apr, 2023</em></td>
-<td><em>0 seconds</em> <strong style = "color: #0388FC;">^</strong></td>
-</tr>
-<tr>
-<td><code>server-interference</code></td>
-<td>/shutdown</td>
-<td>Commands that may stop servers or reboot them.</td>
-<td><em>10 Apr, 2023</em></td>
-<td><em>60 <br>seconds</em><strong style = "color: #F00;"> *</strong></td>
-</tr>
-<tr>
-<td><code>software</code></td>
-<td>/admins, /cmds</td>
-<td>Commands that are for using Destrix easier. Can only be disabled by the Destrix system.</td>
-<td><em>10 Apr, 2023</em></td>
-<td><em>0 seconds</em> <strong style = "color: #0388FC;">^</strong></td>
-</tr>
-<tr>
-<td><code>contact</code></td>
-<td>/modcall</td>
-<td>Commands that allow players to interact with moderators/admins.</td>
-<td><em>10 Apr, 2023</em></td>
-<td><em>30 minutes</em></td>
-</tr>
-<tr>
-<td><code>workplace-interference</code></td>
-<td>/reloadmap, /reloadworkplace</td>
-<td>Commands that interfere with the workplace.</td>
-<td><em>12 Apr, 2023</em></td>
-<td><em>None</em></td>
-</tr>
-<tr>
-<td><code>prompt</code></td>
-<td>/promptgamepass, promptasset</td>
-<td>Commands that prompt users.</td>
-<td><em>12 Apr, 2023</em></td>
-<td><em>None</em></td>
-</tr>
-<tr>
-<td><code>teleport</code></td>
-<td>/fplace, /rejoin, /reconnect</td>
-<td>Commands that use TeleportService.</td>
-<td><em>12 Apr, 2023</em></td>
-<td><em>60 <br>seconds</em><strong style = "color: #F00;"> *</strong></td>
-</tr>
-<tr>
-<td><code>fun</code></td>
-<td>/fire, /sit, /stratosphere</td>
-<td>Commands in the category 'fun'.</td>
-<td><em>12 Apr, 2023</em></td>
-<td><em>None</em></td>
-</tr>
-<tr>
-<td><code>danger</code></td>
-<td>/stopmods <strong style = "color: #000;">*</strong></td>
-<td>Commands that can stop admin commands. Can only be disabled by the Destrix system.</td>
-<td><em>12 Apr, 2023</em></td>
-<td><em>0 seconds</em> <strong style = "color: #0388FC;">^</strong></td>
-</tr>
-<tr>
-<td><code>dev</code></td>
-<td><em>None</em></td>
-<td>Hidden developer commands. Can only be disabled by the Destrix system.</td>
-<td><em>12 Apr, 2023</em></td>
-<td><em>0 seconds</em> <strong style = "color: #0388FC;">^</strong></td>
-</tr>
-</tbody>
-</table>
-<p><small><strong style="color: #F00;">*</strong> Cannot be interacted with for 30 seconds after limit expires.</small>
-<br>
-<small><strong style="color: #0388FC;">^</strong> Can only be interacted with by Destrix.</small></p>
+<h1 id="countdown-countdown"><p style="color: rgb(220,220,220); display: inline;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0a12 12 0 0 1 12 12 12 12 0 0 1-12 12A12 12 0 0 1 0 12 12 12 0 0 1 12 0m0 2A10 10 0 0 0 2 12c0 2.4.85 4.6 2.26 6.33L18.33 4.26A9.984 9.984 0 0 0 12 2m0 20a10 10 0 0 0 10-10c0-2.4-.85-4.6-2.26-6.33L5.67 19.74A9.984 9.984 0 0 0 12 22Z"/></svg></span> Countdown</p> (/countdown)</h1>
+<div style="display:inline;">
+<p style="color: #7F5F02; display: inline;">Utility</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | countdown
+</div>
+<p>/countdown starts a countdown onscreen for all players at the top of their screen.</p>
+<p>Arguments: Time : number</p>
 
 
   
 
+
+  
 
 
   <form class="md-feedback" name="feedback" hidden>

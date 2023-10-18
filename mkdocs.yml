@@ -122,6 +122,7 @@ theme:
     - navigation.sections
     - navigation.top
     - content.code.copy
+    - content.action.view
     - content.code.annotate
     - navigation.footer
     - content.tabs.link
@@ -135,7 +136,7 @@ theme:
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      # scheme: default
       primary: black
       accent: blue
       toggle:
