@@ -2,9 +2,41 @@
 title: Introduction
 hide:
     - navigation
+
+definitions:
+
+  # Page title with site name
+  - &page_title_with_site_name >-
+    {%- if not page.is_homepage -%}
+      {{ page.meta.get("title", page.title) }} - {{ config.site_name }}
+    {%- else -%}
+      {{ page.meta.get("title", page.title) }}
+    {%- endif -%}
+
+  # Page description
+  - &page_description >-
+    {{ page.meta.get("description", config.site_description) or "" }}
+
+# Meta tags
+tags:
+
+  # Open Graph
+  og:type: website
+  og:title: *page_title_with_site_name
+  og:description: *page_description
+  og:image: "https://cdn.discordapp.com/attachments/786817739867947009/1169215778915102820/destrix_docs_og_img_large.png?ex=6554980c&is=6542230c&hm=8f7e60d7a63a1a98455c4e705441f1c054f84f26c9069ab9cf053a293dcfb9c6&"
+  og:image:type: "{{ image.type }}"
+  og:image:width: "960"
+  og:image:height: "540"
+  og:url: "{{ page.canonical_url }}"
+
+  # Twitter
+  twitter:card: summary_large_image
+  twitter.title: *page_title_with_site_name
+  twitter:description: *page_description
+  twitter:image: "{{ image.url }}"
 ---
 :octicons-info-16: Destrix is not created yet. This documentation is more of a concept, and shown demos are POC's.
-:destrix-logo:
 
 # Welcome to Destrix Documentation
 
