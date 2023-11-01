@@ -4,6 +4,7 @@ hide:
     - navigation
 ---
 :octicons-info-16: Destrix is not created yet. This documentation is more of a concept, and shown demos are POC's.
+:destrix-logo:
 
 # Welcome to Destrix Documentation
 

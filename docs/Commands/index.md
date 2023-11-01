@@ -2,12 +2,12 @@
 tags:
     - Commands
 title: All Commands
-description: A full list of all the commands
+description: A full list of all the commands available on Destrix.
 search:
   boost: 2
 hide:
   - toc
-  - navigation
+  # - navigation
 
 # alt + z
 ---

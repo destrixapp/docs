@@ -1,5 +1,6 @@
 ---
 title: /message | Commands
+icon: material/message
 
 tags:
     - Commands

@@ -2,152 +2,307 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.destrix.app/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/about/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/ban/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/bans/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/brazil/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/checkplus/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/checkrank/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/commands/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/countdown/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/credits/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/dversion/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/fire/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/fplace/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/freeze/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/fshutdown/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/gametime/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/hint/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/inspect-avatar/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/jupiter/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/kick/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/limits/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/logs/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/mars/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/message/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/modcall/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/ping/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/placename/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/plus/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/prefix/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/prompt-asset/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/prompt-gamepass/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/rank/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/ranks/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/reloadmap/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/reset/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/rocket/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/sban/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/serverlock/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/shutdown/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/sit/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/stratosphere/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/tban/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/temp-rank/</loc>
+         <lastmod>2023-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/Commands/specifics/timer/</loc>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Commands/specifics/view/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/DAX/about/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/DAX/Introduction/disabling-commands/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/DAX/Introduction/interfacing-with-the-panel/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/DAX/Reference/CommandTypes/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/DAX/Reference/Functions/DisableEXEType/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/DAX/Reference/Functions/FireCommand/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/DAXI/about/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Extenstions/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Extenstions/SP/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Extenstions/Plugins/Getting_Started/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Extenstions/Themes/Getting_Started/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Extenstions/Themes/Creating/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Extenstions/Themes/Creating/Guidelines/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Features/feature/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.destrix.app/Getting_Started/</loc>
-         <lastmod>2023-10-18</lastmod>
+         <lastmod>2023-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -3,5 +3,6 @@ Disallow: /
 
 Disallow: /cdn
 Disallow: /stylesheets
+Disallow: /overrides
 
 Sitemap: https://docs.destrix.app/sitemap.xml

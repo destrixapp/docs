@@ -1,5 +1,6 @@
 ---
 title: /shutdown | Commands
+icon: material/server
 
 tags:
     - Commands

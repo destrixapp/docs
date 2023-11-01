@@ -1,5 +1,6 @@
 ---
 title: /fshutdown | Commands
+icon: material/server
 
 tags:
     - Commands

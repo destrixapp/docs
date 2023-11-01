@@ -16,6 +16,9 @@ markdown_extensions:
     - pymdownx.emoji:
         emoji_index: !!python/name:material.extensions.emoji.twemoji
         emoji_generator: !!python/name:material.extensions.emoji.to_svg
+        options:
+          custom_icons:
+            - overrides/.icons
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.superfences
@@ -23,24 +26,77 @@ markdown_extensions:
     - attr_list
     - pymdownx.snippets
 
-# nav:
-#   - index.md
-#   - Getting Started:
-#     - Installation Guide: /Getting_Started
-#   - Commands:
-#     - Introduction: /Commands
-#   - DAX:
-#     - About: /DAX/about
-#     - Introduction:
-#       - DisableEXEType: /DAX/Introduction/disabling-commands
-#     - API Reference:
-#       - Command Types: /DAX/Reference/CommandTypes
-#       - Functions:
-#         - DisableEXEType: /DAX/Reference/Functions/DisableEXEType
-#         - FireCommand: /DAX/Reference/Functions/FireCommand
-#   - DAXI: /DAXI/about
-#   - Extenstions: /Extenstions
-#   - Features: /Features
+nav:
+  - index.md
+  - Getting Started:
+    - Installation Guide: /Getting_Started
+  - Commands:
+    - Commands/index.md
+    # Utility
+    - Utility:
+      - /ban: Commands/specifics/ban.md
+      - /server-ban: Commands/specifics/sban.md
+      - /temp-ban: Commands/specifics/tban.md
+      # - /pban: Commands/specifics/pban.md
+      - /kick: Commands/specifics/kick.md
+      - /server-lock: Commands/specifics/serverlock.md
+      - /shutdown: Commands/specifics/shutdown.md
+      - /force-shutdown: Commands/specifics/fshutdown.md
+      # - /tslock: Commands/specifics/serverlock.md
+      - /reload-map: Commands/specifics/reloadmap.md
+      - /countdown: Commands/specifics/countdown.md
+      - /timer: Commands/specifics/timer.md
+      - /message: Commands/specifics/message.md
+      - /hint: Commands/specifics/hint.md
+      - /spectate: Commands/specifics/view.md
+      - /prompt-gamepass: Commands/specifics/prompt-gamepass.md
+      - /prompt-asset: Commands/specifics/prompt-asset.md
+      - /logs: Commands/specifics/logs.md
+      - /rank: Commands/specifics/rank.md
+      - /temp-rank: Commands/specifics/temp-rank.md
+      - /force-place: Commands/specifics/fplace.md
+
+    # Software
+    - Software:
+      - /about: Commands/specifics/about.md
+      - /check-plus: Commands/specifics/checkplus.md
+      - /check-rank: Commands/specifics/checkrank.md
+      - /ping: Commands/specifics/ping.md
+      - /prefix: Commands/specifics/prefix.md
+      - /gametime: Commands/specifics/gametime.md
+      - /dversion: Commands/specifics/dversion.md
+      - /plus: Commands/specifics/plus.md
+      - /commands: Commands/specifics/commands.md
+      - /bans: Commands/specifics/bans.md
+      - /plus: Commands/specifics/plus.md
+      - /credits: Commands/specifics/credits.md
+    
+     # Contact
+    - Contact:
+      - /modcall: Commands/specifics/modcall.md
+
+    # Fun
+    - Fun:
+      - /fire: Commands/specifics/fire.md
+      - /sit: Commands/specifics/sit.md
+      - /mars: Commands/specifics/mars.md
+      - /jupiter: Commands/specifics/jupiter.md
+      - /brazil: Commands/specifics/brazil.md
+      - /freeze: Commands/specifics/freeze.md
+      - /stratosphere: Commands/specifics/stratosphere.md
+      - /rocket: Commands/specifics/rocket.md
+  - DAX:
+    - About: /DAX/about
+    - Introduction:
+      - DisableEXEType: /DAX/Introduction/disabling-commands
+    - API Reference:
+      - Command Types: /DAX/Reference/CommandTypes
+      - Functions:
+        - DisableEXEType: /DAX/Reference/Functions/DisableEXEType
+        - FireCommand: /DAX/Reference/Functions/FireCommand
+  - DAXI: /DAXI/about
+  - Extenstions: /Extenstions
+  - Features: /Features
 
 extra:
   homepage: /
@@ -63,9 +119,12 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://destrix.app/t/youtube
       name: Destrix on YouTube
-    - icon: fontawesome/brands/patreon
+    - icon: destrix/patreon-2023
       link: https://destrix.app/t/patreon
       name: Wolfite on Patreon
+    - icon: destrix/logo
+      link: https://destrix.app/
+      name: Destrix.app
   alternate:
     - name: English
       link: https://docs.destrix.app/
@@ -108,6 +167,7 @@ copyright: >
   Copyright &copy; 2022 - 2024 <a href="//wolfite.dev?to=twitter">@Wolfite_</a>
   <br><a href="#__consent">Change cookie settings</a>
 plugins:
+  # - social
   - search:
       lang: en
 # tags plugin seems to be removing the search tool somehow.
@@ -130,12 +190,15 @@ theme:
     - navigation.top
     - content.code.copy
     - content.action.view
+    - content.tooltips
     - content.code.annotate
     - navigation.footer
     - content.tabs.link
     - search.suggest
     - search.share
     - announce.dismiss
+    - toc.follow
+    - navigation.indexes
     # - toc.integrate
   icon:
     repo: fontawesome/brands/github

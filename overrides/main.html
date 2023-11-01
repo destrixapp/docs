@@ -17,3 +17,20 @@
     <strong>Twitter</strong>
   </a>
 {% endblock %}
+
+{% block extrahead %}
+  {% set title = config.site_name %}
+  {% if page and page.meta and page.meta.title %}
+    {% set title = title ~ " - " ~ page.meta.title %}
+  {% elif page and page.title and not page.is_homepage %}
+    {% set title = title ~ " - " ~ page.title %}
+  {% endif %}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.canonical_url }}" />
+  <meta property="og:description" content="{{ config.site_description }}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/786817739867947009/1169215778915102820/destrix_docs_og_img_large.png?ex=6554980c&is=6542230c&hm=8f7e60d7a63a1a98455c4e705441f1c054f84f26c9069ab9cf053a293dcfb9c6&" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="960" />
+  <meta property="og:image:height" content="540" />
+{% endblock %}

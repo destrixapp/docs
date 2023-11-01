@@ -1,5 +1,6 @@
 ---
 title: /ban | Commands
+icon: material/block-helper
 
 tags:
     - Commands
@@ -11,7 +12,6 @@ search:
 
 hide:
     - toc
-    - navigation
 
 ---
 # <p style="color: rgb(220,220,220); display: inline;">:material-block-helper: Ban</p> (/ban)
