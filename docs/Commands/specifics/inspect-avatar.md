@@ -11,7 +11,6 @@ search:
 
 hide:
     - toc
-    - navigation
 
 ---
 # <p style="color: rgb(220,220,220); display: inline;">:fontawesome-solid-magnifying-glass: Inspect Avatar</p> (/inspect)

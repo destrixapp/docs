@@ -36,6 +36,8 @@ tags:
   twitter:description: *page_description
   twitter:image: "{{ image.url }}"
 ---
+
+<!-- ![Destrix](https://docs.destrix.app/cdn/logo.png) -->
 :octicons-info-16: Destrix is not created yet. This documentation is more of a concept, and shown demos are POC's.
 
 # Welcome to Destrix Documentation
@@ -53,16 +55,16 @@ Destrix is a developer-centric admin system forged to simplify and empower your 
 
 ## Explore
 
-### [Commands](https://roblox.com)
+### [Commands](Commands/index.md)
 Dive into our comprehensive list of commands, each designed to offer you unparalleled control and moderation power, ensuring that you’re always in command.
 
-### [DAX](https://roblox.com)
+### [DAX](DAX/about.md)
 The Destrix API Module (DAX, also referred to as DAXM) is module that helps scripts to easily interact with and control Destrix from the server side.
 
-### [DAXI](https://roblox.com)
+### [DAXI](DAXI/about.md)
 Explore DAXI, where innovation meets intuition. A tool that’s not just about getting things done but about redefining what’s possible in the world of game moderation. A powerful tool for developers to integrate their own models and systems seamlessly with Destrix.
 
-### [Extension Docs](https://roblox.com)
+### [Extension Docs](Extensions/index.md)
 Get the insights, guides, and tips you need to extend and enhance the capabilities of Destrix. Your journey to creating a safe, engaging, and immersive gaming world just got easier.
 
 ## Join The Community

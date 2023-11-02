@@ -2,7 +2,7 @@ site_name: Destrix
 site_description: Destrix is a developer-focused admin system on Roblox, making it easier for developers who want a flexible and non-disruptive admin/moderation system in their game, for free.
 site_url: https://docs.destrix.app
 repo_url: https://github.com/DestrixApp
-repo_name: DestrixApp
+repo_name: Destrix
 
 markdown_extensions:
     - pymdownx.highlight:
@@ -23,15 +23,18 @@ markdown_extensions:
     - pymdownx.snippets
     - pymdownx.superfences
     - abbr
+    - md_in_html
     - attr_list
     - pymdownx.snippets
 
 nav:
   - index.md
   - Getting Started:
-    - Installation Guide: /Getting_Started
+    - Getting_Started/index.md
+    - Configurations: Getting_Started/configurations.md
   - Commands:
     - Commands/index.md
+    - Parameters: Commands/parameters.md
     # Utility
     - Utility:
       - /ban: Commands/specifics/ban.md
@@ -49,12 +52,14 @@ nav:
       - /message: Commands/specifics/message.md
       - /hint: Commands/specifics/hint.md
       - /spectate: Commands/specifics/view.md
+      - /inspect-avatar: Commands/specifics/inspect-avatar.md
       - /prompt-gamepass: Commands/specifics/prompt-gamepass.md
       - /prompt-asset: Commands/specifics/prompt-asset.md
       - /logs: Commands/specifics/logs.md
       - /rank: Commands/specifics/rank.md
       - /temp-rank: Commands/specifics/temp-rank.md
       - /force-place: Commands/specifics/fplace.md
+      - /reset: Commands/specifics/reset.md
 
     # Software
     - Software:
@@ -64,12 +69,16 @@ nav:
       - /ping: Commands/specifics/ping.md
       - /prefix: Commands/specifics/prefix.md
       - /gametime: Commands/specifics/gametime.md
+      - /place-name: Commands/specifics/placename.md
+      - /ranks: Commands/specifics/ranks.md
       - /dversion: Commands/specifics/dversion.md
-      - /plus: Commands/specifics/plus.md
       - /commands: Commands/specifics/commands.md
       - /bans: Commands/specifics/bans.md
+      - /limits: Commands/specifics/limits.md
       - /plus: Commands/specifics/plus.md
       - /credits: Commands/specifics/credits.md
+      - /hide-ui: Commands/specifics/hideui.md
+      - /show-ui: Commands/specifics/showui.md
     
      # Contact
     - Contact:
@@ -85,18 +94,45 @@ nav:
       - /freeze: Commands/specifics/freeze.md
       - /stratosphere: Commands/specifics/stratosphere.md
       - /rocket: Commands/specifics/rocket.md
+      - /blur: Commands/specifics/blur.md
+      - /glitch: Commands/specifics/glitch.md
+      - /fling: Commands/specifics/fling.md
+      - /bighead: Commands/specifics/bighead.md
+
+    # Standard
+    - Standard:
+      - /fly: Commands/specifics/fly.md
+      - /kill: Commands/specifics/kill.md
+      - /loopkill: Commands/specifics/loopkill.md
+      - /explode: Commands/specifics/explode.md
+      - /heal: Commands/specifics/heal.md
+      - Optional:
+        - /rejoin: Commands/specifics/rejoin.md
+
+      # Cosmetic
+    - Cosmetic:
+      - /smoke: Commands/specifics/smoke.md
+      - /sparke: Commands/specifics/sparkle.md
+      - /glow: Commands/specifics/glow.md
+      - /glass: Commands/specifics/glass.md
+      - /gold: Commands/specifics/gold.md
+
+      # Developer
+    - Developer:
+      - /changecameratype: Commands/specifics/changecameratype.md
   - DAX:
-    - About: /DAX/about
+    - About: DAX/about.md
     - Introduction:
-      - DisableEXEType: /DAX/Introduction/disabling-commands
+      - DisableEXEType: DAX/Introduction/disabling-commands.md
     - API Reference:
-      - Command Types: /DAX/Reference/CommandTypes
+      - Command Types: DAX/Reference/CommandTypes.md
       - Functions:
-        - DisableEXEType: /DAX/Reference/Functions/DisableEXEType
-        - FireCommand: /DAX/Reference/Functions/FireCommand
+        - DisableEXEType: DAX/Reference/Functions/DisableEXEType.md
+        - FireCommand: DAX/Reference/Functions/FireCommand.md
   - DAXI: /DAXI/about
-  - Extenstions: /Extenstions
-  - Features: /Features
+  - Extensions: 
+    - Extensions/index.md
+  - Features: Features/feature.md
 
 extra:
   homepage: /
@@ -130,8 +166,11 @@ extra:
       link: https://docs.destrix.app/
       lang: en
     # - name: Español
-    #   link: /es/
+    #   link: https://es.docs.destrix.app/?from=lang_en
     #   lang: es
+    # - name: 日本語
+    #   link: https://jp.docs.destrix.app/?from=lang_en
+    #   lang: jp
   consent:
     title: Cookie consent
     description: >- 
@@ -201,7 +240,8 @@ theme:
     - navigation.indexes
     # - toc.integrate
   icon:
-    repo: fontawesome/brands/github
+    repo: destrix/logo
+    annotation: material/plus-circle
 
   
   

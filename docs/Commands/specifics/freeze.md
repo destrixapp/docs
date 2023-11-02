@@ -1,6 +1,6 @@
 ---
 title: /freeze | Commands
-icon: material/cube-outline
+icon: material/snowflake
 
 tags:
     - Commands
@@ -11,10 +11,9 @@ search:
 
 hide:
     - toc
-    - navigation
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-cube-outline: Freeze</p> (/freeze)
+# <p style="color: rgb(220,220,220); display: inline;">:material-snowflake: Freeze</p> (/freeze)
 <div style="display:inline;">
 <p style="color: #216E4E; display: inline;">Fun</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | freeze
 </div>

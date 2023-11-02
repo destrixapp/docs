@@ -1,8 +1,8 @@
 ---
 title: Installation
 
-hide:
-    - navigation
+# hide:
+    # - navigation
 ---
 
 # Installation Guide

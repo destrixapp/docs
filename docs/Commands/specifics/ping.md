@@ -12,7 +12,6 @@ search:
 
 hide:
     - toc
-    - navigation
 
 ---
 # <p style="color: rgb(220,220,220); display: inline;">:material-server-off: Ping</p> (/ping)

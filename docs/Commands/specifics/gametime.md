@@ -11,7 +11,6 @@ search:
 
 hide:
     - toc
-    - navigation
 
 ---
 # <p style="color: rgb(220,220,220); display: inline;">:material-earth-plus: Game Time</p> (/gametime)

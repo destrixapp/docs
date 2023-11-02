@@ -5,6 +5,8 @@ tags:
     - Unstable
 title: Command Types
 description: All the command types in Destrix that are used for DAX.
+hide:
+    - toc
 ---
 # Command Types
 Please note that these are not final and maybe be further changed.

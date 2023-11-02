@@ -20,7 +20,12 @@ hide:
 </div>
 /kick can kick a player (disconnect them) from the current server. However, they can join back. See [/ban](/Commands/specifics/ban/) for options to ban a player.
 
-Arguments: Player : player
+## Parameters
+
+| Name           | Type   | Required :material-information-outline:{ title="Most commands that specify required arguments sometimes still work without the argument being specified, or bring up a menu prompting an answer." } | Default            | Description                                               |
+|----------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|-----------------------------------------------------------|
+| Player         | player | :material-check:                                                                                                                                                                                    | nil                | The player you want to kick.                              |
+| Reason         | string | :material-close:                                                                                                                                                                                    | nil                | The reason the player will see (filtered).                |
 
 ## See Also
 * [/ban](/Commands/specifics/ban/)

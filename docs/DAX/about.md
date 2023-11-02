@@ -4,7 +4,7 @@ tags:
     - Security
 title: About
 description: About the Destrix API Module (DAX), what it does, what it can't, and what it is.
-icon: simple/readdotcv
+icon: material/book-open
 search:
   boost: 10
 ---
