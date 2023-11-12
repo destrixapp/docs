@@ -133,6 +133,8 @@ nav:
   - Extensions: 
     - Extensions/index.md
   - Features: Features/feature.md
+  - News:
+    - blog/index.md
 
 extra:
   homepage: /
@@ -203,12 +205,15 @@ extra:
             Thanks for your feedback! Help us improve this page by
             using our <a href="//destrix.app/?feedback=docs" target="_blank" rel="noopener">feedback form</a>.
 copyright: >
-  Copyright &copy; 2022 - 2024 <a href="//wolfite.dev?to=twitter">@Wolfite_</a>
+  Copyright &copy; 2016 - 2024 <a href="//wolfite.dev?to=twitter">@Wolfite_</a>
   <br><a href="#__consent">Change cookie settings</a>
 plugins:
   # - material/social
   - search:
       lang: en
+  - blog
+      # authors: true
+      # authors_file: "{blog}/.authors.yml"
 # tags plugin seems to be removing the search tool somehow.
 
 extra_css:

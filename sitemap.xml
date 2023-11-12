@@ -410,4 +410,29 @@
          <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://docs.destrix.app/blog/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/blog/2016/11/12/introducing-destrix/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/blog/archive/2016/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/blog/category/destrix/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/blog/category/012/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
