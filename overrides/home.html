@@ -56,6 +56,7 @@
     }
 
     .tx-hero .md-button {
+        transition: all 0.25s linear;
         margin-top: .5rem;
         margin-right: .5rem;
         color: var(--md-primary-bg-color)
@@ -70,7 +71,7 @@
 
     .tx-hero .md-button:focus,
     .tx-hero .md-button:hover {
-        background-color: var(--md-primary-bg-color);
+        background-color: var(--md-accent-fg-color);
         color: var(--md-default-bg-color);
         border-color: var(--md-accent-fg-color)
     }
@@ -84,11 +85,22 @@
         color: #fff;
     }
 
+    .feature-item h2, .feature-item svg, .feature-item p {
+        transition: color 0.2s linear;
+    }
+
+    .feature-item:hover h2,
+    .feature-item:hover svg,
+    .feature-item:hover p {
+        color: var(--md-accent-fg-color);
+    }
+
     .top-hr {
         margin-top: 42px;
     }
 
     .feature-item {
+        cursor: pointer;
 	border-radius: 20px;
 	margin-top: .5rem;
         margin-right: .5rem;
@@ -180,7 +192,7 @@
         }
 
         /* .feature-item:hover {
-            background-color: #526cfe47;
+            background-color: #526cfe47;    
             border-radius: 3px;
         } */
     }
@@ -241,6 +253,28 @@
         }
     }
 
+    [data-md-color-scheme="default"] {
+        .tx-container {
+            background-image: url("https://cdn.discordapp.com/attachments/786817739867947009/1173534855393464330/destrix-background-lightmode.png?ex=65644e80&is=6551d980&hm=d049a90b5add79c5084bd2442177229fcff9272a718633f59f735174db18c797&");
+        }
+
+        .tx-hero .md-button {
+            color: #000000;
+        }
+
+        .tx-hero .tx-hero__content h1, .tx-hero .tx-hero__content p {
+            color: #000000;
+        }
+
+        .tx-hero .tx-hero__content .tx-hero__image .logo-black {
+            display: flex;
+        }
+
+        .tx-hero .tx-hero__content .tx-hero__image .logo-white {
+            display: none;
+        }
+    }
+
     /* @media screen and (max-width:280px) {
         .tx-hero__image {
             width: 100%;
@@ -256,7 +290,8 @@
       
         <!-- Custom Image -->
         <div style="position: relative;" class="tx-hero__image">
-	  <img style="vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="{{ config.home_cover_image }}" draggable="false">
+	    <img class="logo-white" style="vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="{{ config.home_cover_image }}" draggable="false">
+        <img class="logo-black" style="display: none; vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="{{ config.home_cover_image_black }}" draggable="false">
         </div>
 	
 	<!-- Main Tagline -->
@@ -293,7 +328,7 @@
 
     <!-- Start Outer Condition -->
     {%- if config.home_button1_name -%}
-    <div class="feature-item">
+    <div class="feature-item" onclick='window.location.href = "Get_Started"'>
         <h2>
 	    <!-- People Icon -->
 	    {%- if config.home_button1_icon == "people" -%}
@@ -391,6 +426,9 @@
     </div>
     {%- endif -%}
     <!-- End Outer Condition -->
+
+
+
 </div>
 
 <!-- <div class="top-hr">

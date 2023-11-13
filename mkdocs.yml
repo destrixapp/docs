@@ -253,7 +253,7 @@ theme:
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      # scheme: default
+      scheme: default
       primary: black
       accent: blue
       toggle:
@@ -324,6 +324,7 @@ theme:
 
 # Custom Homepage Elements
 home_cover_image: https://docs.destrix.app/cdn/logo.png # This path starts at your root mkdocs directory.
+home_cover_image_black: https://docs.destrix.app/cdn/logo-black.png # This path starts at your root mkdocs directory.
 home_tagline: Destrix
 home_description: |
   Destrix is the ultimate admin and moderation companion, specifically crafted with developers in mind.

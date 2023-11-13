@@ -507,6 +507,7 @@
     }
 
     .tx-hero .md-button {
+        transition: all 0.25s linear;
         margin-top: .5rem;
         margin-right: .5rem;
         color: var(--md-primary-bg-color)
@@ -521,7 +522,7 @@
 
     .tx-hero .md-button:focus,
     .tx-hero .md-button:hover {
-        background-color: var(--md-primary-bg-color);
+        background-color: var(--md-accent-fg-color);
         color: var(--md-default-bg-color);
         border-color: var(--md-accent-fg-color)
     }
@@ -535,11 +536,22 @@
         color: #fff;
     }
 
+    .feature-item h2, .feature-item svg, .feature-item p {
+        transition: color 0.2s linear;
+    }
+
+    .feature-item:hover h2,
+    .feature-item:hover svg,
+    .feature-item:hover p {
+        color: var(--md-accent-fg-color);
+    }
+
     .top-hr {
         margin-top: 42px;
     }
 
     .feature-item {
+        cursor: pointer;
 	border-radius: 20px;
 	margin-top: .5rem;
         margin-right: .5rem;
@@ -631,7 +643,7 @@
         }
 
         /* .feature-item:hover {
-            background-color: #526cfe47;
+            background-color: #526cfe47;    
             border-radius: 3px;
         } */
     }
@@ -692,6 +704,28 @@
         }
     }
 
+    [data-md-color-scheme="default"] {
+        .tx-container {
+            background-image: url("https://cdn.discordapp.com/attachments/786817739867947009/1173534855393464330/destrix-background-lightmode.png?ex=65644e80&is=6551d980&hm=d049a90b5add79c5084bd2442177229fcff9272a718633f59f735174db18c797&");
+        }
+
+        .tx-hero .md-button {
+            color: #000000;
+        }
+
+        .tx-hero .tx-hero__content h1, .tx-hero .tx-hero__content p {
+            color: #000000;
+        }
+
+        .tx-hero .tx-hero__content .tx-hero__image .logo-black {
+            display: flex;
+        }
+
+        .tx-hero .tx-hero__content .tx-hero__image .logo-white {
+            display: none;
+        }
+    }
+
     /* @media screen and (max-width:280px) {
         .tx-hero__image {
             width: 100%;
@@ -707,7 +741,8 @@
       
         <!-- Custom Image -->
         <div style="position: relative;" class="tx-hero__image">
-	  <img style="vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="https://docs.destrix.app/cdn/logo.png" draggable="false">
+	    <img class="logo-white" style="vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="https://docs.destrix.app/cdn/logo.png" draggable="false">
+        <img class="logo-black" style="display: none; vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="https://docs.destrix.app/cdn/logo-black.png" draggable="false">
         </div>
 	
 	<!-- Main Tagline -->
@@ -731,7 +766,7 @@
 <!-- Main site box descriptions -->
 <div class="top-hr">
 
-    <!-- Start Outer Condition --><div class="feature-item">
+    <!-- Start Outer Condition --><div class="feature-item" onclick='window.location.href = "Get_Started"'>
         <h2>
 	    <!-- People Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 24 24">
             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
@@ -764,6 +799,9 @@
         <p>The Destrix API Module, abbreviated as DAX (or DAXM), is a specialized module designed to facilitate effortless server-side interaction and control over Destrix for scripts.
 </p>
     </div><!-- End Outer Condition -->
+
+
+
 </div>
 
 <!-- <div class="top-hr">
