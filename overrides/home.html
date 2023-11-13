@@ -266,12 +266,12 @@
             color: #000000;
         }
 
-        .tx-hero .tx-hero__content .tx-hero__image .logo-black {
-            display: flex;
+        .logo-black {
+            opacity: 1;
         }
 
-        .tx-hero .tx-hero__content .tx-hero__image .logo-white {
-            display: none;
+        .logo-white {
+            opacity: 0;
         }
     }
 
@@ -290,8 +290,8 @@
       
         <!-- Custom Image -->
         <div style="position: relative;" class="tx-hero__image">
-	    <img class="logo-white" style="vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="{{ config.home_cover_image }}" draggable="false">
-        <img class="logo-black" style="display: none; vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="{{ config.home_cover_image_black }}" draggable="false">
+	    <img class="logo-white" style="opacity: 1; vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="{{ config.home_cover_image }}" draggable="false">
+        <img class="logo-black" style="opacity: 0; vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="{{ config.home_cover_image_black }}" draggable="false">
         </div>
 	
 	<!-- Main Tagline -->
