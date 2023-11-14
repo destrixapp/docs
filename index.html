@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Destrix is a developer-focused admin system on Roblox, making it easier for developers who want a flexible and non-disruptive admin/moderation system in their game, for free.">
+        <meta name="description" content="Destrix is the ultimate admin and moderation companion, specifically crafted with developers in mind.">
       
       
       
@@ -22,11 +22,7 @@
       <link rel="icon" href="https://docs.destrix.app/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.7">
     
-    
-      
-        <title>Home - Destrix</title>
-      
-    
+    <title>Destrix Documentation</title>
     
       <link rel="stylesheet" href="assets/stylesheets/main.4b4a2bd9.min.css">
       
@@ -453,12 +449,21 @@
 </nav>
           
         
-      
-
-
-<!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
+      <title>Destrix Documentation</title><!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
 <!-- .tx-container Original Green Gradient: hsla(160deg,47%,55%,1) -->
 <style>
+    /* main.md-main {
+        display: none;
+    } */
+
+    .md-social__link svg {
+        color: #FFFFFF !important;
+    }
+
+    :root {
+        --logo-black--opacity: 0;
+        --logo-white--opacity: 1;
+    }
 
     body {
         background-color: #000000;
@@ -698,16 +703,29 @@
         padding-top: 20px;
     }
 
-    @media screen and (max-width:425px) {
+    @media screen and (max-width:475px) {
         .tx-hero__image {
             width: 100%;
+        }
+
+        .tx-hero__content {
+            text-align: center;
         }
     }
 
     [data-md-color-scheme="default"] {
+        --logo-black--opacity: 1 !important;
+        --logo-white--opacity: 0 !important;
+    }
+    [data-md-color-scheme="default"] {
         .tx-container {
             background-image: url("https://cdn.discordapp.com/attachments/786817739867947009/1173534855393464330/destrix-background-lightmode.png?ex=65644e80&is=6551d980&hm=d049a90b5add79c5084bd2442177229fcff9272a718633f59f735174db18c797&");
         }
+
+        /* :root {
+            --logo-black--opacity: 1 !important;
+            --logo-white--opacity: 0 !important;
+        } */
 
         .tx-hero .md-button {
             color: #000000;
@@ -715,14 +733,6 @@
 
         .tx-hero .tx-hero__content h1, .tx-hero .tx-hero__content p {
             color: #000000;
-        }
-
-        .logo-black {
-            opacity: 1;
-        }
-
-        .logo-white {
-            opacity: 0;
         }
     }
 
@@ -741,8 +751,8 @@
       
         <!-- Custom Image -->
         <div style="position: relative;" class="tx-hero__image">
-	    <img class="logo-white" style="opacity: 1; vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="https://docs.destrix.app/cdn/logo.png" draggable="false">
-        <img class="logo-black" style="opacity: 0; vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="https://docs.destrix.app/cdn/logo-black.png" draggable="false">
+	    <img class="logo-white" style="opacity: var(--logo-white--opacity); vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="https://docs.destrix.app/cdn/logo.png" draggable="false">
+        <img class="logo-black" style="opacity: var(--logo-black--opacity); vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="https://docs.destrix.app/cdn/logo-black.png" draggable="false">
         </div>
 	
 	<!-- Main Tagline -->
@@ -755,7 +765,7 @@
             Get Started
           </a><a href="Commands/" title="Material | MkDocs" class="md-button">
             Commands
-          </a><a href="Folder3/" title="Material | MkDocs" class="md-button">
+          </a><a href="DAX/" title="Material | MkDocs" class="md-button">
             DAX
           </a></div>
       </div>
@@ -802,7 +812,141 @@
 
 
 
+
+
+
 </div>
+
+<div class="top-hr"><div class="feature-item">
+        <h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-ui-checks-grid" viewBox="0 0 24 24">
+                <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-3zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-3zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0l2-2z"/>
+              </svg>
+	    
+	    <!-- Button Description -->
+            Extensions
+        </h2>
+        <p>Make Destrix the way you want it to look, or add some more features with Destrix Extensions. A complete guide on how to install themes and plugins or make your own.
+</p>
+    </div><div class="feature-item">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-display" viewBox="0 0 24 24">
+                <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+              </svg>
+
+       
+	    
+	    <!-- Button Description -->
+            DAXI
+        </h2>
+        <p>Integrate Destrix with your models or plugins and start making commands that work seemlessly with Destrix in any experience with your own custom code and input.
+</p>
+    </div><div class="feature-item" style="cursor: default !important;">
+        <h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-database-check" viewBox="0 0 24 24">
+            
+            
+        </svg>
+	    
+	    <!-- Button Description -->
+            <!-- DAXI -->
+        </h2>
+        <p><!--Integrate Destrix with your models or plugins and start making commands that work seemlessly with Destrix in any experience with your own custom code and input.
+--></p>
+    </div><!-- End Outer Condition -->
+</div>
+
+
+<!-- bottom button -->
+
+<div class="top-hr"><div class="feature-item">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 24 24">
+                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+              </svg>
+
+       
+	    
+	    <!-- Button Description -->
+            News
+        </h2>
+        <p>Stay up to date with Destrix, learn of upcoming changes, updates, and what to expect.
+</p>
+    </div></div>
+
+<div class="md-social" style="margin-left: auto; padding-right: 10px;">
+
+  
+  
+  
+  
+    <a href="https://destrix.app/t/github" target="_blank" rel="noopener" title="Destrix on Github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/twitter" target="_blank" rel="noopener" title="Destrix on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/discord" target="_blank" rel="noopener" title="Destrix on Discord" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/trello" target="_blank" rel="noopener" title="Destrix on Trello" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.3 32H56.1C25.1 32 0 57.1 0 88c-.1 0 0-4 0 336 0 30.9 25.1 56 56 56h336.2c30.8-.2 55.7-25.2 55.7-56V88c.1-30.8-24.8-55.8-55.6-56zM197 371.3c-.2 14.7-12.1 26.6-26.9 26.6H87.4c-14.8.1-26.9-11.8-27-26.6V117.1c0-14.8 12-26.9 26.9-26.9h82.9c14.8 0 26.9 12 26.9 26.9v254.2zm193.1-112c0 14.8-12 26.9-26.9 26.9h-81c-14.8 0-26.9-12-26.9-26.9V117.2c0-14.8 12-26.9 26.8-26.9h81.1c14.8 0 26.9 12 26.9 26.9v142.1z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/youtube" target="_blank" rel="noopener" title="Destrix on YouTube" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/patreon" target="_blank" rel="noopener" title="Wolfite on Patreon" class="md-social__link">
+      <!--?xml version="1.0" encoding="utf-8"?-->
+  <!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
+  <path d="M1033.05,324.45c-0.19-137.9-107.59-250.92-233.6-291.7c-156.48-50.64-362.86-43.3-512.28,27.2
+    C106.07,145.41,49.18,332.61,47.06,519.31c-1.74,153.5,13.58,557.79,241.62,560.67c169.44,2.15,194.67-216.18,273.07-321.33
+    c55.78-74.81,127.6-95.94,216.01-117.82C929.71,603.22,1033.27,483.3,1033.05,324.45z"></path>
+  </svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/" target="_blank" rel="noopener" title="Destrix.app" class="md-social__link">
+      <svg width="16" height="16" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M884.538 379.001L379.001 195L195 700.537L700.537 884.538L884.538 379.001ZM379.587 722H519.502C556.434 722 588.453 714.779 615.56 700.338C642.667 685.778 663.619 664.945 678.416 637.838C693.212 610.613 700.61 578.061 700.61 540.182C700.61 502.303 693.153 469.81 678.238 442.703C663.442 415.478 642.372 394.644 615.028 380.203C587.802 365.643 555.487 358.364 518.082 358.364H379.587V722ZM515.951 638.193H478.309V442.17H513.11C532.05 442.17 548.03 445.071 561.051 450.871C574.19 456.671 584.133 466.673 590.88 480.878C597.746 495.082 601.178 514.85 601.178 540.182C601.178 565.513 597.805 585.281 591.058 599.486C584.429 613.69 574.722 623.693 561.938 629.493C549.273 635.293 533.943 638.193 515.951 638.193Z" fill="white"></path>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M90.7988 801.975L714.789 1029.09L681.962 958.69L161.198 769.147L90.7988 801.975ZM958.75 397.243L769.207 918.007L802.035 988.406L1029.15 364.415L958.75 397.243ZM988.24 277.275L917.166 310.417L397.723 121.355L364.58 50.2809L988.24 277.275ZM121.415 681.482L50.3415 714.624L277.335 90.9648L310.477 162.039L121.415 681.482Z" fill="#D9D9D9"></path>
+  </svg>
+    </a>
+  
+  </div>
+
+
+
+<!-- END FOOTER CLONE -->
 
 <!-- <div class="top-hr">
     <div class="hr">
@@ -3288,6 +3432,10 @@ document$.subscribe(function() {
           
         
       
+        
+      
+        
+      
     
     
     
@@ -3315,6 +3463,11 @@ document$.subscribe(function() {
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
@@ -3324,6 +3477,135 @@ document$.subscribe(function() {
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Extensions/extensions-security-policy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security Policy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="Extensions/Themes/Creating/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Themes
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_3" id="__nav_6_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Themes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Extensions/Themes/Creating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Extensions/Themes/Creating/Guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
               
             
           </ul>

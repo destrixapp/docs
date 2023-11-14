@@ -1,1 +1,0 @@
-# Extenstion Security Policy

@@ -1,42 +1,56 @@
 ---
-title: Guildelines
-description: Guidelines for all Destrix themes to follow.
+title: Theme Guidelines
+description: The Destrix Theme Guidelines that all endorsed themes have to abide by.
 tags:
     - Themes
-    - Extenstions
+    - Extensions
 search:
   boost: 2
 
 ---
+
 # Theme Guidelines
 This page contains all the current guidelines that endorsed themes have to follow. Please note that themes are also expected to abide by the [Roblox Community Standards](https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Standards) and the [Roblox Terms of Use](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use).
 
 ---
+
+:material-information: These guidelines have been updated as of 13 November 2023, and will be effective 6th May, 2023. View the [old guidelines here](/Extensions/Themes/Creating/Guidelines_archive_1/).
+
+---
 ## Guidelines
 
-### __1. Controversial__
-Themes can not "controversial," this means themes can not contain content that could be considered controversial, such as a theme presented to be in support of a specific opinion like a political party, human rights, etc.
+### __1. Neutral__
+Themes for Destrix must strictly adhere to a policy of neutrality and should avoid any form of controversy. They are not permitted to endorse or convey opinions on sensitive topics, reference drama, divisive events, tragedies, or any related content. Themes should maintain a neutral and inclusive stance, fostering a positive and enjoyable user experience for all without inadvertently promoting any form of bias or contention.
 
 ### __2. Security__
 Your theme should not violate our Extenstion Security Policy.
 
 ### __3. Bodily Parts__
-Themes may not contain or be based around anything relating to themes of bodily parts, such as skin, blood, waste, etc.
+Themes are prohibited from containing or being centered around imagery related to bodily parts, including but not limited to skin, blood, waste, etc.
 
 ### __4. Copyrighted Material__
-Themes can not contain content that does not belong to the creator or is not in public domain. Destrix has to have legal permission to the content for your theme to be uploaded and endorsed, otherwise, the risk is on you.
+Themes must not include content without proper authorization from the creator or content in the public domain. Destrix requires legal permission for the content used in your theme, and any legal risks associated with unauthorized content are your responsibility.
 
 ### __5. Original__
-Themes must be mostly original. Please do not copy the themes of other Destrix users, and do not rip-off themes from other software, webistes, etc. Be mindful to change it so it is your original work.
+Themes must be predominantly original. Avoid replicating themes from other Destrix users or copying themes from different software or websites. Ensure that your theme is a unique and original creation.
 
-### __6. Supported__
-Your theme must not be affected by screen size. Meaning that all devices will be able to use Destrix normally if your theme is in use.
+### __6. Compatibility__
+Your theme must be compatible across various screen sizes to guarantee a seamless experience for all users. Destrix should function normally on all devices when your theme is in use.
 
 ### __7. Personalised__
-Themes can not be about you. You can not make your own theme about your brand, product, etc. Destrix will not endorse it, however you can use it for your own projects and can create themes about notable content creators and brands. We count any content creator with over 100,000 subscribers (YouTube), and 10,000 follows (Twitter) to be notable.
+Themes cannot be self-promotional. You are not allowed to create themes about your personal brand or product for Destrix endorsement. However, you can use such themes for personal projects. Themes about notable content creators and brands are acceptable, with the criteria for notability being content creators with over 100,000 subscribers on YouTube and 10,000 followers on Twitter.
 
 ### __8. Warnings__
-If your theme creates content that may cause complications for epileptic people, you must warn them within a reasonable amount of time before those risks appear.
+If your theme contains content that may pose risks for individuals with epilepsy, you must provide a warning within a reasonable timeframe before such content appears, prioritizing the safety of users with epilepsy.
+
+### __9. Performance Impact__
+Themes should be optimized for performance to ensure they do not significantly impact the gameplay experience. Avoid excessive use of resources that could lead to lag or performance issues.
+
+### __10. Transparency__
+Provide clear information about the functionalities and features of your theme. Users should have a comprehensive understanding of what to expect when using the theme.
+
+### __11. Maintenance__
+Endorsed Destrix themes are required to stay up-to-date with changes and respond with-in a reasonable timeframe from an update being announced that may effect your theme.
 
 ---
 
