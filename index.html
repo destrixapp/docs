@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Destrix is the ultimate admin and moderation companion, specifically crafted with developers in mind.">
+        <meta name="description" content="Destrix is the ultimate admin and moderation companion, specifically crafted with developers in mind. Welcome to the Destrix Documentation, learn everything you need to know about setting up Destrix for your experience.">
       
       
       
@@ -505,6 +505,7 @@
     }
 
     .tx-hero__image{
+        transition: height 0.2s linear;
         width:17rem;
         height:17rem;
         order:1;
@@ -711,6 +712,27 @@
         .tx-hero__content {
             text-align: center;
         }
+
+        .md-social {
+            margin-top: 20px;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (max-width:380px) {
+        #b_3rd {
+            width: 150px;
+        }
+
+        .tx-hero__image {
+            height: 10rem;
+        }
+    }
+
+    @media screen and (max-width:300px) {
+        .tx-hero__image {
+            height: 7rem;
+        }
     }
 
     [data-md-color-scheme="default"] {
@@ -765,7 +787,7 @@
             Get Started
           </a><a href="Commands/" title="Material | MkDocs" class="md-button">
             Commands
-          </a><a href="DAX/" title="Material | MkDocs" class="md-button">
+          </a><a id="b_3rd" href="DAX/about" title="Material | MkDocs" class="md-button">
             DAX
           </a></div>
       </div>
@@ -776,7 +798,7 @@
 <!-- Main site box descriptions -->
 <div class="top-hr">
 
-    <!-- Start Outer Condition --><div class="feature-item" onclick='window.location.href = "Get_Started"'>
+    <!-- Start Outer Condition --><div class="feature-item" onclick='window.location.href = " Getting_Started/"'>
         <h2>
 	    <!-- People Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 24 24">
             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
@@ -787,7 +809,7 @@
 </p>
     </div><!-- End Outer Condition -->
     
-    <!-- Start Outer Condition --><div class="feature-item">
+    <!-- Start Outer Condition --><div class="feature-item" onclick='window.location.href = " Commands/"'>
         <h2>
 	    <!-- People Icon --><!-- Gear Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 24 24">
             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
@@ -798,7 +820,7 @@
 </p>
     </div><!-- End Outer Condition -->
     
-    <!-- Start Outer Condition --><div class="feature-item">
+    <!-- Start Outer Condition --><div class="feature-item" onclick='window.location.href = " DAX/about"'>
         <h2>
 	    <!-- People Icon --><!-- Gear Icon --><!-- Image Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-database-check" viewBox="0 0 24 24">
             <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514Z"/>
@@ -817,7 +839,7 @@
 
 </div>
 
-<div class="top-hr"><div class="feature-item">
+<div class="top-hr"><div class="feature-item" onclick='window.location.href = " Extensions/"'>
         <h2>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-ui-checks-grid" viewBox="0 0 24 24">
                 <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-3zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-3zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0l2-2z"/>
@@ -828,7 +850,7 @@
         </h2>
         <p>Make Destrix the way you want it to look, or add some more features with Destrix Extensions. A complete guide on how to install themes and plugins or make your own.
 </p>
-    </div><div class="feature-item">
+    </div><div class="feature-item" onclick='window.location.href = " DAXI/"'>
         <h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-display" viewBox="0 0 24 24">
                 <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
@@ -841,7 +863,7 @@
         </h2>
         <p>Integrate Destrix with your models or plugins and start making commands that work seemlessly with Destrix in any experience with your own custom code and input.
 </p>
-    </div><div class="feature-item" style="cursor: default !important;">
+    </div><div class="feature-item" style="cursor: default !important;" onclick='window.location.href = " DAXI/"'>
         <h2>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-database-check" viewBox="0 0 24 24">
             

@@ -14,6 +14,8 @@ search:
 hide:
     - toc
 
+comments: true
+
 ---
 # <p style="color: var(--md-default-fg-color); display: inline;">:material-block-helper: Ban</p> (/ban)
 <div style="display:inline;">
@@ -28,6 +30,8 @@ The /ban command bans the specified player/s, with the default length being perm
 | Player         | player | :material-check:                                                                                                                                                                                    | nil                | The player you want to ban                                |
 | Reason         | string | :material-close:                                                                                                                                                                                    | nil                | The reason the player will see (filtered).                |
 | Moderator Note | string | :material-close:                                                                                                                                                                                    | "No note provided" | What other moderators will see when looking at the bans.  |
+
+`/ban {player} {reason} {moderator-note}` | `/ban @Roblox Making annoying updates||For the greater good`
 
 ## See Also
 * [:material-block-helper: /server-ban](/Commands/specifics/sban/)
