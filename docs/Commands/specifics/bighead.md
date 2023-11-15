@@ -1,5 +1,6 @@
 ---
 title: /big-head | Commands
+description: Make a players head enlarge.
 icon: material/distribute-horizontal-center
 
 tags:
@@ -13,15 +14,15 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-distribute-horizontal-center: Big Head</p> (/big-head)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-distribute-horizontal-center: Big Head</p> (/big-head)
 <div style="display:inline;">
-<p style="color: #216E4E; display: inline;">Fun</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | big-head
+<p style="color: #216E4E; display: inline;">Fun</p> | <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | big-head
 </div>
-Make a player's head large?
 
-Arguments: _Victim : player?_
+Make a players head enlarge.
 
-<!-- ## See Also
-* [:material-airplane: /jupiter](/Commands/specifics/jupter/)
-* [:material-airplane: /mars](/Commands/specifics/mars/)
-* [:material-orbit: /stratosphere](/Commands/specifics/stratosphere/) -->
+## Parameters
+
+| Name   | Type   | Required         | Default | Description                            |
+|:--------|:--------|:------------------:|:---------:|----------------------------------------:|
+| Victim | player | :material-close: | @me     | The player's head you want to enlarge. |

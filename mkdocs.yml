@@ -3,6 +3,9 @@ site_description: Destrix is a developer-focused admin system on Roblox, making 
 site_url: https://docs.destrix.app
 repo_url: https://github.com/DestrixApp
 repo_name: Destrix
+# view_uri: /docs/docs/docs
+extra_javascript:
+  - js/extra.js
 
 markdown_extensions:
     - pymdownx.highlight:
@@ -26,6 +29,8 @@ markdown_extensions:
     - md_in_html
     - attr_list
     - pymdownx.snippets
+    - admonition
+    - pymdownx.details
 
 nav:
   - index.md
@@ -98,6 +103,7 @@ nav:
       - /glitch: Commands/specifics/glitch.md
       - /fling: Commands/specifics/fling.md
       - /bighead: Commands/specifics/bighead.md
+      - /paint: Commands/specifics/paint.md
 
     # Standard
     - Standard:
@@ -121,14 +127,15 @@ nav:
     - Developer:
       - /changecameratype: Commands/specifics/changecameratype.md
   - DAX:
-    - About: DAX/about.md
+    - About: DAX/v1/about.md
     - Introduction:
-      - DisableEXEType: DAX/Introduction/disabling-commands.md
+      - Interfacing: DAX/v1/Introduction/interfacing-with-the-panel.md
+      - DisableEXEType: DAX/v1/Introduction/disabling-commands.md
     - API Reference:
-      - Command Types: DAX/Reference/CommandTypes.md
+      - Command Types: DAX/v1/Reference/CommandTypes.md
       - Functions:
-        - DisableEXEType: DAX/Reference/Functions/DisableEXEType.md
-        - FireCommand: DAX/Reference/Functions/FireCommand.md
+        - DisableEXEType: DAX/v1/Reference/Functions/DisableEXEType.md
+        - FireCommand: DAX/v1/Reference/Functions/FireCommand.md
   - DAXI: /DAXI/about
   - Extensions: 
     - Extensions/index.md
@@ -190,7 +197,8 @@ extra:
       - manage
       - reject
     cookies:
-      analytics: Analytics
+      analytics: Analytics (Google)
+      
   analytics:
     provider: google
     property: G-3PNP6MZLFT
@@ -210,7 +218,7 @@ extra:
             Thanks for your feedback! Help us improve this page by
             using our <a href="//destrix.app/?feedback=docs" target="_blank" rel="noopener">feedback form</a>.
 copyright: >
-  Copyright &copy; 2016 - 2024 <a href="//wolfite.dev?to=twitter">@Wolfite_</a>
+  Copyright &copy; 2022 - 2024 <a href="//wolfite.dev?to=twitter">@Wolfite_</a>
   <br><a href="#__consent">Change cookie settings</a>
 plugins:
   # - material/social
@@ -254,6 +262,19 @@ theme:
   icon:
     repo: destrix/logo
     annotation: material/plus-circle
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/fire-flame-curved
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
 
   
   
@@ -356,7 +377,7 @@ home_button2_blurb: |         # Short description of this button / section.
   Destrix has a lot of new and exciting commands, this is a large list of what those commands are and what they do, by category.
 
 home_button3_name: DAX   # Comment this parameter out to remove the button.
-home_button3_url: DAX/about    # This path starts at your root mkdocs directory.
+home_button3_url: DAX/v1/about    # This path starts at your root mkdocs directory.
 home_button3_theme: md-button # Options: "md-button", "md-button md-button--primary"
 home_button3_icon: image      # Options: "people", "gear", "image"
 home_button3_blurb: |         # Short description of this button / section.

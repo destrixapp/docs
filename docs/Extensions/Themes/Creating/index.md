@@ -11,7 +11,7 @@ search:
 Themes for Destrix are a way to personalize Destirx for your experience, or your own theme for others to use.
 
 ## Before you start
-You can add a theme to your experience anytime. However, to become an endorsed theme, your theme must adhere to the [Destrix Theme Guidelines](/Extensions/Themes/Creating/Guidelines/). You're theme also has to abide by the Roblox Community Guidelines and Roblox Terms Of Service. For safe keeping, please follow the guidelines reguardless. However, all themes must abide by the [Destrix Extensions Security Policy](/Extensions/extensions-security-policy/).
+You can add a theme to your experience anytime. However, to become an endorsed theme, your theme must adhere to the [Destrix Theme Guidelines](Guidelines.md). You're theme also has to abide by the Roblox Community Guidelines and Roblox Terms Of Service. For safe keeping, please follow the guidelines reguardless. However, all themes must abide by the [Destrix Extensions Security Policy](../../extensions-security-policy.md).
 
 ---
 

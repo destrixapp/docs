@@ -7,7 +7,14 @@ tags:
 search:
   exclude: true
 
+hide:
+  - navigation
 ---
+
+???+ warning "Outdated Guidelines"
+
+    These guidelines are no longer effective as of May 6, 2023. View the [updated guidelines here](Guidelines.md).
+
 
 # Theme Guidelines
 This page contains all the current guidelines that endorsed themes have to follow. Please note that themes are also expected to abide by the [Roblox Community Standards](https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Standards) and the [Roblox Terms of Use](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use).

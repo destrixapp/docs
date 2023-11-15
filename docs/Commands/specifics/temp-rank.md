@@ -1,6 +1,6 @@
 ---
 title: /temp-rank | Commands
-icon: material/trophy-award
+icon: fontawesome/solid/ranking-star
 
 tags:
     - Commands

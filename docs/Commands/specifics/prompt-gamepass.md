@@ -1,6 +1,6 @@
 ---
 title: /promptgamepass | Commands
-icon: material/currency-brl
+icon: fontawesome/solid/money-bills
 
 tags:
     - Commands

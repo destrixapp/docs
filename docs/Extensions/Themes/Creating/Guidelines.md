@@ -14,7 +14,9 @@ This page contains all the current guidelines that endorsed themes have to follo
 
 ---
 
-:material-information: These guidelines have been updated as of 13 November 2023, and will be effective 6th May, 2023. View the [old guidelines here](/Extensions/Themes/Creating/Guidelines_archive_1/).
+???+ info "Recently Updated"
+
+    :material-information: These guidelines have been updated as of 13 November 2023, and will be effective 6th May, 2023. View the [old guidelines here](Guidelines_archive_1.md).
 
 ---
 ## Guidelines
