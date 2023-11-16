@@ -11,12 +11,24 @@ aside.classList.add('md-banner', 'md-banner--warning', 'md-banner--dax-version')
 
 var innerDiv = document.createElement('div');
 innerDiv.classList.add('md-banner__inner', 'md-grid', 'md-typeset');
-innerDiv.textContent = "You're not viewing the latest version of DAX. ";
+innerDiv.innerHTML = "<b> You're not viewing the latest version of DAX. </b>";
+innerDiv.style.color = "#FFFFFF";
+
+var span = document.createElement('span');
+span.classList.add('twemoji');
+
+var img = document.createElement('img');
+img.setAttribute('src', 'https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/material/eye-off.svg');
+img.style.filter = 'brightness(0) invert(1)';
+
+span.appendChild(img);
+innerDiv.insertBefore(span, innerDiv.firstChild);
 
 var strong = document.createElement('strong');
 var link = document.createElement('a');
 link.setAttribute('href', '/DAX');
-link.textContent = 'Click here to go to the latest.';
+link.innerHTML = '<i>Click here to go to the latest.</i>';
+link.style.color = "#5e8bde";
 strong.appendChild(link);
 innerDiv.appendChild(strong);
 
