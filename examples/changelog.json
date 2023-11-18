@@ -1,0 +1,17 @@
+{
+    "changelog_manifest_version": 1,
+    "version": "1.0",
+    "last_updated": "2023-11-18T08:38:55Z",
+
+    "entries": [
+        {
+            "version": "0.9",
+            "date": "2023-11-18T08:38:55Z",
+
+            "title": "Log Name",
+            "subtitle": "View the changelog",
+
+            "summary": "Your full summary here. You can use basic markdown if you wish."
+        }
+    ]
+}

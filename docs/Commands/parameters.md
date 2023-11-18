@@ -39,7 +39,7 @@ More complex than expected, but also simple at the same time. Type `/command 120
 ### Color
 You can either type, A) a color shortcut (e.g. `white`), a HEX color (e.g. `#FFF` or `#FFFFFF`), or in RGB format (e.g. `255,255,255`).
 
-??? info "Color Shortcuts"
+??? example "Color Shortcuts"
 
     Color Shortcuts:
 
@@ -49,7 +49,7 @@ You can either type, A) a color shortcut (e.g. `white`), a HEX color (e.g. `#FFF
     |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------:|:-------:|:-----------:|-----------------------:|
     | <div style="display: inline; color:#FFFFFF; -webkit-filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));">:material-circle:</div> `white`              | :material-check: | #FFFFFF | 255,255,255 |                        |
     | <div style="display: inline; color:#000000; -webkit-filter: drop-shadow( 0px 0px 1px rgba(255, 255, 255, .7));filter: drop-shadow( 0px 0px 1px rgba(255, 255, 255, .7));">:material-circle:</div> `black`  | :material-check: | #000000 | 0,0,0       |                        |
-    | <div style="display: inline; color:8B0000; -webkit-filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));">:material-circle:</div> `dark-red`                | :material-check: | #8B0000 | 139,0,0     |                        |
+    | <div style="display: inline; color:#8B0000; -webkit-filter: drop-shadow( 0px 0px 1px rgba(255, 255, 255, .7));filter: drop-shadow( 0px 0px 1px rgba(255, 255, 255, .7));">:material-circle:</div> `dark-red`                | :material-check: | #8B0000 | 139,0,0     |                        |
     | <div style="display: inline; color:#FF0000; -webkit-filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));">:material-circle:</div> `red`                | :material-check: | #FF0000 | 255,0,0     |                        |
     | <div style="display: inline; color:#DC143C; -webkit-filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));">:material-circle:</div> `crimson`                | :material-check: | #DC143C | 220,20,60     |                        |
     | <div style="display: inline; color:#B22222; -webkit-filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));filter: drop-shadow( 0px 0px 1px rgba(0, 0, 0, .7));">:material-circle:</div> `firebrick`                | :material-check: | #B22222 | 178,34,34     |                        |

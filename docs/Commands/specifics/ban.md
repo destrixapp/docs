@@ -19,8 +19,12 @@ comments: true
 ---
 # <p style="color: var(--md-default-fg-color); display: inline;">:material-block-helper: Ban</p> (/ban)
 <div style="display:inline;">
-<p style="color: #7F5F02; display: inline;">Utility</p>, <p style="color: #943D73; display: inline;">Moderation</p> | <p style="color: var(--md-default-fg-color--light); display: inline;">4</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | ban
+<p style="color: var(--destrix-docs--commandcat-utility); display: inline;">Utility</p>,
+<p style="color: var(--destrix-docs--commandcat-moderation); display: inline;">Moderation</p>
+| <p style="color: var(--md-default-fg-color--light); display: inline;">4</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | ban
 </div>
+
+
 The /ban command bans the specified player/s, with the default length being permanent. Other commands achievve similar yet different effects. Such as [:material-block-helper: /temp-ban](/Commands/specifics/tban/), which bans a player temporarily, or [:material-block-helper: /kick](/Commands/specifics/kick/), which kicks the player and allows them to rejoin after being disconnected.
 
 ## Parameters

@@ -22,6 +22,8 @@ markdown_extensions:
         options:
           custom_icons:
             - overrides/.icons
+    - pymdownx.tabbed:
+        alternate_style: true
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.superfences
@@ -53,6 +55,7 @@ nav:
       # - /tslock: Commands/specifics/serverlock.md
       - /reload-map: Commands/specifics/reloadmap.md
       - /countdown: Commands/specifics/countdown.md
+      - /change: Commands/specifics/change.md
       - /timer: Commands/specifics/timer.md
       - /message: Commands/specifics/message.md
       - /hint: Commands/specifics/hint.md
@@ -65,6 +68,8 @@ nav:
       - /temp-rank: Commands/specifics/temp-rank.md
       - /force-place: Commands/specifics/fplace.md
       - /reset: Commands/specifics/reset.md
+      - /poll: Commands/specifics/poll.md
+      - /connection-logs: Commands/specifics/connection-logs.md
 
     # Software
     - Software:
@@ -78,6 +83,7 @@ nav:
       - /ranks: Commands/specifics/ranks.md
       - /dversion: Commands/specifics/dversion.md
       - /commands: Commands/specifics/commands.md
+      - /changelog: Commands/specifics/changelog.md
       - /bans: Commands/specifics/bans.md
       - /limits: Commands/specifics/limits.md
       - /plus: Commands/specifics/plus.md
@@ -114,6 +120,7 @@ nav:
       - /heal: Commands/specifics/heal.md
       - Optional:
         - /rejoin: Commands/specifics/rejoin.md
+        - /follow: Commands/specifics/follow.md
 
       # Cosmetic
     - Cosmetic:
@@ -122,10 +129,15 @@ nav:
       - /glow: Commands/specifics/glow.md
       - /glass: Commands/specifics/glass.md
       - /gold: Commands/specifics/gold.md
+    
+      # Customization
+    - Customization:
+      - /change-bloom: Commands/specifics/change-bloom.md
 
       # Developer
     - Developer:
-      - /changecameratype: Commands/specifics/changecameratype.md
+      - /change-camera-type: Commands/specifics/changecameratype.md
+      - /devconsole: Commands/specifics/devconsole.md
   - DAX:
     - About: DAX/v1/about.md
     - Introduction:
@@ -136,14 +148,27 @@ nav:
       - Functions:
         - DisableEXEType: DAX/v1/Reference/Functions/DisableEXEType.md
         - FireCommand: DAX/v1/Reference/Functions/FireCommand.md
-  - DAXI: /DAXI/about
+  - DAXI: 
+    - About: DAXI/v1/about.md
+    - Introduction:
+      - Interfacing: DAXI/v1/interfacing
   - Extensions: 
     - Extensions/index.md
     - Security Policy: Extensions/extensions-security-policy.md
+    - Manifest V1: Extensions/manifest/v1.md
+    - Endorsed Extensions: Extensions/endorsed-extensions.md
+    - Additional Structure: Extensions/structure.md
+    - Plugins:
+      - Get Started: Extensions/Plugins/Getting_Started.md
     - Themes:
       - Extensions/Themes/Creating/index.md
       - Get Started: Extensions/Themes/Creating/index.md
       - Guidelines: Extensions/Themes/Creating/Guidelines.md
+  - Plus:
+    - plus/index.md
+    - Benefits: plus/benefits.md
+    - Enterprise:
+      - plus/enterprise/index.md
   - Features: Features/feature.md
   - News:
     - blog/index.md
@@ -153,6 +178,9 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
+    plus: Plus
+    beta: Beta
+    enterprise: Plus Enterprise
   social:
     - icon: fontawesome/brands/github
       link: https://destrix.app/t/github
@@ -220,6 +248,8 @@ extra:
 copyright: >
   Copyright &copy; 2022 - 2024 <a href="//wolfite.dev?to=twitter">@Wolfite_</a>
   <br><a href="#__consent">Change cookie settings</a>
+  <br><a href="?plus">Destrix Plus</a>&nbsp;&nbsp;&nbsp;<a href="?plus-billing">Billing</a>
+  <br>&nbsp;
 plugins:
   # - material/social
   - search:
@@ -249,6 +279,7 @@ theme:
     - navigation.top
     - content.code.copy
     - content.action.view
+    # - content.tabs.link
     - content.tooltips
     - content.code.annotate
     - navigation.footer
@@ -271,7 +302,7 @@ theme:
       question: fontawesome/solid/circle-question
       warning: fontawesome/solid/triangle-exclamation
       failure: fontawesome/solid/bomb
-      danger: fontawesome/solid/skull
+      danger: material/lightning-bolt-circle
       bug: fontawesome/solid/robot
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
@@ -397,12 +428,12 @@ home_button5_icon: custom      # Options: "people", "gear", "image"
 home_button5_blurb: |         # Short description of this button / section.
   Integrate Destrix with your models or plugins and start making commands that work seemlessly with Destrix in any experience with your own custom code and input.
 
-home_button6_name: DAXI   # Comment this parameter out to remove the button.
-home_button6_url: DAXI/    # This path starts at your root mkdocs directory.
+home_button6_name: Plus   # Comment this parameter out to remove the button.
+home_button6_url: plus/    # This path starts at your root mkdocs directory.
 home_button6_theme: md-button # Options: "md-button", "md-button md-button--primary"
 home_button6_icon: custom      # Options: "people", "gear", "image"
 home_button6_blurb: |         # Short description of this button / section.
-  Integrate Destrix with your models or plugins and start making commands that work seemlessly with Destrix in any experience with your own custom code and input.
+  Whether your a player or a developer — plus has you covered — level up your game in every game Destrix is in. With new commands and early access all for a cheap price.
 
 home_button_news_name: News   # Comment this parameter out to remove the button.
 home_button_news_url: blog/    # This path starts at your root mkdocs directory.
@@ -414,3 +445,4 @@ home_button_news_blurb: |         # Short description of this button / section.
 # Homepage Code Execution
 home_execute_js: | # Javascript to execute when accessing the homepage
   console.log("This is an example!");
+

@@ -10,7 +10,31 @@ search:
   boost: 9
 ---
 
-# Elevate Your Experience with Destrix Extensions
+# Extensions
+Extensions are a great way to improve your Destrix experience for your experience. You can either create your own extensions, or you can view some extensions on the Destrix's Github. Click to view [Destrix Themes](https://github.com/orgs/DestrixApp/repositories?q=&type=all&language=css&sort=stargazers), or [Destrix Plugins](https://github.com/orgs/DestrixApp/repositories?q=&type=all&language=lua&sort=stargazers).
+
+<!-- ???+ warning "Warning"
+
+    The links provided display all repositories tagged with `destrix-plugin` or `destrix-theme`, which means **anyone** can add a repository. Make sure you trust what extensions you add. You can trust any `DestrixApp/` repository. -->
+
+## How to add a theme to Destrix
+
+```lua
+  ...
+
+  themes = {
+    "DestrixApp/snowy";
+    -- (1)
+    -- (2)
+  }
+
+  ...
+```
+
+1. You can add your own themes here if the repo is public. `{github_username}`/`{repo_name}`
+2. You can add multiple themes, but this may cause compatibility issues.
+
+<!-- # Elevate Your Experience with Destrix Extensions
 
 ## Understanding Extensions
 
@@ -43,4 +67,4 @@ Visit our [GitHub](https://github.com/orgs/DestrixApp/repositories?q=theme&type=
 Become part of the vibrant Destrix Extension community. Share your creations, seek advice, and collaborate with fellow developers to push the boundaries of what Destrix can achieve.
 
 Elevate your admin experience, unleash creativity, and unlock new possibilities with Destrix Extensions!
-
+ -->

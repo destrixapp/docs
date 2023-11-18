@@ -1,5 +1,5 @@
 ---
-title: /fling | Commands
+title: /fly | Commands
 icon: material/airplane-alert
 
 tags:
@@ -13,13 +13,18 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-airplane-alert: Fly</p> (/fly)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-airplane-alert: Fly</p> (/fly)
 <div style="display:inline;">
-<p style="color: #579DFF; display: inline;">Standard</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | fly
+<p style="color: var(--destrix-docs--commandcat-standard); display: inline;">Standard</p>
+| <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | fly
 </div>
 Use /fly to fly yourself or another player.
 
-Arguments: _Victim : player?_
+## Parameters
+
+| Name   | Type   | Required         | Default | Description                            |
+|:--------|:--------|:------------------:|:---------:|----------------------------------------:|
+| Victim | [player](../parameters.md#player) | :material-close: | @me     | The player's you want to toggle the command on. |
 
 ## See Also
 * [:material-airplane: /jupiter](/Commands/specifics/jupter/)

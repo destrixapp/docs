@@ -1,0 +1,619 @@
+<!-- Elements added to "home.html" will only be displayed on the home page -->
+
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+
+{%- block htmltitle -%} 
+<title>Destrix Plus</title> 
+{%- endblock -%} 
+
+
+<!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
+<!-- .tx-container Original Green Gradient: hsla(160deg,47%,55%,1) -->
+<style>
+    /* main.md-main {
+        display: none;
+    } */
+
+
+    .md-social__link svg {
+        color: #FFFFFF !important;
+    }
+
+    :root {
+        --logo-black--opacity: 0;
+        --logo-white--opacity: 1;
+    }
+
+    body {
+        background-color: #000000;
+    }
+
+
+    .md-main {
+        flex-grow: 0
+    }
+
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .tx-container {
+        padding-top: .0rem;
+        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.home_gradient_hsla }} 99%) */
+        background-image: url("https://cdn.discordapp.com/attachments/786817739867947009/1174652323889430610/andrea-de-santis-Fh6it-vgByk-unsplash_lowexposure.png?ex=65685f3a&is=6555ea3a&hm=ebaf58f7fe380757373d5543d93dd2236f64b9e2f11e7610c7a7e5050ca9af99&");
+        background-size: 100% auto;
+        background-repeat:no-repeat;
+        background-position: 0px;
+    }
+
+    .tx-hero {
+        margin: 32px 2.8rem;
+        color: var(--md-primary-bg-color);
+        justify-content: center;
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-weight: 700
+    }
+
+    .tx-hero__content {
+        padding-bottom: 1rem;
+        margin: 0 auto;
+    }
+
+    .tx-hero__image{
+        transition: height 0.2s linear;
+        width:17rem;
+        height:17rem;
+        order:1;
+        padding-right: 2.5rem;
+    }
+
+    .tx-hero .md-button {
+        transition: all 0.25s linear;
+        margin-top: .5rem;
+        margin-right: .5rem;
+        color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button--primary {
+        background-color: var(--md-primary-bg-color);
+        /* color: var(--md-default-bg-color); */
+        color: #000000;
+        border-color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button:focus,
+    .tx-hero .md-button:hover {
+        background-color: var(--md-accent-fg-color);
+        color: var(--md-default-bg-color);
+        border-color: var(--md-accent-fg-color)
+    }
+
+    .feature-item h2 svg {
+        height: 30px;
+        width: 30px;
+        float: left;
+        margin-right: 10px;
+        transform: translateY(10%);
+        color: #fff;
+    }
+
+    .feature-item h2, .feature-item svg, .feature-item p {
+        transition: color 0.2s linear;
+    }
+
+    .feature-item:hover h2,
+    .feature-item:hover svg,
+    .feature-item:hover p {
+        color: var(--md-accent-fg-color);
+    }
+
+    .top-hr {
+        margin-top: 42px;
+    }
+
+    .feature-item {
+        cursor: pointer;
+	border-radius: 20px;
+	margin-top: .5rem;
+        margin-right: .5rem;
+	    /* background-color: #000000; */
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        box-sizing: border-box;
+        padding: 0 15px;
+        word-break: break-word
+    }
+
+    .feature-item h2 {
+        color: #FFF;
+        font-weight: 300;
+        font-size: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: inherit;
+    }
+
+    .feature-item p {
+        font-size: 16px;
+        line-height: 1.8em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        color: #FFF;
+        margin: 0 0 10px;
+        display: block;
+    }
+
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tx-hero__content {
+            max-width: 22rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+
+        .top-hr {
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .bottom-hr {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 0;
+        }
+
+        /* .feature-item:hover {
+            background-color: #526cfe47;    
+            border-radius: 3px;
+        } */
+    }
+
+    .hr {
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .text-center {
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 15px;
+        font-family: 'Lato', sans-serif;
+        font-size: 23px;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 0 auto;
+    }
+
+    .logos img {
+        flex: 1 1 auto;
+        padding: 25px;
+        max-height: 130px;
+        vertical-align: middle;
+    }
+
+    .hr-logos {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .md-footer-meta__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1.0rem;
+    }
+
+    .md-footer-social {
+        padding-top: 20px;
+    }
+
+    @media screen and (max-width:475px) {
+        .tx-hero__image {
+            width: 100%;
+        }
+
+        .tx-hero__content {
+            text-align: center;
+        }
+
+        .md-social {
+            margin-top: 20px;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (max-width:380px) {
+        #b_3rd {
+            width: 150px;
+        }
+
+        .tx-hero__image {
+            height: 10rem;
+        }
+    }
+
+    @media screen and (max-width:300px) {
+        .tx-hero__image {
+            height: 7rem;
+        }
+    }
+
+    /* [data-md-color-scheme="default"] {
+        --logo-black--opacity: 1 !important;
+        --logo-white--opacity: 0 !important;
+    }
+    [data-md-color-scheme="default"] {
+        .tx-container {
+            background-image: url("https://cdn.discordapp.com/attachments/786817739867947009/1173534855393464330/destrix-background-lightmode.png?ex=65644e80&is=6551d980&hm=d049a90b5add79c5084bd2442177229fcff9272a718633f59f735174db18c797&");
+        }
+
+
+
+        .tx-hero .md-button {
+            color: #000000;
+        }
+
+        .tx-hero .tx-hero__content h1, .tx-hero .tx-hero__content p {
+            color: #000000;
+        }
+    } */
+
+    /* @media screen and (max-width:280px) {
+        .tx-hero__image {
+            width: 100%;
+        }
+    } */
+</style>
+
+
+<!-- Main site entry button descriptions -->
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+      
+        <!-- Custom Image -->
+        <div style="position: relative;" class="tx-hero__image">
+	    <img class="logo-white" style="opacity: var(--logo-white--opacity); vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="{{ config.home_cover_image }}" draggable="false">
+        <img class="logo-black" style="opacity: var(--logo-black--opacity); vertical-align: middle; position: absolute;     top: 50%;     left: 50%;     transform: translate(-50%, -50%);" src="{{ config.home_cover_image_black }}" draggable="false">
+        </div>
+	
+	<!-- Main Tagline -->
+        <div class="tx-hero__content">
+          <h1>Destrix Plus</h1>
+          <p>Unlock limitless possibilities with Destrix Plus. Elevate your experience in every game that uses Destrix.</p>
+	  
+	  <!-- Added Buttons (up to 3) -->
+          <!-- {%- if config.home_button1_name -%} -->
+          <a href="/" class="{{ config.home_button1_theme }}">
+            Benefits
+          </a>
+	  <!-- {%- endif -%} -->
+	  
+          <!-- {%- if config.home_button2_name -%} -->
+          <a href="/plus/enterprise/" title="Enterprise" class="{{ config.home_button2_theme }}">
+            Enterprise
+          </a>
+	  <!-- {%- endif -%} -->
+	  
+	  <!-- {%- if config.home_button3_name -%} -->
+          <a id="b_3rd" href="?plus" class="{{ config.home_button3_theme }}" style="border: 0px none !important;">
+            US$2.99
+          </a>
+	  <!-- {%- endif -%} -->
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- Main site box descriptions -->
+<div class="top-hr">
+
+    <!-- Start Outer Condition -->
+    {%- if config.home_button1_name -%}
+    <div class="feature-item" onclick='window.location.href = " {{ config.home_button1_url }}"' tabindex="0">
+        <h2>
+	    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
+            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0z"/>
+          </svg>
+	    
+	    <!-- Button Description -->
+            Benefits
+        </h2>
+        <p>View everything plus subscribers get here.</p>
+    </div>
+    {%- endif -%}
+    <!-- End Outer Condition -->
+    
+    <!-- Start Outer Condition -->
+    {%- if config.home_button2_name -%}
+    <div class="feature-item" onclick='window.location.href = " {{ config.home_button2_url }}"' tabindex="0">
+        <h2>
+	    <!-- People Icon -->
+	    {%- if config.home_button2_icon == "people" -%}
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 24 24">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+          </svg>
+	    {%- endif -%}
+	    
+	    <!-- Gear Icon -->
+	    {%- if config.home_button2_icon == "gear" -%}
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 24 24">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+          </svg>
+	    {%- endif -%}
+	    
+	    <!-- Image Icon -->
+	    {%- if config.home_button2_icon == "image" -%}
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/>
+	    </svg>
+	    {%- endif -%}
+	    
+	    <!-- Button Description -->
+	    {{ config.home_button2_name }}
+        </h2>
+        <p>Get a few extra nice commands for Destrix.</p>
+    </div>
+    {%- endif -%}
+    <!-- End Outer Condition -->
+    
+    <!-- Start Outer Condition -->
+    <!-- {%- if config.home_button3_name -%} -->
+    <div class="feature-item" onclick='window.location.href = " {{ config.home_button3_url }}"' tabindex="0">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-database-check" viewBox="0 0 24 24">
+                <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                <path d="M12.096 6.223A4.92 4.92 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.493 4.493 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.525 4.525 0 0 1-.813-.927C8.5 14.992 8.252 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.552 4.552 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10c.262 0 .52-.008.774-.024a4.525 4.525 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777ZM3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4Z"/>
+              </svg>
+	    
+	    <!-- Button Description -->
+            Make Destrix Yours
+        </h2>
+        <p>Change colors, backgrounds, themes, and all.*</p>
+    </div>
+    <!-- {%- endif -%} -->
+    <!-- End Outer Condition -->
+
+
+
+
+
+
+</div>
+
+<div class="top-hr">
+    <!-- {%- if config.home_button4_name -%} -->
+    <div class="feature-item" onclick='window.location.href = "/plus/benefits"' tabindex="0">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 24 24">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+	    
+	    <!-- Button Description -->
+            <!-- {{ config.home_button4_name }} -->
+            Early Access
+        </h2>
+        <p>Help us test new feautres, plugins, and themes.</p>
+    </div>
+    <!-- {%- endif -%} -->
+
+    <!-- {%- if config.home_button5_name -%} -->
+    <div class="feature-item" onclick='window.location.href = "/plus/benefits"' tabindex="0">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-display" viewBox="0 0 24 24">
+                <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+              </svg>
+
+       
+	    
+	    <!-- Button Description -->
+            <!-- {{ config.home_button5_name }} -->
+            Priority Support
+        </h2>
+        <p>Get your issues resolved faster.</p>
+    </div>
+    <!-- {%- endif -%} -->
+
+    {%- if config.home_button6_name -%}
+    <div class="feature-item" onclick='window.location.href = "#"' tabindex="0">
+        <h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-database-check" viewBox="0 0 24 24">
+            <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+            <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
+        </svg>
+	    
+	    <!-- Button Description -->
+            Support Us
+        </h2>
+        <p>This subscription is mainly a monthly donation system with a few perks. Thanks for helping us create and maintain Destrix!</p>
+    </div>
+    {%- endif -%}
+    <!-- End Outer Condition -->
+</div>
+
+
+<!-- bottom button -->
+
+<div class="top-hr">
+    {%- if config.home_button_news_name -%}
+    <div class="feature-item" onclick='window.location.href = "{{ config.home_button_news_url }}"' tabindex="0">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 24 24">
+                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+              </svg>
+
+       
+	    
+	    <!-- Button Description -->
+            {{ config.home_button_news_name }}
+        </h2>
+        <p>{{ config.home_button_news_blurb }}</p>
+    </div>
+    {%- endif -%}
+</div>
+
+<div class="top-hr">
+    <div class="feature-item" onclick='window.location.href = "#__consent"'>
+        <p>Change cookie settings</p>
+    </div>
+</div>
+
+<div class="top-hr" style="margin-top: -20px !important;">
+    <div class="feature-item" onclick='window.location.href = "?plus-billing"'>
+        <p>Billing</p>
+    </div>
+</div>
+
+<div class="md-social" style="margin-left: auto; padding-right: 10px;">
+
+  
+  
+  
+  
+    <a href="https://destrix.app/t/github" target="_blank" rel="noopener" title="Destrix on Github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/twitter" target="_blank" rel="noopener" title="Destrix on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/discord" target="_blank" rel="noopener" title="Destrix on Discord" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/trello" target="_blank" rel="noopener" title="Destrix on Trello" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.3 32H56.1C25.1 32 0 57.1 0 88c-.1 0 0-4 0 336 0 30.9 25.1 56 56 56h336.2c30.8-.2 55.7-25.2 55.7-56V88c.1-30.8-24.8-55.8-55.6-56zM197 371.3c-.2 14.7-12.1 26.6-26.9 26.6H87.4c-14.8.1-26.9-11.8-27-26.6V117.1c0-14.8 12-26.9 26.9-26.9h82.9c14.8 0 26.9 12 26.9 26.9v254.2zm193.1-112c0 14.8-12 26.9-26.9 26.9h-81c-14.8 0-26.9-12-26.9-26.9V117.2c0-14.8 12-26.9 26.8-26.9h81.1c14.8 0 26.9 12 26.9 26.9v142.1z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/youtube" target="_blank" rel="noopener" title="Destrix on YouTube" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/t/patreon" target="_blank" rel="noopener" title="Wolfite on Patreon" class="md-social__link">
+      <!--?xml version="1.0" encoding="utf-8"?-->
+  <!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
+  <path d="M1033.05,324.45c-0.19-137.9-107.59-250.92-233.6-291.7c-156.48-50.64-362.86-43.3-512.28,27.2
+    C106.07,145.41,49.18,332.61,47.06,519.31c-1.74,153.5,13.58,557.79,241.62,560.67c169.44,2.15,194.67-216.18,273.07-321.33
+    c55.78-74.81,127.6-95.94,216.01-117.82C929.71,603.22,1033.27,483.3,1033.05,324.45z"></path>
+  </svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://destrix.app/" target="_blank" rel="noopener" title="Destrix.app" class="md-social__link">
+      <svg width="16" height="16" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M884.538 379.001L379.001 195L195 700.537L700.537 884.538L884.538 379.001ZM379.587 722H519.502C556.434 722 588.453 714.779 615.56 700.338C642.667 685.778 663.619 664.945 678.416 637.838C693.212 610.613 700.61 578.061 700.61 540.182C700.61 502.303 693.153 469.81 678.238 442.703C663.442 415.478 642.372 394.644 615.028 380.203C587.802 365.643 555.487 358.364 518.082 358.364H379.587V722ZM515.951 638.193H478.309V442.17H513.11C532.05 442.17 548.03 445.071 561.051 450.871C574.19 456.671 584.133 466.673 590.88 480.878C597.746 495.082 601.178 514.85 601.178 540.182C601.178 565.513 597.805 585.281 591.058 599.486C584.429 613.69 574.722 623.693 561.938 629.493C549.273 635.293 533.943 638.193 515.951 638.193Z" fill="white"></path>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M90.7988 801.975L714.789 1029.09L681.962 958.69L161.198 769.147L90.7988 801.975ZM958.75 397.243L769.207 918.007L802.035 988.406L1029.15 364.415L958.75 397.243ZM988.24 277.275L917.166 310.417L397.723 121.355L364.58 50.2809L988.24 277.275ZM121.415 681.482L50.3415 714.624L277.335 90.9648L310.477 162.039L121.415 681.482Z" fill="#D9D9D9"></path>
+  </svg>
+    </a>
+  
+  </div>
+
+
+
+<!-- END FOOTER CLONE -->
+
+<!-- <div class="top-hr">
+    <div class="hr">
+    </div>
+</div> -->
+
+
+<!-- Toggleable JavaScript execution -->
+{%- if config.home_execute_js -%}
+<script>
+document$.subscribe(function() {
+  console.log("'home_execute_js' is enabled:");
+  {{ config.home_execute_js }}
+}).unsubscribe();
+</script>
+{%- endif -%}
+
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

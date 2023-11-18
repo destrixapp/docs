@@ -5,6 +5,8 @@ title: FireCommand
 description: FireCommand lets you fire command logic for specific players artificially.
 search:
   boost: 2
+
+status: deprecated
 ---
 
 # DAX:FireCommand

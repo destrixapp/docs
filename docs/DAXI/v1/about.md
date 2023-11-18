@@ -1,8 +1,8 @@
 ---
 tags:
-    - DAX
-    - Security
-title: About
+    - DAXI
+    - Integration
+title: About | DAXI
 description: About the Destrix Integrations API Module (DAXI).
 search:
   boost: 9

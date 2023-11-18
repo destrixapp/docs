@@ -13,13 +13,12 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:destrix-logo: About</p> (/about)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-book-cog: About</p> (/about)
 <div style="display:inline;">
-<p style="color: #C6EDFB; display: inline;">Software</p> | <p style="color: rgb(220,220,220); display: inline;">0</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | about
+<p style="color: var(--destrix-docs--commandcat-software); display: inline;">Software</p> | <p style="color: var(--md-default-fg-color--light); display: inline;">0</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | about
 </div>
-A shortcut to open the Destrix about page.
 
-Arguments: _None_
+A shortcut to open the Destrix about page.
 
 <!-- ## See Also -->
 <!-- * [Destrix Plus](/404.html) -->

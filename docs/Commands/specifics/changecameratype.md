@@ -13,10 +13,12 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-camera: Change Camera Type</p> (/changecameratype)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-camera: Change Camera Type</p> (/changecameratype)
 <div style="display:inline;">
-<p style="color: #596773; display: inline;">Developer</p> | <p style="color: rgb(220,220,220); display: inline;">4</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | changecameratype
+<p style="color: var(--destrix-docs--commandcat-developer); display: inline;">Developer</p>
+| <p style="color: var(--md-default-fg-color--light); display: inline;">4</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | changecameratype
 </div>
+
 Locally change your Camera.CameraType to the specified CameraType.
 
 Arguments: _CameraType : enum/string?_
