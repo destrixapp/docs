@@ -1,5 +1,6 @@
 ---
 title: /change-bloom | Commands
+description: Change the bloom effect (if in use), otherwise this command will create a BloomEffect under Lighting.
 icon: material/vector-arrange-below
 
 tags:
@@ -27,7 +28,15 @@ status: plus
 
     This command is currently exclusive to plus subscribers for the foreseeable future.
 
-Change the bloom effect (if in use), otherwise this command will create a BloomEffect under Lighting.
+Change the bloom effect (if in use), otherwise this command will create a [BloomEffect](https://create.roblox.com/docs/reference/engine/classes/BloomEffect) under Lighting.
+
+## Parameters
+
+| Name           | Type   | Required | Default            | Description                                               |
+|:----------------|:--------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|:-----------------------------------------------------------|
+| Intensity         | [number](../parameters.md#number) | :material-close:                                                                                                                                                                                    | 0                | Determines the additive blending intensity.                                |
+| Size         | [number](../parameters.md#number) | :material-close:                                                                                                                                                                                    | 0                | Determines the radius of the bloom in pixels.                                |
+| Threshold         | [number](../parameters.md#number) | :material-close:                                                                                                                                                                                    | 0                | Determines how bright a color must be before it blooms.                                |
 
 <!-- ## See Also -->
 <!-- * [Destrix Plus](/404.html) -->

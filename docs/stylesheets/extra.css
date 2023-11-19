@@ -84,10 +84,10 @@
 
 @keyframes deprecated {
   0%, 100% {
-    transform: translateY(0px);
+    transform: translateY(-1.5px);
   }
   50% {
-    transform: translateY(2px);
+    transform: translateY(1.5px);
   }
 }
 
@@ -153,4 +153,8 @@
   background-color: var(--md-admonition-icon--beta--mask);
   -webkit-mask-image: var(--md-admonition-icon--beta);
           mask-image: var(--md-admonition-icon--beta);
+}
+
+.md-typeset .plus > .admonition-title::before, .md-typeset .plus > summary::before {
+  animation: new 2s infinite;
 }

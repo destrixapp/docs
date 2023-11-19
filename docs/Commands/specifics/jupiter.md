@@ -13,15 +13,23 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-airplane: Jupiter</p> (/jupiter)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-airplane: Jupiter</p> (/jupiter)
 <div style="display:inline;">
-<p style="color: #216E4E; display: inline;">Fun</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | jupiter
+<p style="color: var(--destrix-docs--commandcat-fun); display: inline;">Fun</p>
+| <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | jupiter
 </div>
-:fontawesome-solid-circle-info: This command is a duplicate of [/mars](/Commands/specifics/mars/).
+
+???+ info
+
+    This command is a duplicate of [/mars](./mars.md).
 
 Send a player to jupiter!
 
-Arguments: _Victim : player_
+## Parameters
+
+| Name   | Type   | Required         | Default | Description                            |
+|:--------|:--------|:------------------:|:---------:|----------------------------------------:|
+| Victim | [player](../parameters.md#player) | :material-close: | @me     | The player's you want to toggle the command on. |
 
 ## See Also
-* [:material-airplane: /mars](/Commands/specifics/mars/)
+* [:material-airplane: /mars](./mars.md)

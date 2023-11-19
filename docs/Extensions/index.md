@@ -19,6 +19,7 @@ Extensions are a great way to improve your Destrix experience for your experienc
 
 ## How to add a theme to Destrix
 
+Let's say you wanted to add the [_snowy_ theme](https://github.com/DestrixApp/snowy). That theme is published under the DestrixApp account, so you would need to add `DestrixApp/snowy` to the configuration.
 ```lua
   ...
 
@@ -33,6 +34,28 @@ Extensions are a great way to improve your Destrix experience for your experienc
 
 1. You can add your own themes here if the repo is public. `{github_username}`/`{repo_name}`
 2. You can add multiple themes, but this may cause compatibility issues.
+
+## How to add a plugin to Destrix
+
+```lua
+  ...
+
+  plugins = {
+    "DestrixApp/plugin";
+  }
+
+  ...
+```
+
+!!! danger "Responsibility"
+
+    Plugins are uncontrolled and can pretty much do anything with your experience. To reduce risk, please make sure you trust the plugins that you are inserting and do not add plugins that other users tell you to. It is safe, however, to assume the plugins that are endorsed on [DestrixApp](https://github.com/DestrixApp) are safe to use. 
+    
+    <small>**_Destrix is not liable for the damage caused to you, your users, or your experience due to a malicious extension._**</small>
+
+
+## Make your own extensions
+Want to make your own extensions? [Click here to make a theme](./Themes/Creating/index.md), or [click here to make a plugin](./Plugins/Getting_Started.md).
 
 <!-- # Elevate Your Experience with Destrix Extensions
 

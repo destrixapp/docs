@@ -12,20 +12,20 @@ search:
 
 ## Introduction
 
-The Destrix API Module, abbreviated as DAX (or DAXM), is a specialized module designed to facilitate effortless server-side interaction and control over Destrix for scripts. DAXM is distinct from DXCA (Destrix Client API Module) and should not be conflated with it.
+The Destrix API Module, abbreviated as DAX (or DAXM), is a specialized module designed to facilitate effortless server-side interaction and control over Destrix for scripts. DAXM is distinct from DXCA (Destrix Client API Module) and should not be confused with it.
 
 ## Core Functionalities
 
-DAXM is instrumental in performing elementary tasks including but not limited to:
+DAXM is effective in performing elementary tasks including but not limited to:
 
 * Disabling specific commands for designated permission levels,
-* Temporarily concealing the panel for enhanced user engagement.
+* Temporarily concealing the panel for enhanced user experience.
 
 However, there are explicit limitations to DAXM's capabilities. It is not designed to:
 
 * Alter user settings or data,
 * Monitor client-generated requests,
-* Modify pre-established settings in Configurations.
+* Modify pre-established settings in [Configurations](../../Getting_Started/configurations.md).
 
 ## Recommended Applications
 DAXM is optimized for enhancing User Experience (UX). Typical use cases encompass:

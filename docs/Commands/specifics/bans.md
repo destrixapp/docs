@@ -12,14 +12,15 @@ search:
 hide:
     - toc
 
+comments: true
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-block-helper: Bans</p> (/bans)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-block-helper: Bans</p> (/bans)
 <div style="display:inline;">
-<p style="color: #C6EDFB; display: inline;">Software</p> | <p style="color: rgb(220,220,220); display: inline;">0</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | bans, banland, banned
+<p style="color: var(--destrix-docs--commandcat-software); display: inline;">Software</p>
+| <p style="color: var(--md-default-fg-color--light); display: inline;">4</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | bans
 </div>
+
 A shortcut command for opening the Bans page.
 
-Arguments: _None_
-
 ## See Also
-* [:material-block-helper: /ban](/Commands/specifics/ban/)
+* [:material-block-helper: /ban](./ban.md)

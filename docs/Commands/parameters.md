@@ -27,11 +27,50 @@ Probably the most simplest of the complex type of command, the player. Parameter
 
     You may recognise that in some command specifics that the default value of parameter type "player" is sometimes **@me**, this will default to whatever use trigged the command. This is what a player type will be set to if no parameter is provided.
 
+??? tip "`@everyone` & `@all`"
+
+    @everyone and @all will return all the players in the server. You can remove the `@` if you wish.
+
 ### Number
 Simply a number. Int, float, or a double. For example, you can type `/command 0`, `/command 0.00`, or `/command -0` and the outcome will all be the same; 0. Command creators can specify or lock a command to an integer by chaning `number` to `number:i`, which converts it to an integer automatically.
 
+??? example annotate "`number:dynamic`"
+
+    <i id="number:dynamic"></i>
+
+    === "Normal Behaviour"
+        A Dynamic Number is a number that can accept arithmetic operations, such as addition `+`, subtraction `-`, multiplication `*`, division `/`, and floor division `//`. [Learn more about Luau arithmetic operators here.](https://create.roblox.com/docs/luau/operators#arithmetic).
+
+        <strong>Examples</strong>
+
+        - `/command leaderstat *2` (1)
+        - `/command leaderstat +100` (2)
+        - `/command leaderstat -100` (3)
+        - `/command leaderstat /2` (4)
+        - `/command leaderstat //2.3` (5)
+        
+
+    === "`number:dynamic:b` (aka Dynamic Basic)"
+        A "Basic Dynamic Number" is a number paramater that can accept the operations of subtraction and addition. For example, in the [`/change`](./specifics/change.md) command, you can add or subtract 100 via `-100` or `+100`. This removed the need for the `/add-stat` or `subtract-stat` that many other admin systems use.
+
+        For example, if you wanted to give a player a win, but you didn't know what their stats already were, you could simply do `/change {player} +1`, or remove a win by doing `/change {player} -1`. Dynamic numbers also support just regular numbers without operations.
+
+1. This will multiply the value by 2, effectively doubling it.
+2. This will add to the value by 100.
+3. This will subtract from the value by 100.
+4. This will divide the value by 2.
+5. This will divide the value by 2.3, and round the answer to the nearest whole.
+
+
 ### String
 Words. Just type `/command Your text here`, and `Your text here` will be passed. Alternatively, you can also use `/command "Your text here"` if you wish. If two string parameters are required next to eachother, type the command as so: `/command Your text here||Your 2nd text here`, and two separate strings (`Your text here` and `Your 2nd test here`) will be provided.
+
+??? example "`string:nb`"
+
+    <i id="string:nb"></i>
+
+
+    A string that takes no spaces
 
 ### Time
 More complex than expected, but also simple at the same time. Type `/command 120s`, `/command 120`, `/command 2m` and `120` will be provided. For longer times, use `/command 2d-0h-3m-4s`. That was simpler than I thought.
@@ -110,13 +149,23 @@ You can either type, A) a color shortcut (e.g. `white`), a HEX color (e.g. `#FFF
 
 
 ### Filtered String (`string:f`)
-Works the same as a [string](#string), except it filters the string for using input.
+Works the same as a [string](#string), except it filters the string using FilterAsync, making it ready to be broadcasted to other users.
 
 ### Material
 Expects a material (Enum.Material.{MaterialName}), e.g. `/command {MaterialName}`.
 
 ### User
-A user ID or username, for example: `/command 655331725` or `/command @Wolf1te`.
+A user ID or username, for example: `/command 655331725` or `/command @Wolf1te`. This parameter can take users outside of the game, and will not take shortcuts.
+
+### Boolean
+A yes or no value; true or false. For example: `/command true`, or `/command false`. Alternatively, we allow `/command y` and `/command n`.
+
+### Any
+The any parameter type is a wildcard, it is every parameter type.
+
+<!-- ??? example "`any:v`"
+
+    `any:v` is an alternative parameter type to `any`, in the behaviour that it only accepts value types. -->
 
 <!-- ### Rank
 A rank name or index.
@@ -125,5 +174,8 @@ A rank name or index.
 A team color of a team in the game. -->
 
 ## Special Use-cases
+### Keep a parameter unchanged
+You can use the `~` key to replace a parameter if you do not wish to change it, and the parameter is not required. Most commands support this.
+
 ### Two string parameters next to eachother.
 If a command requires or can recieve 2 or more string paramaters consecutively, separate them with '||'. For example, `/ban @1Wolfite This is the reason||This is the moderator note`.

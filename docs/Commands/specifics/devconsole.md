@@ -19,7 +19,7 @@ status: new
 <div style="display:inline;">
 <p style="color: var(--destrix-docs--commandcat-developer); display: inline;">Developer</p>,
 <p style="color: var(--destrix-docs--commandcat-software); display: inline;">Software</p>
-| <p style="color: var(--md-default-fg-color--light); display: inline;">0</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | changecameratype
+| <p style="color: var(--md-default-fg-color--light); display: inline;">0</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | devconsole
 </div>
 
 Open the [Developer Console](https://create.roblox.com/docs/studio/developer-console).

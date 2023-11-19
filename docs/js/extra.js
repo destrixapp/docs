@@ -115,3 +115,121 @@ document.body.insertBefore(div, document.body.firstChild);
 if (window.location.pathname == '/DAX' || window.location.pathname == '/DAX/' || window.location.pathname == '/DAX/about' || window.location.pathname == '/DAX/about/') {
     window.location.href = '/DAX/v1/about'
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // fix View Source
+    const elements = document.querySelectorAll("a.md-content__button[title='View source of this page']");
+    console.log(elements);
+
+    elements.forEach((element) => {
+    let href = element.getAttribute("href");
+    href = href.replace("https://github.com/DestrixApp/raw/master/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+    // href += "?from=destrix-docs"
+    element.setAttribute("href", href);
+    element.setAttribute("target", "_blank")
+    
+
+    // Twitter & Copy URL
+    // temporarily removed twitter because it looks weird and idk
+
+    const clone = element.cloneNode(true);
+    const svg = clone.querySelector("svg");
+
+    svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svg.setAttribute('width', '24');
+    svg.setAttribute('height', '24');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.querySelector("path").setAttribute("d", "M7.539 22.4991C16.596 22.4991 21.5505 14.9946 21.5505 8.49809C21.5505 8.28809 21.5505 8.07509 21.5415 7.86509C22.5061 7.16682 23.3386 6.30231 24 5.31209C23.099 5.70936 22.1441 5.9712 21.1665 6.08909C22.1963 5.47354 22.9676 4.50504 23.337 3.36359C22.3695 3.93677 21.3105 4.33915 20.2065 4.55309C19.4643 3.76262 18.4821 3.23896 17.4121 3.06322C16.3422 2.88748 15.2441 3.06947 14.288 3.58099C13.3319 4.09252 12.5712 4.90503 12.1237 5.89268C11.6761 6.88032 11.5668 7.98799 11.8125 9.04409C9.85461 8.94591 7.93922 8.43729 6.19056 7.5512C4.4419 6.66511 2.89903 5.42135 1.662 3.90059C1.03401 4.98521 0.842361 6.26819 1.12597 7.48899C1.40958 8.70978 2.14718 9.77688 3.189 10.4736C2.40831 10.4471 1.64478 10.2374 0.96 9.86159V9.92909C0.961346 11.0653 1.35496 12.1662 2.07431 13.0457C2.79366 13.9252 3.79462 14.5294 4.908 14.7561C4.48539 14.8725 4.04884 14.9305 3.6105 14.9286C3.30148 14.9295 2.99307 14.9009 2.6895 14.8431C3.00418 15.8212 3.61691 16.6763 4.44187 17.2888C5.26683 17.9013 6.2627 18.2404 7.29 18.2586C5.54483 19.6293 3.3891 20.3727 1.17 20.3691C0.778981 20.3707 0.388235 20.3482 0 20.3016C2.25227 21.7375 4.86795 22.4999 7.539 22.4991Z");
+
+    clone.setAttribute('title', 'Share to Twitter')
+
+    // let href2 = clone.getAttribute("href");
+    // href2 = href2.replace("https://github.com/DestrixApp/raw/master/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+    clone.setAttribute("href", `https://twitter.com/intent/tweet?text=${window.document.title}&url=${window.location.href}&newtwitter=true`);
+
+    // Append the modified element after the original element
+    // element.parentNode.insertBefore(clone, element);
+
+    const clone2 = element.cloneNode(true);
+    const svg2 = clone2.querySelector("svg");
+
+    svg2.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svg2.setAttribute('width', '24');
+    svg2.setAttribute('height', '24');
+    svg2.setAttribute('viewBox', '0 0 24 24');
+    svg2.querySelector("path").setAttribute("d", "M16.5004 3.75047C16.5003 2.87062 16.8096 2.01874 17.3741 1.34389C17.9386 0.669031 18.7225 0.214166 19.5885 0.0588767C20.4546 -0.0964129 21.3476 0.0577611 22.1115 0.494425C22.8753 0.931088 23.4613 1.62243 23.7669 2.44751C24.0725 3.27258 24.0783 4.17884 23.7832 5.00773C23.4881 5.83662 22.9109 6.53535 22.1527 6.98169C21.3945 7.42802 20.5034 7.59352 19.6355 7.44925C18.7675 7.30497 17.978 6.8601 17.4049 6.19247L7.3279 10.8725C7.55956 11.6066 7.55956 12.3943 7.3279 13.1285L17.4049 17.8085C18.0107 17.104 18.8564 16.6494 19.7782 16.5329C20.7 16.4165 21.6322 16.6463 22.3942 17.178C23.1561 17.7097 23.6936 18.5053 23.9024 19.4107C24.1112 20.316 23.9764 21.2667 23.5243 22.0783C23.0721 22.89 22.3347 23.5049 21.455 23.8039C20.5753 24.1029 19.6159 24.0646 18.7628 23.6966C17.9097 23.3285 17.2236 22.6569 16.8375 21.8118C16.4513 20.9667 16.3927 20.0083 16.6729 19.1225L6.5959 14.4425C6.09705 15.0238 5.43212 15.4385 4.69057 15.6306C3.94901 15.8227 3.1664 15.7832 2.448 15.5172C1.72961 15.2512 1.10991 14.7716 0.672259 14.1429C0.234606 13.5142 0 12.7665 0 12.0005C0 11.2344 0.234606 10.4868 0.672259 9.85804C1.10991 9.22932 1.72961 8.74972 2.448 8.48375C3.1664 8.21778 3.94901 8.17821 4.69057 8.37034C5.43212 8.56248 6.09705 8.97712 6.5959 9.55847L16.6729 4.87847C16.5582 4.51347 16.5 4.13307 16.5004 3.75047Z");
+
+    // clone2.setAttribute('onclick', 'clone2.setAttribute(\'title\', "Copied!"); navigator.clipboard.writeText(window.location.href);')
+    clone2.setAttribute('title', 'Copy URL to clipboard')
+    // let href2 = clone.getAttribute("href");
+    // href2 = href2.replace("https://github.com/DestrixApp/raw/master/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+    clone2.removeAttribute('href')
+    clone2.style.cursor = "pointer";
+
+    clone2.addEventListener('click', function(event) {
+        // Prevent the default behavior (following the link)
+        event.preventDefault();
+
+        // Get the current URL
+
+
+        // Remove the href attribute
+        element.removeAttribute('href');
+
+        // Copy the URL to the clipboard
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+                console.log('URL copied to clipboard');
+                clone2.setAttribute('title', 'Copied!')
+
+                setTimeout(() => {
+                    element.setAttribute('title', 'Copy URL to clipboard');
+                }, 2000);
+            })
+            .catch((err) => {
+                console.error('Failed to copy URL: ', err);
+                // Handle error if copying fails
+                clone2.setAttribute('title', 'Failed to copy')
+
+                setTimeout(() => {
+                    element.setAttribute('title', 'Copy URL to clipboard');
+                }, 2000);
+            });
+    });
+
+    // Append the modified element after the original element
+    element.parentNode.insertBefore(clone2, element);
+    });
+
+    
+  });
+  
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     function a() {
+//         const htmlContent = `
+//         <a href="https://raw.githubusercontent.com/DestrixApp/docs/master/docs/Commands/index.md" title="View source of this page" class="md-content__button md-icon" target="_blank">
+//           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+//             <path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"></path>
+//           </svg>
+//         </a>
+//       `;
+    
+//       const element = document.querySelector(".md-content__inner");
+//       if (element) {
+//         const newElement = document.createElement("div");
+//         newElement.innerHTML = htmlContent;
+//         const existingH1 = element.querySelector("h1");
+    
+//         if (existingH1) {
+//           element.insertBefore(newElement.firstChild, existingH1);
+//         } else {
+//           element.appendChild(newElement.firstChild);
+//         }
+//       }
+//     }
+
+//     setInterval(a, 3000)
+// });
+  

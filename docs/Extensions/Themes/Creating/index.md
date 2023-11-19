@@ -70,6 +70,4 @@ Additionally, we also use variables for the settings as well.
 
 1. light/dark (What base does your theme use. Is it more light or more dark?)
 
-If you want to be a lunatic and override a property via an instance name, you can doing this:
-
-make it .overrides and a .txt file or even .env ffs idgaf
+<!-- If you want to be a lunatic and override a property via an instance name, you can doing this: -->

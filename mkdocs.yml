@@ -53,6 +53,7 @@ nav:
       - /shutdown: Commands/specifics/shutdown.md
       - /force-shutdown: Commands/specifics/fshutdown.md
       # - /tslock: Commands/specifics/serverlock.md
+      - /viewpl: Commands/specifics/viewpl.md
       - /reload-map: Commands/specifics/reloadmap.md
       - /countdown: Commands/specifics/countdown.md
       - /change: Commands/specifics/change.md
@@ -90,6 +91,8 @@ nav:
       - /credits: Commands/specifics/credits.md
       - /hide-ui: Commands/specifics/hideui.md
       - /show-ui: Commands/specifics/showui.md
+      - /randomn: Commands/specifics/randomn.md
+      - /preview-filter: Commands/specifics/preview-filter.md
     
      # Contact
     - Contact:
@@ -148,6 +151,7 @@ nav:
       - Functions:
         - DisableEXEType: DAX/v1/Reference/Functions/DisableEXEType.md
         - FireCommand: DAX/v1/Reference/Functions/FireCommand.md
+        - TogglePanel: DAX/v1/Reference/Functions/TogglePanel.md
   - DAXI: 
     - About: DAXI/v1/about.md
     - Introduction:
