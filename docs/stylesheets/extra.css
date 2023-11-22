@@ -11,6 +11,7 @@
     --destrix-docs--commandcat-plus: #57ff81;
     --destrix-docs--commandcat-developer: #7f7f7f;
     --destrix-docs--commandcat-customization: #9659ff;
+    --destrix-docs--commandcat-dangerous: #ff5959;
   }
 
   [data-md-color-scheme="default"] {
@@ -24,6 +25,7 @@
     --destrix-docs--commandcat-plus: #2a9a46;
     --destrix-docs--commandcat-developer: #293471;
     --destrix-docs--commandcat-customization: #8944ff;
+    --destrix-docs--commandcat-dangerous: #ff5959;
   }
 
   .md-banner {
@@ -41,6 +43,10 @@
 
 .md-logo img {
     height: 32px !important;
+}
+
+.headerlink {
+  user-select: none;
 }
 
 /* statuses */
@@ -113,16 +119,19 @@
 :root {
   --md-admonition-icon--plus: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-dotted" viewBox="0 0 16 16"><path d="M8 0c-.176 0-.35.006-.523.017l.064.998a7.117 7.117 0 0 1 .918 0l.064-.998A8.113 8.113 0 0 0 8 0zM6.44.152c-.346.069-.684.16-1.012.27l.321.948c.287-.098.582-.177.884-.237L6.44.153zm4.132.271a7.946 7.946 0 0 0-1.011-.27l-.194.98c.302.06.597.14.884.237l.321-.947zm1.873.925a8 8 0 0 0-.906-.524l-.443.896c.275.136.54.29.793.459l.556-.831zM4.46.824c-.314.155-.616.33-.905.524l.556.83a7.07 7.07 0 0 1 .793-.458L4.46.824zM2.725 1.985c-.262.23-.51.478-.74.74l.752.66c.202-.23.418-.446.648-.648l-.66-.752zm11.29.74a8.058 8.058 0 0 0-.74-.74l-.66.752c.23.202.447.418.648.648l.752-.66zm1.161 1.735a7.98 7.98 0 0 0-.524-.905l-.83.556c.169.253.322.518.458.793l.896-.443zM1.348 3.555c-.194.289-.37.591-.524.906l.896.443c.136-.275.29-.54.459-.793l-.831-.556zM.423 5.428a7.945 7.945 0 0 0-.27 1.011l.98.194c.06-.302.14-.597.237-.884l-.947-.321zM15.848 6.44a7.943 7.943 0 0 0-.27-1.012l-.948.321c.098.287.177.582.237.884l.98-.194zM.017 7.477a8.113 8.113 0 0 0 0 1.046l.998-.064a7.117 7.117 0 0 1 0-.918l-.998-.064zM16 8a8.1 8.1 0 0 0-.017-.523l-.998.064a7.11 7.11 0 0 1 0 .918l.998.064A8.1 8.1 0 0 0 16 8zM.152 9.56c.069.346.16.684.27 1.012l.948-.321a6.944 6.944 0 0 1-.237-.884l-.98.194zm15.425 1.012c.112-.328.202-.666.27-1.011l-.98-.194c-.06.302-.14.597-.237.884l.947.321zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a6.999 6.999 0 0 1-.458-.793l-.896.443zm13.828.905c.194-.289.37-.591.524-.906l-.896-.443c-.136.275-.29.54-.459.793l.831.556zm-12.667.83c.23.262.478.51.74.74l.66-.752a7.047 7.047 0 0 1-.648-.648l-.752.66zm11.29.74c.262-.23.51-.478.74-.74l-.752-.66c-.201.23-.418.447-.648.648l.66.752zm-1.735 1.161c.314-.155.616-.33.905-.524l-.556-.83a7.07 7.07 0 0 1-.793.458l.443.896zm-7.985-.524c.289.194.591.37.906.524l.443-.896a6.998 6.998 0 0 1-.793-.459l-.556.831zm1.873.925c.328.112.666.202 1.011.27l.194-.98a6.953 6.953 0 0 1-.884-.237l-.321.947zm4.132.271a7.944 7.944 0 0 0 1.012-.27l-.321-.948a6.954 6.954 0 0 1-.884.237l.194.98zm-2.083.135a8.1 8.1 0 0 0 1.046 0l-.064-.998a7.11 7.11 0 0 1-.918 0l-.064.998zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/></svg>');
   --md-admonition-icon--beta: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16"> <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/> <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/> </svg>');
+  --md-admonition-icon--deprecated: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16"><path d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z"/></svg>');
 }
 
 [data-md-color-scheme="default"] {
   --md-admonition-icon--plus--mask: #2a9a46;
   --md-admonition-icon--beta--mask: #949600;
+  --md-admonition-icon--deprecated--mask: #9f0000;
 }
 
 [data-md-color-scheme="slate"] {
   --md-admonition-icon--plus--mask: #57ff81;
   --md-admonition-icon--beta--mask: #d2d504;
+  --md-admonition-icon--deprecated--mask: #ff3434;
 }
 
 .md-typeset .admonition.plus,
@@ -155,6 +164,114 @@
           mask-image: var(--md-admonition-icon--beta);
 }
 
+.md-typeset .admonition.beta,
+.md-typeset details.beta {
+  border-color: #d2d504;
+}
+.md-typeset .beta > .admonition-title,
+.md-typeset .beta > summary {
+  background-color: #d1d50449;
+}
+.md-typeset .beta > .admonition-title::before,
+.md-typeset .beta > summary::before {
+  background-color: var(--md-admonition-icon--beta--mask);
+  -webkit-mask-image: var(--md-admonition-icon--beta);
+          mask-image: var(--md-admonition-icon--beta);
+}
+
+
+
+.md-typeset .admonition.deprecated,
+.md-typeset details.deprecated {
+  border-color: #ff1919;
+}
+.md-typeset .deprecated > .admonition-title,
+.md-typeset .deprecated > summary {
+  background-color: rgba(168, 0, 0, 0.286);
+}
+.md-typeset .deprecated > .admonition-title::before,
+.md-typeset .deprecated > summary::before {
+  background-color: var(--md-admonition-icon--deprecated--mask);
+  -webkit-mask-image: var(--md-admonition-icon--deprecated);
+          mask-image: var(--md-admonition-icon--deprecated);
+}
+
+
+
 .md-typeset .plus > .admonition-title::before, .md-typeset .plus > summary::before {
   animation: new 2s infinite;
+}
+
+[data-md-color-scheme="default"] {
+  --tag--plus--text-color: #2a9a46;
+  --tag--plus--icon-color: #2a9a46;
+
+  --tag--utility--text-color: #7F5F02;
+  --tag--utility--icon-color: #7F5F02;
+  --tag--moderation--text-color: #943D73;
+  --tag--moderation--icon-color: #943D73;
+  --tag--fun--text-color: #216E4E;
+  --tag--fun--icon-color: #216E4E;
+  --tag--software--text-color: #70aec5;
+  --tag--software--icon-color: #70aec5;
+  --tag--customization--text-color: #8944ff;
+  --tag--customization--icon-color: #8944ff;
+}
+
+[data-md-color-scheme="slate"] {
+  --tag--plus--text-color: #57ff81;
+  --tag--plus--icon-color: #57ff81;
+
+  --tag--utility--text-color: #dbbf4e;
+  --tag--utility--icon-color: #dbbf4e;
+  --tag--moderation--text-color: #ff5bbe;
+  --tag--moderation--icon-color: #ff5bbe;
+  --tag--fun--text-color: #A9E0CA;
+  --tag--fun--icon-color: #A9E0CA;
+  --tag--software--text-color: #70aec5;
+  --tag--software--icon-color: #70aec5;
+  --tag--customization--text-color: #9659ff;
+  --tag--customization--icon-color: #9659ff;
+}
+
+.md-tag--Plus::before {
+  background-color: var(--tag--plus--icon-color) !important;
+}
+
+.md-tag--Plus {
+  color: var(--tag--plus--text-color) !important;
+}
+
+.md-tag--Utility::before { background-color: var(--tag--utility--icon-color) !important;}
+.md-tag--Utility { color: var(--tag--utility--text-color) !important;}
+
+.md-tag--Moderation::before { background-color: var(--tag--moderation--icon-color) !important;}
+.md-tag--Moderation { color: var(--tag--moderation--text-color) !important;}
+
+.md-tag--Fun::before { background-color: var(--tag--fun--icon-color) !important;}
+.md-tag--Fun { color: var(--tag--fun--text-color) !important;}
+
+.md-tag--Software::before { background-color: var(--tag--software--icon-color) !important;}
+.md-tag--Software { color: var(--tag--software--text-color) !important;}
+
+.md-tag--Customization::before { background-color: var(--tag--customization--icon-color) !important;}
+.md-tag--Customization { color: var(--tag--customization--text-color) !important;}
+
+/* plus nav */
+
+.md--tabs--plus-inner {
+  transition-delay: 0s !important;
+  transition: color 0.3s linear !important;
+}
+
+.md--tabs--plus-inner:hover {
+  color: #57ff81;
+}
+
+.md--tabs--plus-inner:hover svg {
+    animation: plus 2s infinite;
+}
+
+.md--tabs--plus-inner-active {
+  color: #57ff81 !important;
 }

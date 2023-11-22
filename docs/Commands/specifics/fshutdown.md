@@ -20,4 +20,4 @@ comments: true
 | <p style="color: var(--md-default-fg-color--light); display: inline;">5</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | fshutdown, force-shutdown
 </div>
 
-Similiar to [/shutdown](/Commands/specifics/shutdown), /fshutdown shuts the server instantly without Soft Shutdown activating. Without this, /fshutdown kicks all the players, usually within 3 seconds.
+Similiar to [/shutdown](./shutdown.md), /fshutdown shuts the server instantly without Soft Shutdown activating. Without this, /fshutdown kicks all the players, usually within 3 seconds.

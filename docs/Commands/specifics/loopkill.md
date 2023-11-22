@@ -4,7 +4,7 @@ icon: material/emoticon-dead
 
 tags:
     - Commands
-    - Fun
+    - Standard
 
 search:
     boost: 2

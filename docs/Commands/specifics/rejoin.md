@@ -4,7 +4,7 @@ icon: material/play-box
 
 tags:
     - Commands
-    - Fun
+    - Standard
 
 search:
     boost: 2

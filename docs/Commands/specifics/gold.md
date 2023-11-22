@@ -13,14 +13,15 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-gold: Gold</p> (/gold)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-gold: Gold</p> (/gold)
 <div style="display:inline;">
-<p style="color: #A54800; display: inline;">Cosmetic</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | gold
+<p style="color: var(--destrix-docs--commandcat-cosmetic); display: inline;">Cosmetic</p> | <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | gold
 </div>
+
 No documentation available.
 
-Arguments: _Player : player_
+## Parameters
 
-<!-- ## See Also
-* [:material-refresh: /reset](/Commands/specifics/reset/)
-* [:material-emoticon-dead: /kill](/Commands/specifics/kill/) -->
+| Name   | Type   | Required         | Default | Description                            |
+|:--------|:--------|:------------------:|:---------:|----------------------------------------:|
+| Victim | [player](../parameters.md#player) | :material-close: | @me     | The player's you want to toggle the command on. |

@@ -22,6 +22,11 @@ comments: true
 | <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | brazil
 </div>
 
+!!! deprecated "Deprecated"
+
+    This command is deprecated and this page is a candidate for deletion. Make sure to check what links to this page.
+
+
 Send a player to Brazil.. metaphorically.
 
 ## Parameters

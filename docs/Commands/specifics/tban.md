@@ -34,8 +34,8 @@ hide:
 | Moderator Note | string | :material-close:                                                                                                                                                                                    | "No note provided" | What other moderators will see when looking at the bans.  |
 
 ## See Also
-* [:material-block-helper: /server-ban](/Commands/specifics/sban/)
-* [:material-block-helper: /ban](/Commands/specifics/ban/)
-* [:material-block-helper: /kick](/Commands/specifics/kick/)
-* [:material-block-helper: /bans](/Commands/specifics/bans/)
-* [:material-timer-edit: /limits](/Commands/specifics/limits/)
+* [:material-block-helper: /server-ban](./sban.md)
+* [:material-block-helper: /ban](./ban.md)
+* [:material-block-helper: /kick](./kick.md)
+* [:material-block-helper: /bans](./bans.md)
+* [:material-timer-edit: /limits](./limits.md)

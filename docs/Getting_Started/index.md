@@ -1,23 +1,19 @@
 ---
 title: Installation
-
-# hide:
-    # - navigation
+description: Get started installing Destrix for your experience in under a minute.
 ---
 
-# Installation Guide
+# Getting Started
 Welcome to the step-by-step installation guide for the Destrix admin system. Follow these simple steps to easily integrate Destrix into your Roblox game, unlocking a world of efficiency, flexibility, and power.
 
 ## Prerequisites
-Ensure that you have:
+1. A Roblox account[^1], and
+2. Roblox Studio installed.[^2]
 
-1. A Roblox account. Sign up if you don’t have one yet.
-2. Roblox Studio installed. Download it here if needed.
+## Installation (via Roblox)
 
-## Installing Destrix
-
-### Step 1: Visit the Destrix Page
-* Navigate to the Destrix Page on Roblox.
+### Step 1: Get the loader
+* Navigate to Destrix on Roblox Create, or [click here](?redirect_event=get/free).
 * Click on the ‘Get’ button to add it to your inventory.
 
 ### Step 2: Open Roblox Studio
@@ -30,5 +26,8 @@ Ensure that you have:
 * Drag and drop Destrix into the workspace. It will automatically configure itself.
 
 ### Step 4: Test the Installation
-* Click on ‘Play’ to enter the game simulation mode.
-* Use a Destrix command (e.g., `!help`) in the chat to verify the successful installation.
+* Click on ‘Play’ to enter the game via studio.
+* Use a Destrix command (e.g., [`/game-time`](../Commands/specifics/game-time.md)) in the chat to verify the successful installation.
+
+[^1]: If you do not have a roblox account, you may create one [here](https://roblox.com/).
+[^2]: You can install Roblox studio at [Roblox Create](https://create.roblox.com).

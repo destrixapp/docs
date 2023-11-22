@@ -93,3 +93,17 @@ player = "Player";
         [`group_id`] = {
             [`role_id`] = "`rank_name`";
         }
+
+## Custom Prefix
+
+A default custom prefix is available in experiences which use Legacy Chat rather than TextChatService due to limitations.
+
+```lua
+prefix = "/"; -- (1)
+```
+
+1. Set your own custom prefix here, not compatible with TextChatService.
+
+    For example, if you wanted to change the default prefix to `!`, then it would look like this:
+    
+        prefix = "!";

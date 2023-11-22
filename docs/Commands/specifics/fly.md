@@ -4,7 +4,7 @@ icon: material/airplane-alert
 
 tags:
     - Commands
-    - Fun
+    - Standard
 
 search:
     boost: 2
@@ -27,6 +27,6 @@ Use /fly to fly yourself or another player.
 | Victim | [player](../parameters.md#player) | :material-close: | @me     | The player's you want to toggle the command on. |
 
 ## See Also
-* [:material-airplane: /jupiter](/Commands/specifics/jupter/)
-* [:material-airplane: /mars](/Commands/specifics/mars/)
-* [:material-orbit: /stratosphere](/Commands/specifics/stratosphere/)
+* [:material-airplane: /jupiter](./jupiter.md)
+* [:material-airplane: /mars](./mars.md)
+* [:material-orbit: /stratosphere](./stratosphere.md)

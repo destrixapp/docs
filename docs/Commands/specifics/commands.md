@@ -12,16 +12,14 @@ search:
 hide:
     - toc
 
+comments: true
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:octicons-log-16: Commands</p> (/commands)
+# <p style="color: var(--md-default-fg-color); display: inline;">:octicons-log-16: Commands</p> (/commands)
 <div style="display:inline;">
-<p style="color: #C6EDFB; display: inline;">Software</p> | <p style="color: rgb(220,220,220); display: inline;">0</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | commands, cmds
+<p style="color: var(--destrix-docs--commandcat-software); display: inline;">Software</p> | <p style="color: var(--md-default-fg-color--light); display: inline;">0</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | commands, cmds
 </div>
+
 A shortcut command for opening the commands page (/commands, /cmds).
 
-Arguments: _None_
-
 ## See Also
-<!-- * [Destrix Plus](/404.html) -->
-<!-- * [:fontawesome-solid-ranking-star: /check-rank](/Commands/specifics/checkrank/) -->
-* [:octicons-log-16: All Commands](/Commands/)
+* [:octicons-log-16: All Commands](../index.md)

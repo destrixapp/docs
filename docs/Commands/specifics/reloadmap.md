@@ -13,10 +13,10 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-refresh: Reload Map</p> (/reloadmap)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-refresh: Reload Map</p> (/reload-map)
 <div style="display:inline;">
-<p style="color: #7F5F02; display: inline;">Utility</p> | <p style="color: rgb(220,220,220); display: inline;">4</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | reloadmap, reloadworkspace
+<p style="color: var(--destrix-docs--commandcat-utility); display: inline;">Utility</p>
+| <p style="color: var(--md-default-fg-color--light); display: inline;">4</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | reload-map, reload-workspace
 </div>
-/reloadmap (/reloadworkspace) reloads the workspace as if it was the same as the game started.
 
-Arguments: _None_
+/reload-map (/reload-workspace) reloads the workspace as if it was the same as the game started.

@@ -3,6 +3,8 @@ site_description: Destrix is a developer-focused admin system on Roblox, making 
 site_url: https://docs.destrix.app
 repo_url: https://github.com/DestrixApp
 repo_name: Destrix
+edit_uri: https://github.com/DestrixApp/docs/blob/main/docs/
+docs_dir: "docs"
 # view_uri: /docs/docs/docs
 extra_javascript:
   - js/extra.js
@@ -33,12 +35,20 @@ markdown_extensions:
     - pymdownx.snippets
     - admonition
     - pymdownx.details
+    - footnotes
+    - toc:
+       permalink: true
+       title: On this page
 
 nav:
   - index.md
   - Getting Started:
     - Getting_Started/index.md
     - Configurations: Getting_Started/configurations.md
+    - Advanced: Getting_Started/advanced.md
+    - Changelog:
+      - Getting_Started/changelog/index.md
+      - What's Next?: Getting_Started/changelog/whats-next.md
   - Commands:
     - Commands/index.md
     - Parameters: Commands/parameters.md
@@ -79,7 +89,8 @@ nav:
       - /check-rank: Commands/specifics/checkrank.md
       - /ping: Commands/specifics/ping.md
       - /prefix: Commands/specifics/prefix.md
-      - /gametime: Commands/specifics/gametime.md
+      - /game-time: Commands/specifics/game-time.md
+      - /elapsed-time: Commands/specifics/elapsed-time.md
       - /place-name: Commands/specifics/placename.md
       - /ranks: Commands/specifics/ranks.md
       - /dversion: Commands/specifics/dversion.md
@@ -141,6 +152,10 @@ nav:
     - Developer:
       - /change-camera-type: Commands/specifics/changecameratype.md
       - /devconsole: Commands/specifics/devconsole.md
+    
+    - Misc:
+      # - Categories: Commands/categories.md
+      - Rules: Commands/rules.md
   - DAX:
     - About: DAX/v1/about.md
     - Introduction:
@@ -173,12 +188,31 @@ nav:
     - Benefits: plus/benefits.md
     - Enterprise:
       - plus/enterprise/index.md
-  - Features: Features/feature.md
+  # - Features: Features/feature.md
   - News:
-    - blog/index.md
+    - news/index.md
 
 extra:
   homepage: /
+  tags:
+    DAX: DAX
+    Commands: Commands
+    Plus: Plus
+    Utility: Utility
+    Moderation: Moderation
+    Software: Software
+    Fun: Fun
+    Standard: Standard
+    Contact: Contact
+    Cosmetic: Cosmetic
+    Customization: Customization
+    Developer: Developer
+    Extensions: Extensions
+    Themes: Themes
+    Plugins: Plugins
+    Security: Security
+    Hidden: Hidden
+    Dangerous: Dangerous
   status:
     new: Recently added
     deprecated: Deprecated
@@ -258,10 +292,34 @@ plugins:
   # - material/social
   - search:
       lang: en
-  - blog
-      # authors: true
+  # - git-revision-date-localized:
+  #     # enabled: !ENV [CI, false]
+  #     enable_creation_date: true
+  #     type: date
+  #     fallback_to_build_date: true
+  - blog:
+      blog_dir: news
+      blog_toc: true
+      categories_toc: false
+      pagination_per_page: 10
+      draft_if_future_date: true
+      post_dir: "{blog}/articles"
+      authors_file: "{blog}/.authors.yml"
+      authors: true
+      post_date_format: full
+      post_url_date_format: yyyy/MM/dd
+      post_url_format: "view/{date}/{slug}"
+      categories_allowed:
+        - Destrix
       # authors_file: "{blog}/.authors.yml"
   - tags
+  - git-committers:
+      repository: DestrixApp/docs
+      branch: main
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      fallback_to_build_date: true
 # tags plugin seems to be removing the search tool somehow.
 # EDIT 13/11/23: This seems to be fixed now.
 
@@ -279,11 +337,16 @@ theme:
 
   features:
     - navigation.tabs
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.sections
     - navigation.top
     - content.code.copy
     - content.action.view
     # - content.tabs.link
+    - content.code.select
     - content.tooltips
     - content.code.annotate
     - navigation.footer
@@ -310,10 +373,31 @@ theme:
       bug: fontawesome/solid/robot
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
+    tag:
+      DAX: fontawesome/solid/plug
+      Commands: material/chat
+      Utility: material/lightbulb
+      Moderation: material/block-helper
+      Software: material/cog
+      Contact: fontawesome/solid/phone
+      Fun: fontawesome/solid/fire-flame-curved
+      Standard: material/calendar
+      Cosmetic: octicons/sparkle-fill-16
+      Customization: fontawesome/solid/palette
+      Dangerous: material/lightning-bolt-circle
+      Plus: bootstrap/plus-circle-dotted
 
   
   
   palette:
+
+    - media: "(prefers-color-scheme)"
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -330,7 +414,7 @@ theme:
       accent: blue
       toggle:
         icon: material/weather-night
-        name: Switch to light mode
+        name: Switch to system preference
 
 
 

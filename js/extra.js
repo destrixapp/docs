@@ -1,3 +1,29 @@
+// better news og descriptions for articles
+
+if (window.location.href.includes('news/view/')) {
+    document.addEventListener("DOMContentLoaded", function() {
+        var meta_tags = document.getElementsByTagName('meta');
+
+        for (var i = 0; i < meta_tags.length; i++) {
+            if (meta_tags[i].getAttribute('name') === 'description') {
+                var content = document.querySelector('.md-content__inner');
+
+                if (content){
+                    var first_p = content.querySelector('p');
+
+                    if (first_p){
+                        meta_tags[i].setAttribute('content', first_p.textContent);
+                    } else {
+                        meta_tags[i].setAttribute('content', 'No preview found for this article.');
+                    };
+                } else {
+                    meta_tags[i].setAttribute('content', 'No preview found for this article.');
+                };
+            };
+    }
+    });
+}
+
 if (window.location.href.includes('?plus-billing')) {
     window.location.href = 'https://en.help.roblox.com/hc/en-us/articles/20292383332500-Subscription-Billing-and-Refunds'
 } else if (window.location.href.includes('?plus')) {
@@ -124,7 +150,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     elements.forEach((element) => {
     let href = element.getAttribute("href");
-    href = href.replace("https://github.com/DestrixApp/raw/master/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+
+    if (window.location.href.includes('news/view/')) {
+        href = href.replace("https://github.com/DestrixApp/docs/raw/main/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+    } else {
+        href = href.replace("https://github.com/DestrixApp/raw/master/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+    };
     // href += "?from=destrix-docs"
     element.setAttribute("href", href);
     element.setAttribute("target", "_blank")
@@ -182,18 +213,20 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(() => {
                 console.log('URL copied to clipboard');
                 clone2.setAttribute('title', 'Copied!')
+                alert$.next('Copied!')
 
                 setTimeout(() => {
-                    element.setAttribute('title', 'Copy URL to clipboard');
+                    clone2.setAttribute('title', 'Copy URL to clipboard');
                 }, 2000);
             })
             .catch((err) => {
                 console.error('Failed to copy URL: ', err);
                 // Handle error if copying fails
                 clone2.setAttribute('title', 'Failed to copy')
+                alert$.next(`Failed to copy URL: ${err}`)
 
                 setTimeout(() => {
-                    element.setAttribute('title', 'Copy URL to clipboard');
+                    clone2.setAttribute('title', 'Copy URL to clipboard');
                 }, 2000);
             });
     });
@@ -205,6 +238,49 @@ document.addEventListener("DOMContentLoaded", function() {
     
   });
   
+
+//   share to permalink
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     // fix View Source
+//     const elements = document.querySelectorAll(".md-content__inner h1 .headerlink, .md-content__inner h2 .headerlink, .md-content__inner h3 .headerlink, .md-content__inner h4 .headerlink");
+//     console.log(elements);
+
+//     elements.forEach((element) => {
+//         const share = element.cloneNode(true);
+//         const svg = document.createElement('svg');//share.querySelector("svg");
+//         const path = document.createElement('path');
+//         console.log('a');
+//         // share.classList.add('md-content__button');
+//         // share.classList.add('md-icon');
+//         // share.style.float = left;
+//         // share.textContent = 'a';
+//         share.innerHTML = 'a';
+//         share.innerHTML = '';
+//         // share.style['mask-image'] = url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16"><path d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z"/></svg>');
+
+//         svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+//         svg.setAttribute('width', '24');
+//         svg.setAttribute('height', '24');
+//         svg.setAttribute('viewBox', '0 0 24 24');
+//         path.setAttribute("d", "M16.5004 3.75047C16.5003 2.87062 16.8096 2.01874 17.3741 1.34389C17.9386 0.669031 18.7225 0.214166 19.5885 0.0588767C20.4546 -0.0964129 21.3476 0.0577611 22.1115 0.494425C22.8753 0.931088 23.4613 1.62243 23.7669 2.44751C24.0725 3.27258 24.0783 4.17884 23.7832 5.00773C23.4881 5.83662 22.9109 6.53535 22.1527 6.98169C21.3945 7.42802 20.5034 7.59352 19.6355 7.44925C18.7675 7.30497 17.978 6.8601 17.4049 6.19247L7.3279 10.8725C7.55956 11.6066 7.55956 12.3943 7.3279 13.1285L17.4049 17.8085C18.0107 17.104 18.8564 16.6494 19.7782 16.5329C20.7 16.4165 21.6322 16.6463 22.3942 17.178C23.1561 17.7097 23.6936 18.5053 23.9024 19.4107C24.1112 20.316 23.9764 21.2667 23.5243 22.0783C23.0721 22.89 22.3347 23.5049 21.455 23.8039C20.5753 24.1029 19.6159 24.0646 18.7628 23.6966C17.9097 23.3285 17.2236 22.6569 16.8375 21.8118C16.4513 20.9667 16.3927 20.0083 16.6729 19.1225L6.5959 14.4425C6.09705 15.0238 5.43212 15.4385 4.69057 15.6306C3.94901 15.8227 3.1664 15.7832 2.448 15.5172C1.72961 15.2512 1.10991 14.7716 0.672259 14.1429C0.234606 13.5142 0 12.7665 0 12.0005C0 11.2344 0.234606 10.4868 0.672259 9.85804C1.10991 9.22932 1.72961 8.74972 2.448 8.48375C3.1664 8.21778 3.94901 8.17821 4.69057 8.37034C5.43212 8.56248 6.09705 8.97712 6.5959 9.55847L16.6729 4.87847C16.5582 4.51347 16.5 4.13307 16.5004 3.75047Z");
+//         svg.appendChild(path);
+
+//     share.appendChild(svg)
+//     // share.innerHTML = url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16"><path d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z"/></svg>');
+
+//     // clone2.setAttribute('onclick', 'clone2.setAttribute(\'title\', "Copied!"); navigator.clipboard.writeText(window.location.href);')
+//     share.setAttribute('title', 'Copy URL to clipboard')
+//     // let href2 = clone.getAttribute("href");
+//     // href2 = href2.replace("https://github.com/DestrixApp/raw/master/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+//     share.removeAttribute('href')
+//     share.style.cursor = "pointer";
+//     element.parentNode.insertBefore(share, element);
+//     });
+
+    
+// });
+// ^ scrapped due to laziness
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     function a() {
@@ -233,3 +309,22 @@ document.addEventListener("DOMContentLoaded", function() {
 //     setInterval(a, 3000)
 // });
   
+// plus hover effect
+
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll("li.md-tabs__item a[href*='plus']");
+    console.log(elements);
+
+    elements.forEach((element) => {
+        element.classList.add('md--tabs--plus-inner')
+    });
+})
+
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll("li.md-tabs__item a[href='./']");
+    if (window.location.pathname.includes('/plus')){
+        elements.forEach((element) => {
+            element.classList.add('md--tabs--plus-inner-active')
+        });   
+    }
+})

@@ -12,15 +12,17 @@ search:
 hide:
     - toc
 
+comments: true
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-weather-lightning: Glitch</p> (/glitch)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-weather-lightning: Glitch</p> (/glitch)
 <div style="display:inline;">
-<p style="color: #216E4E; display: inline;">Fun</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | glitch, corrupt
+<p style="color: var(--destrix-docs--commandcat-fun); display: inline;">Fun</p> | <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | glitch, corrupt
 </div>
+
 The /glitch (or /corrupt) command locally places a ColorEffect with -99999999.
 
-Arguments: _Victim : player_
+## Parameters
 
-<!-- ## See Also -->
-<!-- * [:material-airplane: /jupiter](/Commands/specifics/jupter/) -->
-<!-- * [:material-airplane: /mars](/Commands/specifics/mars/) -->
+| Name   | Type   | Required         | Default | Description                            |
+|:--------|:--------|:------------------:|:---------:|----------------------------------------:|
+| Victim | [player](../parameters.md#player) | :material-close: | @me     | The player's you want to toggle the command on. |

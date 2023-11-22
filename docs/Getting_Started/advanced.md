@@ -1,0 +1,55 @@
+---
+title: Advanced Configuration
+# description: No description avaialble.
+icon: material/cog
+
+search:
+    boost: 3
+---
+
+# Advanced
+This page outlines relevant information for advanced configuration in Destrix. Recommended for those with a greater grasp on lua, but this tutorial should be understandable for all skillsets nonetheless.
+
+??? example "What this page outlines"
+
+    This page outlines information on how to limit commands, disable commands by default, blacklist gears and items, etc.
+
+---
+
+## Adding advanced configurations
+Navigate to your settings module, named `settings` under the Destrix loader. Create a new `ModuleScript` and name it `.advanced`. To start, you can set the source as follows:
+
+```lua
+return {
+    extended_config_version = 1;
+}
+```
+
+## Limit Parameters
+> How do I limit parameters for certain commands?
+
+This section outlines how you can limit parameters for certain commands. However, this is only compatible for parameter types of `number` and `number:i` currently.
+
+You can use the following as a template on how to implement this. You can add this to your table in `.advanced`.
+
+```lua
+parameter_limits = {
+    ["server-ban"] = {
+        ignore = 4; -- (1)
+        
+        max = {
+            -- parameter name = max_value;
+            length = 604800;
+        };
+    };	
+};
+```
+
+1. The minimum permission level to bypass this limit.
+
+In this case, the above code will limit anyone that is not an [admin](./configurations.md#default-ranks) so that they can not use the `/server-ban` command to ban anyone for over a week.
+
+??? warning "Support Issues"
+
+    Some commands use custom interfaces and may not adhere to these limits.
+

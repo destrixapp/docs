@@ -23,13 +23,32 @@ Parameters are specified information a command asks for. Parameters are also ref
 ### Player
 Probably the most simplest of the complex type of command, the player. Parameters of this type can expect a Player class returned. In a command, if you wanted to provide @DestrixApp, you could simply type `/command @DestrixApp`, `/command DestrixApp`, or type `/command d` (if no one else is in the server who's name starts with a d). 
 
-??? tip "`@me`"
+<!-- ??? tip "`@me`"
 
     You may recognise that in some command specifics that the default value of parameter type "player" is sometimes **@me**, this will default to whatever use trigged the command. This is what a player type will be set to if no parameter is provided.
 
 ??? tip "`@everyone` & `@all`"
 
-    @everyone and @all will return all the players in the server. You can remove the `@` if you wish.
+    @everyone and @all will return all the players in the server. You can remove the `@` if you wish. -->
+
+??? tip "Player Selectors"
+
+    You can use player selectors to select multiple groups of players or a player that matches certain attributes 
+
+    === "`@me`"
+        You may recognise that in some command specifics that the default value of parameter type "player" is sometimes **@me**, this will default to whatever use trigged the command. This is what a player type will be set to if no parameter is provided.
+    === "`@everyone` & `@all`"
+        @everyone and @all will return all the players in the server. You can remove the `@` if you wish. -->
+    === "`@random`/`@someone`"
+        Selects a random player from the server. You can also be selected.
+    === "`@ranked`"
+        Selects all the players that have a permission level above 0.
+    === "`@others`"
+        Selects all other players in the server.
+    === "`%{team}`"
+        Selects all player in the specified team, e.g. `/command %red`.
+    === "`${attribute}`"
+        For custom integration. Selects a player with a boolean attribute matching the name with the value of `true`. **Don't know what an attribute is?** [Click here to learn more](https://create.roblox.com/docs/studio/instance-attributes).
 
 ### Number
 Simply a number. Int, float, or a double. For example, you can type `/command 0`, `/command 0.00`, or `/command -0` and the outcome will all be the same; 0. Command creators can specify or lock a command to an integer by chaning `number` to `number:i`, which converts it to an integer automatically.
@@ -73,7 +92,10 @@ Words. Just type `/command Your text here`, and `Your text here` will be passed.
     A string that takes no spaces
 
 ### Time
-More complex than expected, but also simple at the same time. Type `/command 120s`, `/command 120`, `/command 2m` and `120` will be provided. For longer times, use `/command 2d-0h-3m-4s`. That was simpler than I thought.
+More complex than expected, but also simple at the same time. Type `/command 120s`, `/command 120`, `/command 2m` and `120` will be parsed. For longer times, use `/command 2d-0h-3m-4s`. (1)
+{ .annotate }
+
+1.  This will automatically be converted to `172_984`, or 172,984 seconds.
 
 ### Color
 You can either type, A) a color shortcut (e.g. `white`), a HEX color (e.g. `#FFF` or `#FFFFFF`), or in RGB format (e.g. `255,255,255`).
@@ -177,5 +199,5 @@ A team color of a team in the game. -->
 ### Keep a parameter unchanged
 You can use the `~` key to replace a parameter if you do not wish to change it, and the parameter is not required. Most commands support this.
 
-### Two string parameters next to eachother.
-If a command requires or can recieve 2 or more string paramaters consecutively, separate them with '||'. For example, `/ban @1Wolfite This is the reason||This is the moderator note`.
+### Prevent confused parameters
+Destrix may confused multiple parameters as one. For example, a command that takes a string and another string parameter, they may be confused as one. Or a string parameter then a number. If this problem applies to a command, it may be applicable to separate the parameters with '||'. For example, `/ban @Wolf1te This is the reason||This is the moderator note`.

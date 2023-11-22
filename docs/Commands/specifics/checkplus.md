@@ -1,6 +1,6 @@
 ---
 title: /checkplus | Commands
-icon: material/fan-plus
+icon: bootstrap/plus-circle-dotted
 
 tags:
     - Commands
@@ -13,14 +13,19 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-fan-plus: Check Plus</p> (/checkplus)
+# <p style="color: var(--md-default-fg-color); display: inline;">:bootstrap-plus-circle-dotted: Check Plus</p> (/checkplus)
 <div style="display:inline;">
-<p style="color: #C6EDFB; display: inline;">Software</p> | <p style="color: rgb(220,220,220); display: inline;">0</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | checkplus
+<p style="color: var(--destrix-docs--commandcat-software); display: inline;">Software</p> | <p style="color: var(--md-default-fg-color--light); display: inline;">0</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | check-plus
 </div>
-Use /checkplus to check if a player is a Destrix Plus member.
 
-Arguments: _Player : player_
+Use /checkplus to check if a player is a [Destrix Plus](?plus) member.
+
+## Parameters
+
+| Name   | Type   | Required         | Default | Description                            |
+|:--------|:--------|:------------------:|:---------:|----------------------------------------:|
+| Player | [player](../parameters.md#player) | :material-close: | @me     | The player's you want to check. |
 
 ## See Also
-* [Destrix Plus](/404.html)
-* [:fontawesome-solid-ranking-star: /check-rank](/Commands/specifics/checkrank/)
+* [:bootstrap-plus-circle-dotted: Destrix Plus](?plus)
+* [:fontawesome-solid-ranking-star: /check-rank](./checkrank.md)

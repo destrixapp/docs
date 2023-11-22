@@ -4,7 +4,7 @@ icon: material/bomb
 
 tags:
     - Commands
-    - Fun
+    - Standard
 
 search:
     boost: 2
@@ -13,14 +13,13 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-bomb: Explode</p> (/explode)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-bomb: Explode</p> (/explode)
 <div style="display:inline;">
-<p style="color: #579DFF; display: inline;">Standard</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | explode
+<p style="color: var(--destrix-docs--commandcat-standard); display: inline;">Standard</p> | <p style="color: var(--md-default-fg-color--light); display: inline;">0</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | explode
 </div>
+
 Explode a player.
 
-Arguments: _Victim : player_
-
-<!-- ## See Also
-* [:material-refresh: /reset](/Commands/specifics/reset/)
-* [:material-emoticon-dead: /kill](/Commands/specifics/kill/) -->
+## See Also
+* [:material-refresh: /reset](./reset.md)
+* [:material-emoticon-dead: /kill](./kill.md)
