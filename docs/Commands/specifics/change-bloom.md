@@ -2,6 +2,7 @@
 title: /change-bloom | Commands
 description: Change the bloom effect (if in use), otherwise this command will create a BloomEffect under Lighting.
 icon: material/vector-arrange-below
+cmd_customization: true
 
 tags:
     - Commands

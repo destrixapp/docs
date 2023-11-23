@@ -1,6 +1,7 @@
 ---
 title: /explode | Commands
 icon: material/bomb
+cmd_standard: true
 
 tags:
     - Commands

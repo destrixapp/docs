@@ -1,6 +1,7 @@
 ---
 title: /glow | Commands
 icon: material/glass-fragile
+cmd_cosmetic: true
 
 tags:
     - Commands

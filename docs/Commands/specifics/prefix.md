@@ -1,6 +1,7 @@
 ---
 title: /prefix | Commands
 icon: material/slash-forward
+cmd_software: true
 
 tags:
     - Commands

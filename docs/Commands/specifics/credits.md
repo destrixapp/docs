@@ -1,6 +1,7 @@
 ---
 title: /credits | Commands
 icon: material/copyright
+cmd_software: true
 
 tags:
     - Commands

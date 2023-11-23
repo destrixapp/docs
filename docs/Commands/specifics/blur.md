@@ -2,6 +2,7 @@
 title: /blur | Commands
 description: Blur a player's secreen using BlurEffect, size defaults to 20.
 icon: material/blur
+cmd_fun: true
 
 tags:
     - Commands

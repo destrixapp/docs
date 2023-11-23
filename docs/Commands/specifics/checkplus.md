@@ -1,6 +1,7 @@
 ---
 title: /checkplus | Commands
 icon: bootstrap/plus-circle-dotted
+cmd_software: true
 
 tags:
     - Commands

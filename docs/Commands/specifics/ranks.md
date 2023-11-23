@@ -1,6 +1,7 @@
 ---
 title: /ranks | Commands
 icon: fontawesome/solid/ranking-star
+cmd_software: true
 
 tags:
     - Commands

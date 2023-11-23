@@ -1,6 +1,7 @@
 ---
 title: /follow | Commands
 icon: fontawesome/solid/location-arrow
+cmd_standard: true
 
 tags:
     - Commands

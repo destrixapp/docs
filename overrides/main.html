@@ -38,8 +38,30 @@
         <title>{{ page.title }} - {{ config.site_name }}</title> 
       {%- endif -%}
 
+      {%- if page.is_homepage -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" />
+      {%- endif -%}
+
       {%- if page.meta.cmd_moderation -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-moderation.png" />
+      {%- elif page.meta.cmd_utility -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-utility.png" />
+      {%- elif page.meta.cmd_cosmetic -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-cosmetic.png" />
+      {%- elif page.meta.cmd_customization -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-customization.png" />
+      {%- elif page.meta.cmd_developer -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-developer.png" />
+      {%- elif page.meta.cmd_fun -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-fun.png" />
+      {%- elif page.meta.cmd_software -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-software.png" />
+      {%- elif page.meta.cmd_standard -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-standard.png" />
+      {%- elif page.meta.cmd_unknown -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/commands-destrix.png" />
+      {%- elif page.meta.cmd_index -%}
+        <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/commands-destrix.png" />
       {%- else -%} 
         <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" />
       {%- endif -%} 

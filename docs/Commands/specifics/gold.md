@@ -1,6 +1,7 @@
 ---
 title: /gold | Commands
 icon: material/gold
+cmd_cosmetic: true
 
 tags:
     - Commands

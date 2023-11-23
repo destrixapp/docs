@@ -1,6 +1,7 @@
 ---
 title: /inspect-avatar | Commands
 icon: material/magnify
+cmd_utility: true
 
 tags:
     - Commands

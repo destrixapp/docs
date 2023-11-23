@@ -2,6 +2,7 @@
 title: /big-head | Commands
 description: Make a players head enlarge.
 icon: material/distribute-horizontal-center
+cmd_fun: true
 
 tags:
     - Commands

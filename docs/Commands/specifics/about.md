@@ -1,6 +1,7 @@
 ---
 title: /about | Commands
 icon: material/book-cog
+cmd_software: true
 
 tags:
     - Commands

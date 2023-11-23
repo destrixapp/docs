@@ -1,6 +1,7 @@
 ---
 title: /promptasset | Commands
 icon: material/toy-brick-plus
+cmd_utility: true
 
 tags:
     - Commands

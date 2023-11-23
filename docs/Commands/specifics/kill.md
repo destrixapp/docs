@@ -1,6 +1,7 @@
 ---
 title: /kill | Commands
 icon: material/emoticon-dead
+cmd_standard: true
 
 tags:
     - Commands

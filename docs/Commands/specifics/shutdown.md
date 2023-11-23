@@ -2,6 +2,7 @@
 title: /shutdown | Commands
 description: /shutdown shuts down the server with support for soft-shutdown. The server shuts smoothly and the players are re-connected to the game in another server. For the opposite effect, /fshutdown shutdowns the server within 3 seconds without soft shutdown.
 icon: material/server
+cmd_utility: true
 
 tags:
     - Commands

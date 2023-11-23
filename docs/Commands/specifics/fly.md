@@ -1,6 +1,7 @@
 ---
 title: /fly | Commands
 icon: material/airplane-alert
+cmd_standard: true
 
 tags:
     - Commands

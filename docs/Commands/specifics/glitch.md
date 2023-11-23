@@ -1,6 +1,7 @@
 ---
 title: /glitch | Commands
 icon: material/weather-lightning
+cmd_fun: true
 
 tags:
     - Commands

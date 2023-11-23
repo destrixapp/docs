@@ -1,6 +1,7 @@
 ---
 title: /temp-rank | Commands
 icon: fontawesome/solid/ranking-star
+cmd_utility: true
 
 tags:
     - Commands

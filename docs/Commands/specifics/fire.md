@@ -1,6 +1,7 @@
 ---
 title: /fire | Commands
 icon: material/fire
+cmd_fun: true
 
 tags:
     - Commands

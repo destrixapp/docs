@@ -1,6 +1,7 @@
 ---
 title: /randomn | Commands
 icon: octicons/number-16
+cmd_software: true
 
 tags:
     - Commands

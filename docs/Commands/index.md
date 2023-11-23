@@ -76,7 +76,7 @@ Start exploring all of Destrix's commands. What would you like to start with?
 
     [:octicons-arrow-right-24: View](./specifics/change-bloom.md){ style="color:var(--destrix-docs--commandcat-customization);" }
 
--   [:material-hammer-wrench:{ .lg .middle } __Developer__](./specifics/changecameratype.md){ style="color:var(--destrix-docs--commandcat-developer);" }
+-   [:material-hammer-wrench:{ .lg .middle } __Developer__](./specifics/change-camera-type.md){ style="color:var(--destrix-docs--commandcat-developer);" }
 
     ---
 

@@ -1,6 +1,7 @@
 ---
 title: /rejoin | Commands
 icon: material/play-box
+cmd_standard: true
 
 tags:
     - Commands

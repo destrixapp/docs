@@ -1,6 +1,7 @@
 ---
 title: /hint | Commands
 icon: material/message
+cmd_utility: true
 
 tags:
     - Commands

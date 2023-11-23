@@ -1,6 +1,7 @@
 ---
 title: /devconsole | Commands
 icon: material/console-line
+cmd_developer: true
 
 tags:
     - Commands

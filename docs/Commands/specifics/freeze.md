@@ -1,6 +1,7 @@
 ---
 title: /freeze | Commands
 icon: material/snowflake
+cmd_fun: true
 
 tags:
     - Commands

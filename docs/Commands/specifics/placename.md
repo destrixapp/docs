@@ -1,6 +1,7 @@
 ---
 title: /placename | Commands
 icon: material/earth
+cmd_software: true
 
 tags:
     - Commands

@@ -1,6 +1,7 @@
 ---
 title: /commands | Commands
 icon: octicons/log-16
+cmd_software: true
 
 tags:
     - Commands

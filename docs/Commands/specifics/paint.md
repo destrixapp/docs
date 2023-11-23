@@ -2,6 +2,7 @@
 title: /paint | Commands
 description: Paint a player the specified color.
 icon: fontawesome/solid/paint-roller
+cmd_fun: true
 
 tags:
     - Commands

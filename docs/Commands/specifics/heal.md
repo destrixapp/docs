@@ -1,6 +1,7 @@
 ---
 title: /heal | Commands
 icon: material/heart-cog
+cmd_standard: true
 
 tags:
     - Commands

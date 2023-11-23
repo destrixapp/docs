@@ -1,6 +1,7 @@
 ---
 title: /dversion | Commands
 icon: material/cog
+cmd_software: true
 
 tags:
     - Commands

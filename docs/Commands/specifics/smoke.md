@@ -1,6 +1,7 @@
 ---
 title: /smoke | Commands
 icon: material/clouds
+cmd_cosmetic: true
 
 tags:
     - Commands

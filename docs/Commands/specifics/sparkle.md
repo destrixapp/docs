@@ -1,6 +1,7 @@
 ---
 title: /smoke | Commands
 icon: octicons/sparkle-fill-16
+cmd_cosmetic: true
 
 tags:
     - Commands

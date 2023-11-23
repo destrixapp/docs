@@ -1,10 +1,12 @@
 ---
 title: /plus | Commands
 icon: material/fan-plus
+cmd_software: true
 
 tags:
     - Commands
     - Software
+    - Plus
 
 search:
     boost: 2

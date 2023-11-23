@@ -1,6 +1,7 @@
 ---
 title: /fling | Commands
 icon: material/pause-octagon-outline
+cmd_fun: true
 
 tags:
     - Commands

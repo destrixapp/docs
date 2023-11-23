@@ -1,6 +1,7 @@
 ---
-title: /changecameratype | Commands
+title: /change-camera-type | Commands
 icon: material/camera
+cmd_developer: true
 
 tags:
     - Commands

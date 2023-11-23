@@ -2,6 +2,7 @@
 title: /brazil | Commands
 description: Send a player to Brazil.. metaphorically.
 icon: material/airplane
+cmd_fun: true
 
 tags:
     - Commands

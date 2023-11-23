@@ -2,6 +2,7 @@
 title: /sit | Commands
 description: Force a player to sit down!
 icon: material/seat
+cmd_fun: true
 
 tags:
     - Commands

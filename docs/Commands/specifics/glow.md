@@ -1,6 +1,7 @@
 ---
 title: /glow | Commands
 icon: material/blur
+cmd_cosmetic: true
 
 tags:
     - Commands

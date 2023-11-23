@@ -1,6 +1,7 @@
 ---
 title: /serverlock | Commands
 icon: material/server
+cmd_utility: true
 
 tags:
     - Commands

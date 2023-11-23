@@ -1,6 +1,7 @@
 ---
 title: /timer | Commands
 icon: material/av-timer
+cmd_utility: true
 
 tags:
     - Commands

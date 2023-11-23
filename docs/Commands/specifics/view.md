@@ -1,6 +1,7 @@
 ---
 title: /view | Commands
 icon: material/camera
+cmd_utility: true
 
 tags:
     - Commands

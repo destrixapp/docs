@@ -1,6 +1,7 @@
 ---
 title: /bans | Commands
 icon: material/block-helper
+cmd_software: true
 
 tags:
     - Commands

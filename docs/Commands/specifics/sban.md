@@ -1,6 +1,7 @@
 ---
 title: /sban | Commands
 icon: material/block-helper
+cmd_moderation: true
 
 tags:
     - Commands

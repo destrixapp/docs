@@ -1,6 +1,7 @@
 ---
 title: /plus | Commands
 icon: material/eye-off
+cmd_software: true
 
 tags:
     - Commands

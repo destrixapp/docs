@@ -1,6 +1,7 @@
 ---
 title: /rocket | Commands
 icon: material/rocket-launch
+cmd_fun: true
 
 tags:
     - Commands

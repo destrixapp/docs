@@ -1,6 +1,7 @@
 ---
 title: /limits | Commands
 icon: material/timer-edit
+cmd_software: true
 
 tags:
     - Commands

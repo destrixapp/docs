@@ -1,6 +1,7 @@
 ---
 title: /elapsed-time | Commands
 icon: material/av-timer
+cmd_software: true
 
 tags:
     - Commands

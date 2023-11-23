@@ -1,6 +1,7 @@
 ---
 title: /reset | Commands
 icon: material/refresh
+cmd_utility: true
 
 tags:
     - Commands

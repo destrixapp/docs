@@ -1,6 +1,7 @@
 ---
 title: /checkrank | Commands
 icon: material/check
+cmd_software: true
 
 tags:
     - Commands

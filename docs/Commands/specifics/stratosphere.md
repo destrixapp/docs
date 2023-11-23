@@ -1,6 +1,7 @@
 ---
 title: /stratosphere | Commands
 icon: material/orbit
+cmd_fun: true
 
 tags:
     - Commands

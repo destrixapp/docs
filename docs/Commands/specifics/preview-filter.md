@@ -2,6 +2,7 @@
 title: /preview-filter | Commands
 description: The /preview-filter command allows you to test the Roblox †ext filter and how a string/text will look once being ready for broadcast.
 icon: material/shield-lock
+cmd_utility: true
 
 tags:
     - Commands

@@ -1,6 +1,7 @@
 ---
 title: /mars | Commands
 icon: material/airplane
+cmd_fun: true
 
 tags:
     - Commands

@@ -1,6 +1,7 @@
 ---
 title: /about | Commands
 icon: fontawesome/solid/list
+cmd_software: true
 
 tags:
     - Commands

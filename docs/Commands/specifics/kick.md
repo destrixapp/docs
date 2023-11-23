@@ -1,6 +1,7 @@
 ---
 title: /kick | Commands
 icon: material/block-helper
+cmd_moderation: true
 
 tags:
     - Commands

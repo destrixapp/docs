@@ -1,6 +1,7 @@
 ---
 title: /promptgamepass | Commands
 icon: fontawesome/solid/money-bills
+cmd_utility: true
 
 tags:
     - Commands

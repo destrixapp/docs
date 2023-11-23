@@ -2,6 +2,7 @@
 title: /viewpl | Commands
 description: View the Player Logs of a user on Destrix. A profile showcasing all of their warnings, bans, violations, etc. Also including relevant information such as when they joined, if they're ID Verified, and other information.
 icon: fontawesome/solid/user-shield
+cmd_utility: true
 
 tags:
     - Commands

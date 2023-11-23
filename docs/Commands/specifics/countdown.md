@@ -2,6 +2,7 @@
 title: /countdown | Commands
 description: /countdown starts a countdown onscreen for all players at the top of their screen.
 icon: material/av-timer
+cmd_utility: true
 
 tags:
     - Commands

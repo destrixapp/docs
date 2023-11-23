@@ -2,6 +2,7 @@
 title: /tban | Commands
 description: /tempban (or /tban) is an alternative to /ban which bans the player temporarily instead of permanently, and in all servers.
 icon: material/block-helper
+cmd_moderation: true
 
 tags:
     - Commands

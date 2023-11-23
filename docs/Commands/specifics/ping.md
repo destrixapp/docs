@@ -1,6 +1,7 @@
 ---
-title: /prefix | Commands
+title: /ping | Commands
 icon: material/server-off
+cmd_software: true
 
 tags:
     - Commands

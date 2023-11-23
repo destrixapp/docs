@@ -150,7 +150,7 @@ nav:
 
       # Developer
     - Developer:
-      - /change-camera-type: Commands/specifics/changecameratype.md
+      - /change-camera-type: Commands/specifics/change-camera-type.md
       - /devconsole: Commands/specifics/devconsole.md
     
     - Misc:

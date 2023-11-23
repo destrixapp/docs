@@ -1,6 +1,7 @@
 ---
 title: /gametime | Commands
 icon: material/earth-plus
+cmd_software: true
 
 tags:
     - Commands

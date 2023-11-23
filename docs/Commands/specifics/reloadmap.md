@@ -1,6 +1,7 @@
 ---
 title: /reloadmap | Commands
 icon: material/refresh
+cmd_utility: true
 
 tags:
     - Commands

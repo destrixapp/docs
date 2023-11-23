@@ -1,6 +1,7 @@
 ---
 title: /fplace | Commands
 icon: material/earth-arrow-up
+cmd_utility: true
 
 tags:
     - Commands
