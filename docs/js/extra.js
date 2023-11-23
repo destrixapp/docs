@@ -321,10 +321,20 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll("li.md-tabs__item a[href='./']");
+    const elements = document.querySelectorAll("li.md-tabs__item a[href='./'], li.md-tabs__item a[href='../']");
     if (window.location.pathname.includes('/plus')){
         elements.forEach((element) => {
             element.classList.add('md--tabs--plus-inner-active')
         });   
     }
 })
+
+if (window.location.pathname.includes('/Commands/specifics/ban')){
+    var meta_tags = document.getElementsByTagName('meta');
+
+        for (var i = 0; i < meta_tags.length; i++) {
+            if (meta_tags[i].getAttribute('property') === 'og:image') {
+                meta_tags[i].setAttribute('content', 'https://media.discordapp.net/attachments/786817739867947009/1177123676349534298/destrix-moderation.png?ex=65715cda&is=655ee7da&hm=aa5027ad3afa6690a532e50d568ea734faa73d64258751a375dc43fa1ae2cfd5&=&width=1950&height=1098');
+            };
+        };
+}

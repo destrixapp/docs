@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll("li.md-tabs__item a[href='./']");
+    const elements = document.querySelectorAll("li.md-tabs__item a[href='./'], li.md-tabs__item a[href='../']");
     if (window.location.pathname.includes('/plus')){
         elements.forEach((element) => {
             element.classList.add('md--tabs--plus-inner-active')

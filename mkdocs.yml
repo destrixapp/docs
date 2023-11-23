@@ -213,6 +213,7 @@ extra:
     Security: Security
     Hidden: Hidden
     Dangerous: Dangerous
+    Destrix: Destrix
   status:
     new: Recently added
     deprecated: Deprecated
@@ -309,8 +310,8 @@ plugins:
       post_date_format: full
       post_url_date_format: yyyy/MM/dd
       post_url_format: "view/{date}/{slug}"
-      categories_allowed:
-        - Destrix
+      # categories_allowed:
+      #   - Destrix
       # authors_file: "{blog}/.authors.yml"
   - tags
   - git-committers:
@@ -338,9 +339,9 @@ theme:
   features:
     - navigation.tabs
     - navigation.path
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
     - navigation.sections
     - navigation.top
     - content.code.copy

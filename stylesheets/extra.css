@@ -275,3 +275,14 @@
 .md--tabs--plus-inner-active {
   color: #57ff81 !important;
 }
+
+.md-button-plus {
+  transition: color 0.2s linear;
+  color: #57ff81 !important;
+  background-color: rgba(43, 155, 69, 0.5) !important;
+  border-color: #57ff81 !important;
+}
+
+.md-button-plus:hover {
+  background-color: #57ff81 !important;
+}
