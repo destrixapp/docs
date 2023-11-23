@@ -111,32 +111,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.destrix.app/Getting_Started/</loc>
-         <lastmod>2023-11-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.destrix.app/Getting_Started/advanced/</loc>
-         <lastmod>2023-11-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.destrix.app/Getting_Started/configurations/</loc>
-         <lastmod>2023-11-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.destrix.app/Getting_Started/changelog/</loc>
-         <lastmod>2023-11-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.destrix.app/Getting_Started/changelog/whats-next/</loc>
-         <lastmod>2023-11-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.destrix.app/commands/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/commands/custom-commands/</loc>
          <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -532,6 +512,31 @@
     </url>
     <url>
          <loc>https://docs.destrix.app/commands/specifics/viewpl/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/getting-started/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/getting-started/advanced/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/getting-started/configurations/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/getting-started/changelog/</loc>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.destrix.app/getting-started/changelog/whats-next/</loc>
          <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>

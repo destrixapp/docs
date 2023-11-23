@@ -34,7 +34,7 @@ Probably the most simplest of the complex type of command, the player. Parameter
 
 ??? tip "Player Selectors"
 
-    You can use player selectors to select multiple groups of players or a player that matches certain attributes 
+    You can use player selectors to select multiple groups of players or a player that matches certain attributes.
 
     === "`@me`"
         You may recognise that in some command specifics that the default value of parameter type "player" is sometimes **@me**, this will default to whatever use trigged the command. This is what a player type will be set to if no parameter is provided.
@@ -52,6 +52,8 @@ Probably the most simplest of the complex type of command, the player. Parameter
         For custom integration. Selects a player with a boolean attribute matching the name with the value of `true`. **Don't know what an attribute is?** [Click here to learn more](https://create.roblox.com/docs/studio/instance-attributes).
     === "`[{display-name}]`"
         Display names are trickier. The best way to tell you is to show you: `/command [Wolfite]`. You need to enclose display names in square brackets due to spaces in some display names that may be confused with new parameters. **This selector has a high chance of changing in the future.**
+    === "`@links`"
+        Players that can use at least one social link.
 
 ### Number
 Simply a number. Int, float, or a double. For example, you can type `/command 0`, `/command 0.00`, or `/command -0` and the outcome will all be the same; 0. Command creators can specify or lock a command to an integer by chaning `number` to `number:i`, which converts it to an integer automatically.

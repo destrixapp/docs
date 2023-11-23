@@ -10,14 +10,14 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [:material-chat-processing:{ .lg .middle } __Exclusive Commands__](../Commands/index.md)
+-   [:material-chat-processing:{ .lg .middle } __Exclusive Commands__](../commands/index.md)
 
     ---
 
     Unlock every command that has a plus icon next to it. This can range from exclusive commands, to early access to new commands.
     
     <br>
-    [:octicons-arrow-right-24: View](../Commands/index.md)
+    [:octicons-arrow-right-24: View](../commands/index.md)
 
 -   [:fontawesome-solid-money-bills:{ .lg .middle }&thinsp; __Support Us__](?plus)
 

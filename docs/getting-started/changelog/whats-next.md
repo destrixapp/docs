@@ -1,6 +1,6 @@
 ---
 title: What's Next
-redirect: news/index.md
+redirect: /news
 hide: 
     - feedback
 search:

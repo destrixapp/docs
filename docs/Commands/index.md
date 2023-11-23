@@ -5,7 +5,7 @@ title: All Commands
 description: A full list of all the commands available on Destrix.
 cmd_index: true
 search:
-  boost: 2
+  boost: 6
 hide:
   - toc
   # - navigation
@@ -18,7 +18,7 @@ Start exploring all of Destrix's commands. What would you like to start with?
 <div class="grid cards" markdown>
 
 <!-- -   <span style="display:inline; margin:0px; margin-block: 0px; color: #FFF !important">[:material-lightbulb:{ .lg .middle } __Utility__](./specifics/serverlock.md)</span> -->
--   [:material-lightbulb:{ .lg .middle } __Utility__](./specifics/serverlock.md){ style="color:var(--destrix-docs--commandcat-utility);" }
+-   [:material-lightbulb:{ .lg .middle } __Utility__](./specifics/server-lock.md){ style="color:var(--destrix-docs--commandcat-utility);" }
 
     ---
 

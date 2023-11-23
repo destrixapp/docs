@@ -43,15 +43,18 @@ markdown_extensions:
 nav:
   - index.md
   - Getting Started:
-    - Getting_Started/index.md
-    - Configurations: Getting_Started/configurations.md
-    - Advanced: Getting_Started/advanced.md
+    # - Getting_Started/index.md
+    - getting-started/index.md
+    - Configurations: getting-started/configurations.md
+    - Advanced: getting-started/advanced.md
     - Changelog:
-      - Getting_Started/changelog/index.md
-      - What's Next?: Getting_Started/changelog/whats-next.md
+      - getting-started/changelog/index.md
+      - What's Next?: getting-started/changelog/whats-next.md
   - Commands:
     - commands/index.md
     - Parameters: commands/parameters.md
+    - Custom Commands: commands/custom-commands.md
+
     # Utility
     - Utility:
       - /ban: commands/specifics/ban.md
@@ -252,6 +255,9 @@ extra:
     # - name: 日本語
     #   link: https://jp.docs.destrix.app/?from=lang_en
     #   lang: jp
+    - name: Help us add languages!
+      link: https://destrix.app/?t=discord
+      lang: jp
   consent:
     title: Cookie consent
     description: >- 
@@ -339,9 +345,9 @@ theme:
   features:
     - navigation.tabs
     - navigation.path
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
     - navigation.sections
     - navigation.top
     - content.code.copy
@@ -482,7 +488,7 @@ home_gradient_hsla: hsl(231.43, 14.89%, 9.22%) # Default Green: hsla(160deg,47%,
 
 # Custom Homepage Button(s)
 home_button1_name: Get Started                  # Comment this parameter out to remove the button.
-home_button1_url: Getting_Started/                       # This path starts at your root mkdocs directory.
+home_button1_url: getting-started/                       # This path starts at your root mkdocs directory.
 home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
 home_button1_icon: people                        # Options: "people", "gear", "image"
 home_button1_blurb: |                            # Short description of this button / section.

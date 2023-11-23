@@ -36,12 +36,13 @@ Destrix will look for your [`manifest.json`](../manifest/v1.md) file, which cont
 - `main.luau`: Initiates after Destrix is fully loaded.
 
 ### Structure
-``` { .sh .no-copy }
+``` txt linenums="0"
 .
 ├─ manifest.json
 ├─ main.luau
 ...
 ```
+<!-- { .sh .no-copy } -->
 <!-- 
 │  └─ stylesheets/
 │     └─ extra.css

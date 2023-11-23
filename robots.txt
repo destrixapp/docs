@@ -2,7 +2,15 @@ User-agent: *
 Disallow: /
 
 Disallow: /cdn
+Disallow: /css
+Disallow: /examples
 Disallow: /stylesheets
 Disallow: /overrides
+Disallow: *?q=*
+Disallow: /search
+Disallow: /oldindex
+Disallow: /js
+Disallow: /assets
+Disallow: /.cache
 
 Sitemap: https://docs.destrix.app/sitemap.xml

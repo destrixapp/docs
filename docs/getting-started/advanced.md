@@ -1,6 +1,6 @@
 ---
 title: Advanced Configuration
-# description: No description avaialble.
+description: This page outlines relevant information for advanced configuration in Destrix. Recommended for those with a greater grasp on lua, but this tutorial should be understandable for all skillsets nonetheless.
 icon: material/cog
 
 search:
@@ -53,3 +53,17 @@ In this case, the above code will limit anyone that is not an [admin](./configur
 
     Some commands use custom interfaces and may not adhere to these limits.
 
+## Restrict Commands
+> How do I restrict commands for certain permission levels?
+
+This section outlines how you can restrict commands for permission levels. Let's say that you do like how [moderators](./configurations.md#default-ranks) can use the [`server-ban`](../commands/specifics/sban.md), and you want to limit it to [admins](./configurations.md#default-ranks), which is permission level 4 by default. With the following code, you can archive this.
+
+```lua
+restricted_commands = {
+    ["server-ban"] = {
+        override_min_rank = 4;
+    }
+};
+```
+
+You can do this with any command, simply replace `server-ban` with the command's primary alias you want to disable. Support for secondary aliases will come at a later date.
