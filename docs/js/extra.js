@@ -329,6 +329,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll(".dd-popup");
+
+    elements.forEach((element) => {
+        element.style.cursor = 'pointer';
+
+        element.addEventListener('click', function(event) {
+            alert(element.getAttribute('popup-content'));
+        });
+    });
+})
+
 // if (window.location.pathname.includes('/Commands/specifics/ban')){
 //     var meta_tags = document.getElementsByTagName('meta');
 

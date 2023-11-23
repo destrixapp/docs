@@ -31,4 +31,4 @@ Prompt an asset to yourself or another player.
 Arguments: AssetID : number, Player : player?
 
 ## See Also
-* [:fontawesome-solid-money-bills: /prompt-gamepass](/Commands/specifics/prompt-gamepass/)
+* [:fontawesome-solid-money-bills: /prompt-gamepass](./prompt-gamepass.md)

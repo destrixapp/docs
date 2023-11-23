@@ -26,7 +26,7 @@ status: new
 </div>
 
 
-The /viewPL (or /view-player-logs) command will open the [Player Logs](/404.html) of the player, a profile showcasing all of their warnings, bans, violations, etc. Also including relevant information such as when they joined, if they're [ID Verified](https://en.help.roblox.com/hc/en-us/articles/4407282410644-Age-ID-Verification), and other information.
+The /viewPL (or /view-player-logs) command will open the [Player Logs](../../../404.html) of the player, a profile showcasing all of their warnings, bans, violations, etc. Also including relevant information such as when they joined, if they're [ID Verified](https://en.help.roblox.com/hc/en-us/articles/4407282410644-Age-ID-Verification), and other information.
 
 ## Parameters
 

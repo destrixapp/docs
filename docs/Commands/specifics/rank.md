@@ -23,5 +23,5 @@ Use /rank to rank/alter a player's rank to the new rank.
 Arguments: _Permission Level : number_ **OR** _Rank Name : string_
 
 ## See Also
-* [:fontawesome-solid-ranking-star: /temp-rank](/Commands/specifics/temp-rank/)
-* [:fontawesome-solid-ranking-star: /check-rank](/Commands/specifics/checkrank/)
+* [:fontawesome-solid-ranking-star: /temp-rank](./temp-rank.md)
+* [:fontawesome-solid-ranking-star: /check-rank](./check-rank.md)

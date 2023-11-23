@@ -21,6 +21,4 @@ hide:
 | <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.0.1</p> | shutdown
 </div>
 
-/shutdown shuts down the server with support for soft-shutdown. The server shuts smoothly and the players are re-connected to the game in another server. For the opposite effect, [/fshutdown](/Commands/specifics/fshutdown) shutdowns the server within 3 seconds without soft shutdown.
-
-Arguments: _None_
+/shutdown shuts down the server with support for soft-shutdown. The server shuts smoothly and the players are re-connected to the game in another server. For the opposite effect, [/fshutdown](./fshutdown.md) shutdowns the server within 3 seconds without soft shutdown.

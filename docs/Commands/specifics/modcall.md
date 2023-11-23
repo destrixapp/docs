@@ -19,7 +19,5 @@ hide:
 </div>
 Use /modcall (/mod, /callmod, or /cmod) to call a moderator into the server
 
-Arguments: _None_
-
 ## See Also
-* [:fontawesome-solid-ranking-star: /rank](/Commands/specifics/rank/)
+* [:fontawesome-solid-ranking-star: /rank](./rank.md)

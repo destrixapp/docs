@@ -20,7 +20,7 @@ hide:
 | <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | kill
 </div>
 
-Use /kill to kill another player. You can also use [:material-refresh:/reset](/Commands/specifics/reset/) to reset your own character.
+Use /kill to kill another player. You can also use [:material-refresh:/reset](./rank.md) to reset your own character.
 
 ## Parameters
 
@@ -29,5 +29,5 @@ Use /kill to kill another player. You can also use [:material-refresh:/reset](/C
 | Victim | [player](../parameters.md#player) | :material-close: | @me     | The player's you want to toggle the command on. |
 
 ## See Also
-* [:material-refresh: /reset](/Commands/specifics/reset/)
-* [:material-emoticon-dead: /loopkill](/Commands/specifics/loopkill/)
+* [:material-refresh: /reset](./reset.md)
+* [:material-emoticon-dead: /loopkill](./loopkill.md)

@@ -23,7 +23,7 @@ hide:
 | <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | tban, temp-ban
 </div>
 
-/tempban (or /tban) is an alternative to [:material-block-helper: /ban](/Commands/specifics/ban/) which bans the player temporarily instead of permanently, and in all servers.
+/tempban (or /tban) is an alternative to [:material-block-helper: /ban](./ban.md) which bans the player temporarily instead of permanently, and in all servers.
 
 ## Parameters
 

@@ -3,6 +3,7 @@ tags:
     - Commands
 title: All Commands
 description: A full list of all the commands available on Destrix.
+cmd_index: true
 search:
   boost: 2
 hide:
@@ -21,10 +22,10 @@ Start exploring all of Destrix's commands. What would you like to start with?
 
     ---
 
-    General utility commands like [`/server-lock`](./specifics/serverlock.md), [`/change`](./specifics/change.md), [`/shutdown`](./specifics/shutdown.md), [`/message`](./specifics/message.md), [`/rank`](./specifics/rank.md) and much, much more.
+    General utility commands like [`/server-lock`](./specifics/server-lock.md), [`/change`](./specifics/change.md), [`/shutdown`](./specifics/shutdown.md), [`/message`](./specifics/message.md), [`/rank`](./specifics/rank.md) and much, much more.
     
     <br>
-    [:octicons-arrow-right-24: View](./specifics/serverlock.md){ style="color:var(--destrix-docs--commandcat-utility);" }
+    [:octicons-arrow-right-24: View](./specifics/server-lock.md){ style="color:var(--destrix-docs--commandcat-utility);" }
 
 -   [:material-block-helper:{ .lg .middle }&thinsp; __Moderation__](./specifics/ban.md){ style="color:var(--destrix-docs--commandcat-moderation);" }
 
@@ -83,7 +84,7 @@ Start exploring all of Destrix's commands. What would you like to start with?
     Commands that are useful for developers and debugging.
 
     <br>
-    [:octicons-arrow-right-24: View](./specifics/changecameratype.md){ style="color:var(--destrix-docs--commandcat-developer);" }
+    [:octicons-arrow-right-24: View](./specifics/change-camera-type.md){ style="color:var(--destrix-docs--commandcat-developer);" }
 
 -   [:fontawesome-solid-list:{ .lg .middle }&thinsp; __Rules__](./rules.md)
 

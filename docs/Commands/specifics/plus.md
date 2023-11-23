@@ -21,9 +21,7 @@ hide:
 </div>
 A shortcut command for opening the Plus page.
 
-Arguments: _None_
-
 ## See Also
-* [Destrix Plus](/404.html)
+* [Destrix Plus](?plus)
 <!-- * [:fontawesome-solid-ranking-star: /check-rank](/Commands/specifics/checkrank/) -->
 <!-- * [:octicons-log-16: All Commands](/Commands/) -->

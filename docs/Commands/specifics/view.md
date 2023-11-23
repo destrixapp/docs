@@ -23,4 +23,4 @@ View (/view, /spectate, or /watch) allows you to view the player in-game and spe
 Arguments: Player : player
 
 ## See Also
-* [/inspect-avatar](/Commands/specifics/inspect-avatar/)
+* [/inspect-avatar](./inspect-avatar.md)

@@ -50,112 +50,112 @@ nav:
       - Getting_Started/changelog/index.md
       - What's Next?: Getting_Started/changelog/whats-next.md
   - Commands:
-    - Commands/index.md
-    - Parameters: Commands/parameters.md
+    - commands/index.md
+    - Parameters: commands/parameters.md
     # Utility
     - Utility:
-      - /ban: Commands/specifics/ban.md
-      - /server-ban: Commands/specifics/sban.md
-      - /temp-ban: Commands/specifics/tban.md
+      - /ban: commands/specifics/ban.md
+      - /server-ban: commands/specifics/sban.md
+      - /temp-ban: commands/specifics/tban.md
       # - /pban: Commands/specifics/pban.md
-      - /kick: Commands/specifics/kick.md
-      - /server-lock: Commands/specifics/serverlock.md
-      - /shutdown: Commands/specifics/shutdown.md
-      - /force-shutdown: Commands/specifics/fshutdown.md
+      - /kick: commands/specifics/kick.md
+      - /server-lock: commands/specifics/server-lock.md
+      - /shutdown: commands/specifics/shutdown.md
+      - /force-shutdown: commands/specifics/fshutdown.md
       # - /tslock: Commands/specifics/serverlock.md
-      - /viewpl: Commands/specifics/viewpl.md
-      - /reload-map: Commands/specifics/reloadmap.md
-      - /countdown: Commands/specifics/countdown.md
-      - /change: Commands/specifics/change.md
-      - /timer: Commands/specifics/timer.md
-      - /message: Commands/specifics/message.md
-      - /hint: Commands/specifics/hint.md
-      - /spectate: Commands/specifics/view.md
-      - /inspect-avatar: Commands/specifics/inspect-avatar.md
-      - /prompt-gamepass: Commands/specifics/prompt-gamepass.md
-      - /prompt-asset: Commands/specifics/prompt-asset.md
-      - /logs: Commands/specifics/logs.md
-      - /rank: Commands/specifics/rank.md
-      - /temp-rank: Commands/specifics/temp-rank.md
-      - /force-place: Commands/specifics/fplace.md
-      - /reset: Commands/specifics/reset.md
-      - /poll: Commands/specifics/poll.md
-      - /connection-logs: Commands/specifics/connection-logs.md
+      - /viewpl: commands/specifics/viewpl.md
+      - /reload-map: commands/specifics/reloadmap.md
+      - /countdown: commands/specifics/countdown.md
+      - /change: commands/specifics/change.md
+      - /timer: commands/specifics/timer.md
+      - /message: commands/specifics/message.md
+      - /hint: commands/specifics/hint.md
+      - /spectate: commands/specifics/view.md
+      - /inspect-avatar: commands/specifics/inspect-avatar.md
+      - /prompt-gamepass: commands/specifics/prompt-gamepass.md
+      - /prompt-asset: commands/specifics/prompt-asset.md
+      - /logs: commands/specifics/logs.md
+      - /rank: commands/specifics/rank.md
+      - /temp-rank: commands/specifics/temp-rank.md
+      - /force-place: commands/specifics/fplace.md
+      - /reset: commands/specifics/reset.md
+      - /poll: commands/specifics/poll.md
+      - /connection-logs: commands/specifics/connection-logs.md
 
     # Software
     - Software:
-      - /about: Commands/specifics/about.md
-      - /check-plus: Commands/specifics/checkplus.md
-      - /check-rank: Commands/specifics/checkrank.md
-      - /ping: Commands/specifics/ping.md
-      - /prefix: Commands/specifics/prefix.md
-      - /game-time: Commands/specifics/game-time.md
-      - /elapsed-time: Commands/specifics/elapsed-time.md
-      - /place-name: Commands/specifics/placename.md
-      - /ranks: Commands/specifics/ranks.md
-      - /dversion: Commands/specifics/dversion.md
-      - /commands: Commands/specifics/commands.md
-      - /changelog: Commands/specifics/changelog.md
-      - /bans: Commands/specifics/bans.md
-      - /limits: Commands/specifics/limits.md
-      - /plus: Commands/specifics/plus.md
-      - /credits: Commands/specifics/credits.md
-      - /hide-ui: Commands/specifics/hideui.md
-      - /show-ui: Commands/specifics/showui.md
-      - /randomn: Commands/specifics/randomn.md
-      - /preview-filter: Commands/specifics/preview-filter.md
+      - /about: commands/specifics/about.md
+      - /check-plus: commands/specifics/checkplus.md
+      - /check-rank: commands/specifics/check-rank.md
+      - /ping: commands/specifics/ping.md
+      - /prefix: commands/specifics/prefix.md
+      - /game-time: commands/specifics/game-time.md
+      - /elapsed-time: commands/specifics/elapsed-time.md
+      - /place-name: commands/specifics/placename.md
+      - /ranks: commands/specifics/ranks.md
+      - /dversion: commands/specifics/dversion.md
+      - /commands: commands/specifics/commands.md
+      - /changelog: commands/specifics/changelog.md
+      - /bans: commands/specifics/bans.md
+      - /limits: commands/specifics/limits.md
+      - /plus: commands/specifics/plus.md
+      - /credits: commands/specifics/credits.md
+      - /hide-ui: commands/specifics/hideui.md
+      - /show-ui: commands/specifics/showui.md
+      - /randomn: commands/specifics/randomn.md
+      - /preview-filter: commands/specifics/preview-filter.md
     
      # Contact
     - Contact:
-      - /modcall: Commands/specifics/modcall.md
+      - /modcall: commands/specifics/modcall.md
 
     # Fun
     - Fun:
-      - /fire: Commands/specifics/fire.md
-      - /sit: Commands/specifics/sit.md
-      - /mars: Commands/specifics/mars.md
-      - /jupiter: Commands/specifics/jupiter.md
-      - /brazil: Commands/specifics/brazil.md
-      - /freeze: Commands/specifics/freeze.md
-      - /stratosphere: Commands/specifics/stratosphere.md
-      - /rocket: Commands/specifics/rocket.md
-      - /blur: Commands/specifics/blur.md
-      - /glitch: Commands/specifics/glitch.md
-      - /fling: Commands/specifics/fling.md
-      - /bighead: Commands/specifics/bighead.md
-      - /paint: Commands/specifics/paint.md
+      - /fire: commands/specifics/fire.md
+      - /sit: commands/specifics/sit.md
+      - /mars: commands/specifics/mars.md
+      - /jupiter: commands/specifics/jupiter.md
+      - /brazil: commands/specifics/brazil.md
+      - /freeze: commands/specifics/freeze.md
+      - /stratosphere: commands/specifics/stratosphere.md
+      - /rocket: commands/specifics/rocket.md
+      - /blur: commands/specifics/blur.md
+      - /glitch: commands/specifics/glitch.md
+      - /fling: commands/specifics/fling.md
+      - /bighead: commands/specifics/bighead.md
+      - /paint: commands/specifics/paint.md
 
     # Standard
     - Standard:
-      - /fly: Commands/specifics/fly.md
-      - /kill: Commands/specifics/kill.md
-      - /loopkill: Commands/specifics/loopkill.md
-      - /explode: Commands/specifics/explode.md
-      - /heal: Commands/specifics/heal.md
+      - /fly: commands/specifics/fly.md
+      - /kill: commands/specifics/kill.md
+      - /loopkill: commands/specifics/loopkill.md
+      - /explode: commands/specifics/explode.md
+      - /heal: commands/specifics/heal.md
       - Optional:
-        - /rejoin: Commands/specifics/rejoin.md
-        - /follow: Commands/specifics/follow.md
+        - /rejoin: commands/specifics/rejoin.md
+        - /follow: commands/specifics/follow.md
 
       # Cosmetic
     - Cosmetic:
-      - /smoke: Commands/specifics/smoke.md
-      - /sparke: Commands/specifics/sparkle.md
-      - /glow: Commands/specifics/glow.md
-      - /glass: Commands/specifics/glass.md
-      - /gold: Commands/specifics/gold.md
+      - /smoke: commands/specifics/smoke.md
+      - /sparke: commands/specifics/sparkle.md
+      - /glow: commands/specifics/glow.md
+      - /glass: commands/specifics/glass.md
+      - /gold: commands/specifics/gold.md
     
       # Customization
     - Customization:
-      - /change-bloom: Commands/specifics/change-bloom.md
+      - /change-bloom: commands/specifics/change-bloom.md
 
       # Developer
     - Developer:
-      - /change-camera-type: Commands/specifics/change-camera-type.md
-      - /devconsole: Commands/specifics/devconsole.md
+      - /change-camera-type: commands/specifics/change-camera-type.md
+      - /devconsole: commands/specifics/devconsole.md
     
     - Misc:
       # - Categories: Commands/categories.md
-      - Rules: Commands/rules.md
+      - Rules: commands/rules.md
   - DAX:
     - About: DAX/v1/about.md
     - Introduction:
@@ -339,9 +339,9 @@ theme:
   features:
     - navigation.tabs
     - navigation.path
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.sections
     - navigation.top
     - content.code.copy

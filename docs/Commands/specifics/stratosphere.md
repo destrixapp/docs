@@ -23,5 +23,5 @@ Send a player into the stratosphere, and potentially past it and into orbit!
 Arguments: _Victim : player_
 
 ## See Also
-* [:material-airplane: /jupiter](/Commands/specifics/jupter/)
-* [:material-airplane: /mars](/Commands/specifics/mars/)
+* [:material-airplane: /jupiter](./jupiter.md)
+* [:material-airplane: /mars](./mars.md)

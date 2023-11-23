@@ -23,7 +23,7 @@ hide:
 | <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | kick
 </div>
 
-/kick can kick a player (disconnect them) from the current server. However, they can join back. See [/ban](/Commands/specifics/ban/) for options to ban a player.
+/kick can kick a player (disconnect them) from the current server. However, they can join back. See [/ban](./ban.md) for options to ban a player.
 
 ## Parameters
 
@@ -33,6 +33,6 @@ hide:
 | Reason         | string | :material-close:                                                                                                                                                                                    | nil                | The reason the player will see (filtered).                |
 
 ## See Also
-* [/ban](/Commands/specifics/ban/)
-* [/tban](/Commands/specifics/tban/)
-* [/sban](/Commands/specifics/sban/)
+* [/ban](./ban.md)
+* [/tban](./tban.md)
+* [/sban](./sban.md)

@@ -23,7 +23,5 @@ A shortcut command for opening the Ranks page.
 Arguments: _None_
 
 ## See Also
-<!-- * [Destrix Plus](/404.html) -->
-* [:fontawesome-solid-ranking-star: /check-rank](/Commands/specifics/checkrank/)
-* [:fontawesome-solid-ranking-star: /rank](/Commands/specifics/rank/)
-<!-- * [:octicons-log-16: All Commands](/Commands/) -->
+* [:fontawesome-solid-ranking-star: /check-rank](./check-rank.md)
+* [:fontawesome-solid-ranking-star: /rank](./rank.md)

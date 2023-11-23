@@ -2,6 +2,7 @@
 title: Command Rules
 description: Miscellaneous rules about commands.
 icon: fontawesome/solid/scroll
+cmd_index: true
 search:
   boost: 3
 tags:

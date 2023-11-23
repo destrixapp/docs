@@ -14,14 +14,19 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-emoticon-dead: LoopKill</p> (/loopkill)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-emoticon-dead: LoopKill</p> (/loopkill)
 <div style="display:inline;">
-<p style="color: #579DFF; display: inline;">Standard</p> | <p style="color: rgb(220,220,220); display: inline;">3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | loopkill
+<p style="color: var(--destrix-docs--commandcat-standard); display: inline;">Standard</p> | <p style="color: var(--md-default-fg-color--light); display: inline;">3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | loopkill
 </div>
+
 Contiously kill a player after they respawn. This command cannot be undone.
 
-Arguments: _Victim : player_
+## Parameters
+
+| Name           | Type   | Required :material-information-outline:{ title="Most commands that specify required arguments sometimes still work without the argument being specified, or bring up a menu prompting an answer." } | Default            | Description                                               |
+|:----------------|:--------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|:-----------------------------------------------------------|
+| Victim         | [player](../parameters.md#player) | :material-close:                                                                                                                                                                                    | `@me`                | The player you want to set on fire                                |
 
 ## See Also
-* [:material-refresh: /reset](/Commands/specifics/reset/)
-* [:material-emoticon-dead: /kill](/Commands/specifics/kill/)
+* [:material-refresh: /reset](./reset.md)
+* [:material-emoticon-dead: /kill](./kill.md)

@@ -23,5 +23,5 @@ Use /temp-rank (or /trank) to rank/alter a player's rank to the new rank until t
 Arguments: _Permission Level : number_ **OR** _Rank Name : string_
 
 ## See Also
-* [:fontawesome-solid-ranking-star: /rank](/Commands/specifics/rank/)
-* [:fontawesome-solid-ranking-star: /check-rank](/Commands/specifics/checkrank/)
+* [:fontawesome-solid-ranking-star: /rank](./rank.md)
+* [:fontawesome-solid-ranking-star: /check-rank](./checkrank.md)

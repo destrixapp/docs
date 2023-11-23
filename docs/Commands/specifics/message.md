@@ -23,6 +23,6 @@ hide:
 Arguments: msg : string
 
 ## See Also
-* [/ban](/Commands/specifics/ban/)
-* [/tban](/Commands/specifics/tban/)
-* [/sban](/Commands/specifics/sban/)
+* [/ban](./ban.md)
+* [/tban](./tban.md)
+* [/sban](./sban.md)

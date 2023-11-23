@@ -1,5 +1,6 @@
 ---
 title: /sban | Commands
+description: Unlike /ban, which bans a player from all servers, this command bans them from a specific game server.
 icon: material/block-helper
 cmd_moderation: true
 

@@ -69,3 +69,27 @@
     <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" />
   {%- endif -%} 
 {%- endblock -%} 
+
+
+{% block scripts %}
+  <!-- Add scripts that need to run before here -->
+  <!-- <script>
+    const elements = document.querySelectorAll("li.md-tabs__item a[href*='plus']");
+    console.log(elements);
+
+    elements.forEach((element) => {
+        element.classList.add('md--tabs--plus-inner')
+    });
+  </script>
+
+  <script>
+    const elements2 = document.querySelectorAll("li.md-tabs__item a[href='./'], li.md-tabs__item a[href='../']");
+    if (window.location.pathname.includes('/plus')){
+        elements2.forEach((element) => {
+            element.classList.add('md--tabs--plus-inner-active')
+        });   
+    }
+  </script> -->
+  {{ super() }}
+  <!-- Add scripts that need to run afterwards here -->
+{% endblock %}

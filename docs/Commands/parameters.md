@@ -3,6 +3,7 @@ tags:
     - Commands
 title: Parameters
 description: What are paramaters, and all the types of paramaters.
+cmd_index: true
 search:
   boost: 3
 # hide:
@@ -14,7 +15,7 @@ search:
 # Parameters
 
 ## What are parameters?
-Parameters are specified information a command asks for. Parameters are also referred to and may be known as Arguments, especially in other systems. For example, the [:material-block-helper: /ban](/Commands/specifics/ban/) uses parameters: Player, Reason, and Moderator Note. So, the command looks like `/ban Username`, without parameters, it would just look like `/ban` with no username.
+Parameters are specified information a command asks for. Parameters are also referred to and may be known as Arguments, especially in other systems. For example, the [:material-block-helper: /ban](./specifics/ban.md) uses parameters: Player, Reason, and Moderator Note. So, the command looks like `/ban Username`, without parameters, it would just look like `/ban` with no username.
 
 ## Parameter Types
 ??? note "Incomplete documentation"
@@ -49,6 +50,8 @@ Probably the most simplest of the complex type of command, the player. Parameter
         Selects all player in the specified team, e.g. `/command %red`.
     === "`${attribute}`"
         For custom integration. Selects a player with a boolean attribute matching the name with the value of `true`. **Don't know what an attribute is?** [Click here to learn more](https://create.roblox.com/docs/studio/instance-attributes).
+    === "`[{display-name}]`"
+        Display names are trickier. The best way to tell you is to show you: `/command [Wolfite]`. You need to enclose display names in square brackets due to spaces in some display names that may be confused with new parameters. **This selector has a high chance of changing in the future.**
 
 ### Number
 Simply a number. Int, float, or a double. For example, you can type `/command 0`, `/command 0.00`, or `/command -0` and the outcome will all be the same; 0. Command creators can specify or lock a command to an integer by chaning `number` to `number:i`, which converts it to an integer automatically.

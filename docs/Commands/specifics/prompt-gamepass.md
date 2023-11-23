@@ -31,4 +31,4 @@ Prompt a gamepass to yourself or another player.
 Arguments: GamepassID : number, Player : player?
 
 ## See Also
-* [:material-toy-brick-plus: /prompt-asset](/Commands/specifics/prompt-asset/)
+* [:material-toy-brick-plus: /prompt-asset](./prompt-asset.md)

@@ -1,5 +1,5 @@
 ---
-title: /checkrank | Commands
+title: /check-rank | Commands
 icon: material/check
 cmd_software: true
 
