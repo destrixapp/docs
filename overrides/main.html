@@ -33,10 +33,17 @@
 <!-- {--- if page and page.meta and page.meta.uses_custom_cover ---}  -->
 {% block htmltitle %}
   {%- if page and page.meta -%} 
+
+      {%- if page and page.title and not page.is_homepage -%} 
+        <title>{{ page.title }} - {{ config.site_name }}</title> 
+      {%- endif -%}
+
       {%- if page.meta.cmd_moderation -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-moderation.png" />
       {%- else -%} 
         <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" />
       {%- endif -%} 
+  {%- else -%}
+    <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" />
   {%- endif -%} 
 {%- endblock -%} 
