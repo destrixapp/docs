@@ -2,6 +2,8 @@
 title: /ban | Commands
 description: The /ban command bans the specified player/s, with the default length being permanent. Other commands achievve similar yet different effects. Such as /temp-ban], which bans a player temporarily, or /kick, which kicks the player and allows them to rejoin after being disconnected.
 icon: material/block-helper
+uses_custom_cover: true
+cmd_moderation: true
 
 tags:
     - Commands
