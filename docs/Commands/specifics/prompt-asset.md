@@ -13,22 +13,34 @@ search:
 hide:
     - toc
 
+comments: true
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-toy-brick-plus: Prompt Asset</p> (/prompt-asset)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-toy-brick-plus: Prompt Asset</p> (/prompt-asset)
 <div style="display:inline;">
-<p style="color: #7F5F02; display: inline;">Utility</p> | <p style="color: rgb(220,220,220); display: inline;">0/3</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | prompt-asset
+<p style="color: var(--destrix-docs--commandcat-utility); display: inline;">Utility</p>
+| <p style="color: var(--md-default-fg-color--light); display: inline;">0/3</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | prompt-asset
 </div>
-PromptAsset (/promptasset, or /prompt-asset) responds differently based on permission levels.
+
+PromptAsset (/prompt-asset) responds differently based on permission levels.
 
 ## Permission Level: 0
 Prompt an asset to yourself.
 
-Arguments: AssetID : number
+### Parameters
+
+| Name   | Type   | Required         | Default | Description                            |
+|:--------|:--------|:------------------:|:---------:|----------------------------------------:|
+| AssetID | [number](../parameters.md#number) | :material-close: | 0     | The ID of the asset you want to prompt |
 
 ## Permission Level: 3
 Prompt an asset to yourself or another player.
 
-Arguments: AssetID : number, Player : player?
+### Parameters
+
+| Name   | Type   | Required         | Default | Description                            |
+|:--------|:--------|:------------------:|:---------:|----------------------------------------:|
+| AssetID | [number](../parameters.md#number) | :material-close: | 0     | The ID of the asset you want to prompt |
+| Target | [player](../parameters.md#player) | :material-close: | @me     | The player's you want to toggle the command on. |
 
 ## See Also
 * [:fontawesome-solid-money-bills: /prompt-gamepass](./prompt-gamepass.md)

@@ -14,14 +14,10 @@ hide:
     - toc
 
 ---
-# <p style="color: rgb(220,220,220); display: inline;">:material-slash-forward: Prefix</p> (/prefix)
+# <p style="color: var(--md-default-fg-color); display: inline;">:material-slash-forward: Prefix</p> (/prefix)
 <div style="display:inline;">
-<p style="color: #C6EDFB; display: inline;">Software</p> | <p style="color: rgb(220,220,220); display: inline;">0</p> | <p style="color: rgb(180,180,180); display: inline;"> Added 0.1.2</p> | prefix
+<p style="color: var(--destrix-docs--commandcat-software); display: inline;">Software</p>
+| <p style="color: var(--md-default-fg-color--light); display: inline;">0</p> | <p style="color: var(--md-default-fg-color--light); display: inline;"> Added 0.1.2</p> | prefix
 </div>
+
 Check the prefix with /prefix. In most games, you can also use !prefix.
-
-Arguments: _None_
-
-<!-- ## See Also -->
-<!-- * [:fontawesome-solid-ranking-star: /rank](/Commands/specifics/rank/) -->
-<!-- * [Setting a custom prefix](/404.html) -->

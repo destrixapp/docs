@@ -22,19 +22,25 @@
 <!-- <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" /> -->
 {% block extrahead %}
   <meta property="og:site_name" content="Destrix Docs" />
+  <meta property="og:determiner" content="" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="960" />
   <meta property="og:image:height" content="540" />
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:locale:alternate" content="en_GB"/>
+  <meta property="og:locale:alternate" content="en_AU"/>
+  <meta property="og:locale:alternate" content="en_UK"/>
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#000000">
 {% endblock %}
 
 <!-- {--- if page and page.meta and page.meta.uses_custom_cover ---}  -->
 {% block htmltitle %}
   {%- if page and page.meta -%} 
 
-      {%- if page and page.title and not page.is_homepage -%} 
+      {%- if page and page.meta.title and not page.is_homepage -%} 
+        <title>{{ page.meta.title }} - {{ config.site_name }}</title> 
+      {%- elif page and page.title and not page.is_homepage -%} 
         <title>{{ page.title }} - {{ config.site_name }}</title> 
       {%- endif -%}
 
@@ -44,33 +50,58 @@
 
       {%- if page.is_homepage -%}
         <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a black background." />
+        <meta name="theme-color" content="#000000">
       {%- endif -%}
 
       {%- if page.meta.cmd_moderation -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-moderation.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for the moderation command category." />
+        <meta name="theme-color" content="#ff5bbe">
       {%- elif page.meta.cmd_utility -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-utility.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for the utility command category." />
+        <meta name="theme-color" content="#dbbf4e">
       {%- elif page.meta.cmd_cosmetic -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-cosmetic.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for the cosmetic command category." />
+        <meta name="theme-color" content="#A54800">
       {%- elif page.meta.cmd_customization -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-customization.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for the customization command category." />
+        <meta name="theme-color" content="#9659ff">
       {%- elif page.meta.cmd_developer -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-developer.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for the developer command category." />
+        <meta name="theme-color" content="#7f7f7f">
       {%- elif page.meta.cmd_fun -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-fun.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for the fun command category." />
+        <meta name="theme-color" content="#A9E0CA">
       {%- elif page.meta.cmd_software -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-software.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for the software command category." />
+        <meta name="theme-color" content="#C6EDFB">
       {%- elif page.meta.cmd_standard -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/destrix-standard.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for the standard command category." />
+        <meta name="theme-color" content="#579DFF">
       {%- elif page.meta.cmd_unknown -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/commands-destrix.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for an unknown command category." />
+        <meta name="theme-color" content="#000000">
       {%- elif page.meta.cmd_index -%}
         <meta property="og:image" content="https://cdn.wolfite.net/branding/destrix/commands_og/commands-destrix.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a pink background for an command index." />
       {%- else -%} 
         <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" />
+        <meta property="og:image:alt" content="The Destrix logo on a black background." />
+        <meta name="theme-color" content="#000000">
       {%- endif -%} 
   {%- else -%}
     <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" />
+    <meta property="og:image:alt" content="The Destrix logo on a black background." />
+    <meta name="theme-color" content="#000000">
   {%- endif -%} 
 {%- endblock -%} 
 
