@@ -1,0 +1,4 @@
+search:
+  exclude: true
+
+robots_noindex: true

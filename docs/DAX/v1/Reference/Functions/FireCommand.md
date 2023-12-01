@@ -1,7 +1,7 @@
 ---
 tags:
     - DAX
-title: FireCommand
+title: FireCommand - DAX
 description: FireCommand lets you fire command logic for specific players artificially.
 search:
   boost: 2

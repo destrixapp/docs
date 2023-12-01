@@ -88,7 +88,7 @@ nav:
     # Software
     - Software:
       - /about: commands/specifics/about.md
-      - /check-plus: commands/specifics/checkplus.md
+      - /check-plus: commands/specifics/check-plus.md
       - /check-rank: commands/specifics/check-rank.md
       - /ping: commands/specifics/ping.md
       - /prefix: commands/specifics/prefix.md
@@ -163,7 +163,7 @@ nav:
     - About: DAX/v1/about.md
     - Introduction:
       - Interfacing: DAX/v1/Introduction/interfacing-with-the-panel.md
-      - DisableEXEType: DAX/v1/Introduction/disabling-commands.md
+      # - DisableEXEType: DAX/v1/Introduction/disabling-commands.md
     - API Reference:
       - Command Types: DAX/v1/Reference/CommandTypes.md
       - Functions:
@@ -173,7 +173,11 @@ nav:
   - DAXI: 
     - About: DAXI/v1/about.md
     - Introduction:
-      - Interfacing: DAXI/v1/interfacing
+      - Interfacing: DAXI/v1/intro/interfacing.md
+    - API Reference:
+      - Functions:
+        - DeclareIntegration: DAXI/v1/reference/functions/DesclareIntegration.md
+        - DestrixIntegration:DeclareCommand: DAXI/v1/reference/functions/DestrixIntegration:CreateCommand.md
   - Extensions: 
     - Extensions/index.md
     - Security Policy: Extensions/extensions-security-policy.md
@@ -217,6 +221,11 @@ extra:
     Hidden: Hidden
     Dangerous: Dangerous
     Destrix: Destrix
+    Outdated: Outdated
+    Archive: Archive
+    Security: Security
+    SSecurity: Security
+    Reference: Reference
   status:
     new: Recently added
     deprecated: Deprecated
@@ -242,9 +251,12 @@ extra:
     - icon: destrix/patreon-2023
       link: https://destrix.app/t/patreon
       name: Wolfite on Patreon
-    - icon: destrix/logo
-      link: https://destrix.app/
-      name: Destrix.app
+    - icon: bootstrap/chat-dots-fill
+      link: https://forum.destrix.app
+      name: Destrix Forum
+    # - icon: destrix/logo
+    #   link: https://destrix.app/
+    #   name: Destrix.app
   alternate:
     - name: English
       link: https://docs.destrix.app/
@@ -299,11 +311,6 @@ plugins:
   # - material/social
   - search:
       lang: en
-  # - git-revision-date-localized:
-  #     # enabled: !ENV [CI, false]
-  #     enable_creation_date: true
-  #     type: date
-  #     fallback_to_build_date: true
   - blog:
       blog_dir: news
       blog_toc: true
@@ -316,10 +323,16 @@ plugins:
       post_date_format: full
       post_url_date_format: yyyy/MM/dd
       post_url_format: "view/{date}/{slug}"
+      categories_sort_by: !!python/name:material.plugins.blog.view_post_count
+      authors_profiles: true
+      authors_profiles_name: Authors
+      authors_profiles_url_format: "a/{slug}"
+      authors_profiles_toc: true
       # categories_allowed:
       #   - Destrix
       # authors_file: "{blog}/.authors.yml"
   - tags
+      # tags_file: misc/tags.md
   - git-committers:
       repository: DestrixApp/docs
       branch: main
@@ -327,6 +340,7 @@ plugins:
       enable_creation_date: true
       type: timeago
       fallback_to_build_date: true
+  - meta
 # tags plugin seems to be removing the search tool somehow.
 # EDIT 13/11/23: This seems to be fixed now.
 
@@ -393,6 +407,11 @@ theme:
       Customization: fontawesome/solid/palette
       Dangerous: material/lightning-bolt-circle
       Plus: bootstrap/plus-circle-dotted
+      Outdated: material/eye-off
+      Archive: material/archive
+      Security: material/security
+      SSecurity: material/server-security
+      Reference: material/book
 
   
   

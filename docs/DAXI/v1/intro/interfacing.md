@@ -8,7 +8,7 @@ tags:
 
 DAXI is automatically launched and placed into ServerScriptService if Destrix is installed. Require the DAXI module via these simple steps, with error-proofing for safety. Requiring the module is quite simple:
 ```lua
-local DAXI = require(game.ServerScriptService:WaitForChild("DAXI", math.huge())) --(1)   
+local DAXI = require(game.ServerScriptService:WaitForChild("DAXI", math.huge())) --(1)      
 ```
 
 1. Call WaitForChild just in-case an error occurs and DAXI is delayed.

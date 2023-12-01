@@ -16,15 +16,15 @@ Settings can be overwhelming, with so many options, it's easy to get lost at som
 
 ## Ranks
 ### Default Ranks
-| Rank Name              | Permission Level | Commands                                                    | Ban Limit | Common Use                                                                                                |
+| Rank Name              | Permission Level | commands                                                    | Ban Limit | Common Use                                                                                                |
 |:-----------------------|:----------------:|:-----------------------------------------------------------:|:---------:|----------------------------------------------------------------------------------------------------------:|
-| Creator                | 6                | All Commands                                                | *         | Typically reserved for the creator of the game/group, or co-owners that you trust with full access.       |
-| Developers             | 5                | [/fshutdown](../Commands/specifics/fshutdown.md)                                                  | 700       | For developers of the game, admins and moderators will not need these commands.                           |
-| Admins                 | 4                | [/shutdown](../Commands/specifics/shutdown.md), [/ban](../Commands/specifics/ban.md)                                             | 600       | Administrators will be able to do most commands available on Destrix.                                     |
-| Moderators             | 3                | [/tban](../Commands/specifics/tban.md), [/sban](../Commands/specifics/sban.md), all "Fun" commands                            | 300       | Moderators will be able to temporarily ban players, as well as use all commands under the "fun" category. |
+| Creator                | 6                | All commands                                                | *         | Typically reserved for the creator of the game/group, or co-owners that you trust with full access.       |
+| Developers             | 5                | [/fshutdown](../commands/specifics/fshutdown.md)                                                  | 700       | For developers of the game, admins and moderators will not need these commands.                           |
+| Admins                 | 4                | [/shutdown](../commands/specifics/shutdown.md), [/ban](../commands/specifics/ban.md)                                             | 600       | Administrators will be able to do most commands available on Destrix.                                     |
+| Moderators             | 3                | [/tban](../commands/specifics/tban.md), [/sban](../commands/specifics/sban.md), all "Fun" commands                            | 300       | Moderators will be able to temporarily ban players, as well as use all commands under the "fun" category. |
 | Privileged             | 2                | Cosmetic commands                                           |           | Privileged users will be able to use cosmetic commands on other players.                                  |
 | VIP                    | 1                | Cosmetic commands, (self only)                              |           | VIP users will be able to use cosmetic commands, but only on themselves.                                  |
-| Player (aka. NonAdmin) | 0                | Software commands and other harmless commands like [/rejoin](../Commands/specifics/rejoin.md). |           | Every player will receive this rank.                                                                      |
+| Player (aka. NonAdmin) | 0                | Software commands and other harmless commands like [/rejoin](../commands/specifics/rejoin.md). |           | Every player will receive this rank.                                                                      |
 
 ```lua
 ranks = {

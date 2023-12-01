@@ -1,7 +1,7 @@
 ---
 tags:
     - DAX
-title: TogglePanel
+title: TogglePanel - DAX
 description: TogglePanel lets you toggle the panel of a player (or multiple).
 search:
   boost: 2

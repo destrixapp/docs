@@ -11,7 +11,8 @@ search:
 ---
 
 # Extensions
-Extensions are a great way to improve your Destrix experience for your experience. You can either create your own extensions, or you can view some extensions on the Destrix's Github. Click to view [Destrix Themes](https://github.com/orgs/DestrixApp/repositories?q=&type=all&language=css&sort=stargazers), or [Destrix Plugins](https://github.com/orgs/DestrixApp/repositories?q=&type=all&language=lua&sort=stargazers).
+<!-- Extensions are a great way to improve your Destrix experience for your experience. You can either create your own extensions, or you can view some extensions on the Destrix's Github. Click to view [Destrix Themes](https://github.com/orgs/DestrixApp/repositories?q=&type=all&language=css&sort=stargazers), or [Destrix Plugins](https://github.com/orgs/DestrixApp/repositories?q=&type=all&language=lua&sort=stargazers). -->
+Extensions are a great way to improve your Destrix experience for your experience. You can either create your own extensions, or you can view some extensions on the Destrix's Github. Click to view [Destrix Themes](https://forum.destrix.app/c/themes/6), or [Destrix Plugins](https://forum.destrix.app/c/plugins/5).
 
 <!-- ???+ warning "Warning"
 

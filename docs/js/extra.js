@@ -89,7 +89,7 @@ document.body.insertBefore(div, document.body.firstChild);
 
 }
 
-if (window.location.href.includes('/DAX/v1')) {
+if (window.location.href.includes('/DAX/v0')) {
     console.log("outdated");
 
     // Create a new div element

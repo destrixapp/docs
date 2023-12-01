@@ -12,5 +12,6 @@ Disallow: /oldindex
 Disallow: /js
 Disallow: /assets
 Disallow: /.cache
+Disallow: /misc/tags
 
 Sitemap: https://docs.destrix.app/sitemap.xml

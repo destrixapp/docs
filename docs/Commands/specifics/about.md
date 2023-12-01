@@ -1,6 +1,7 @@
 ---
 title: /about | Commands
 icon: material/book-cog
+description: A shortcut to open the Destrix about page.
 cmd_software: true
 
 tags:

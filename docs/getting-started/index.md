@@ -27,7 +27,7 @@ Welcome to the step-by-step installation guide for the Destrix admin system. Fol
 
 ### Step 4: Test the Installation
 * Click on ‘Play’ to enter the game via studio.
-* Use a Destrix command (e.g., [`/game-time`](../Commands/specifics/game-time.md)) in the chat to verify the successful installation.
+* Use a Destrix command (e.g., [`/game-time`](../commands/specifics/game-time.md)) in the chat to verify the successful installation.
 
 [^1]: If you do not have a roblox account, you may create one [here](https://roblox.com/).
 [^2]: You can install Roblox studio at [Roblox Create](https://create.roblox.com).

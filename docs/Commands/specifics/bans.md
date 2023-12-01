@@ -1,5 +1,6 @@
 ---
 title: /bans | Commands
+description: A shortcut command for opening the Bans page.
 icon: material/block-helper
 cmd_software: true
 

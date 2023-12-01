@@ -261,7 +261,8 @@
 
 .md--tabs--plus-inner {
   transition-delay: 0s !important;
-  transition: color 0.3s linear !important;
+  /* transition: color 0.3s linear !important; */
+  transition: color 0.3s linear;
 }
 
 .md--tabs--plus-inner:hover {
@@ -285,4 +286,20 @@
 
 .md-button-plus:hover {
   background-color: #57ff81 !important;
+}
+
+.md-tabs[hidden] {
+  transition: transform 0ms .1s,opacity .1s !important;
+}
+
+/* .md-tag {
+  transition: all 0.2s linear !important;
+}
+
+.md-tag[href]:hover {
+  background-color: #00000000 !important;
+} */
+
+.md-draft {
+  border-radius: 0.25em !important;
 }
