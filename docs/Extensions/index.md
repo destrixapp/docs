@@ -66,7 +66,7 @@ Want to make your own extensions? [Click here to make a theme](./Themes/Creating
 <script type="text/javascript">
   DiscourseEmbed = {
     discourseUrl: 'https://forum.destrix.app/',
-    discourseEmbedUrl: '/',
+    discourseEmbedUrl: 'https://docs.destrix.app/Extensions/',
     // className: 'CLASS_NAME',
   };
 
