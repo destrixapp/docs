@@ -58,6 +58,25 @@ Let's say you wanted to add the [_snowy_ theme](https://github.com/DestrixApp/sn
 ## Make your own extensions
 Want to make your own extensions? [Click here to make a theme](./Themes/Creating/index.md), or [click here to make a plugin](./Plugins/Getting_Started.md).
 
+
+
+<div id='discourse-comments'></div>
+<meta name='discourse-username' content='wolfite'>
+
+<script type="text/javascript">
+  DiscourseEmbed = {
+    discourseUrl: 'https://forum.destrix.app/',
+    discourseEmbedUrl: 'EMBED_URL',
+    // className: 'CLASS_NAME',
+  };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
+
 <!-- # Elevate Your Experience with Destrix Extensions
 
 ## Understanding Extensions
