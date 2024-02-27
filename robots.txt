@@ -1,6 +1,91 @@
-User-agent: *
+User-agent: MJ12bot
 Disallow: /
 
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Zealbot
+Disallow: /
+
+User-agent: MSIECrawler
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Fetch
+Disallow: /
+
+User-agent: linko
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Microsoft.URL.Control
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+User-agent: larbin
+Disallow: /
+
+User-agent: libwww
+Disallow: /
+
+User-agent: Download Ninja
+Disallow: /
+
+User-agent: fast
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: ZyBORG
+Disallow: /
+
+User-agent: NPBot
+Disallow: /
+
+User-agent: *
 Disallow: /cdn
 Disallow: /css
 Disallow: /examples
@@ -13,5 +98,9 @@ Disallow: /js
 Disallow: /assets
 Disallow: /.cache
 Disallow: /misc/tags
+Disallow: *?plus
+Disallow: *?plus-billing
+Disallow: /tags.json
+Disallow: /README.md
 
 Sitemap: https://docs.destrix.app/sitemap.xml

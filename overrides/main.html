@@ -1,22 +1,7 @@
 {% extends "base.html" %}
 
 {% block announce %}
-
-  For updates follow <strong>@DestrixApp</strong> on
-  <a href="https://twitter.com/DestrixApp" style="color: #5e8bde !important">
-    <span class="twemoji twitter">
-      {% include ".icons/fontawesome/brands/twitter.svg" %}
-    </span>
-    <strong>Twitter</strong>
-  </a>
-  <br>
-  For development follow <strong>@Wolfite_</strong> on
-  <a href="https://twitter.com/Wolfite_" style="color: #5e8bde !important">
-    <span class="twemoji twitter">
-      {% include ".icons/fontawesome/brands/twitter.svg" %}
-    </span>
-    <strong>Twitter</strong>
-  </a>
+  This documentation is still in active development and not finished. Information here may be incorrect and is subject to change.
 {% endblock %}
 
 <!-- <meta property="og:image" content="https://cdn.wolfite.net/destrix_docs_og_img_large.png" /> -->
@@ -117,9 +102,9 @@
     let href = element.getAttribute("href");
 
     if (window.location.href.includes('news/view/')) {
-        href = href.replace("https://github.com/DestrixApp/docs/raw/main/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+        href = href.replace("https://github.com/destrixapp/docs/raw/main/docs/", "https://raw.githubusercontent.com/destrixapp/docs/master/docs/");
     } else {
-        href = href.replace("https://github.com/DestrixApp/raw/master/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+        href = href.replace("https://github.com/destrixapp/docs/raw/main/docs/", "https://raw.githubusercontent.com/destrixapp/docs/master/docs/");
     };
     // href += "?from=destrix-docs"
     element.setAttribute("href", href);
@@ -141,7 +126,7 @@
     clone.setAttribute('title', 'Share to Twitter')
 
     // let href2 = clone.getAttribute("href");
-    // href2 = href2.replace("https://github.com/DestrixApp/raw/master/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+    // href2 = href2.replace("https://github.com/destrixapp/raw/master/docs/", "https://raw.githubusercontent.com/destrixapp/docs/master/docs/");
     clone.setAttribute("href", `https://twitter.com/intent/tweet?text=${window.document.title}&url=${window.location.href}&newtwitter=true`);
 
     // Append the modified element after the original element
@@ -159,7 +144,7 @@
     // clone2.setAttribute('onclick', 'clone2.setAttribute(\'title\', "Copied!"); navigator.clipboard.writeText(window.location.href);')
     clone2.setAttribute('title', 'Copy URL to clipboard')
     // let href2 = clone.getAttribute("href");
-    // href2 = href2.replace("https://github.com/DestrixApp/raw/master/docs/", "https://raw.githubusercontent.com/DestrixApp/docs/master/docs/");
+    // href2 = href2.replace("https://github.com/destrixapp/raw/master/docs/", "https://raw.githubusercontent.com/destrixapp/docs/master/docs/");
     clone2.removeAttribute('href')
     clone2.style.cursor = "pointer";
 

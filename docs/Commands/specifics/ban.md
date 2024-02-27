@@ -1,6 +1,6 @@
 ---
 title: /ban | Commands
-description: The /ban command bans the specified player/s, with the default length being permanent. Other commands achievve similar yet different effects. Such as /temp-ban], which bans a player temporarily, or /kick, which kicks the player and allows them to rejoin after being disconnected.
+description: The /ban command bans the specified player/s, with the default length being permanent. Other commands achieve similar yet different effects. Such as /temp-ban, which bans a player temporarily, or /kick, which kicks the player and allows them to rejoin after being disconnected.
 icon: material/block-helper
 uses_custom_cover: true
 cmd_moderation: true
@@ -27,15 +27,15 @@ comments: true
 </div>
 
 
-The /ban command bans the specified player/s, with the default length being permanent. Other commands achievve similar yet different effects. Such as [:material-block-helper: /temp-ban](./tban.md), which bans a player temporarily, or [:material-block-helper: /kick](./kick.md), which kicks the player and allows them to rejoin after being disconnected.
+The /ban command bans the specified player/s, with the default length being permanent. Other commands achieve similar yet different effects. Such as [:material-block-helper: /temp-ban](./tban.md), which bans a player temporarily, or [:material-block-helper: /kick](./kick.md), which kicks the player and allows them to rejoin after being disconnected.
 
 ## Parameters
 
 | Name           | Type   | Required :material-information-outline:{ .dd-popup popup-content="This command will bring up a menu if the required parameters are not provided." title="This command will bring up a menu if the required parameters are not provided." } | Default            | Description                                               |
 |:----------------|:--------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|:-----------------------------------------------------------|
-| Player         | [player](../parameters.md#player) | :material-minus:{ title="This parameter is partially required." }                                                                                                                                                                                    | Nothing                | The player you want to ban                                |
-| Reason         | [string](../parameters.md#string) | :material-close:{ title="This parameter is not required." }                                                                                                                                                                                    | Nothing                | The reason the player will see (filtered)                |
-| Moderator Note | [string](../parameters.md#string) | :material-close:{ title="This parameter is not required." }                                                                                                                                                                                    | "No note provided" | What other moderators will see when looking at the bans  |
+| Player         | [player](../parameters.md#player) | :material-minus:{ title="This parameter is partially required." .dd-popup popup-content="This parameter is partially required." }                                                                                                                                                                                    | Nothing                | The player you want to ban                                |
+| Reason         | [string](../parameters.md#string) | :material-close:{ title="This parameter is not required." .dd-popup popup-content="This parameter is not required." }                                                                                                                                                                                    | Nothing                | The reason the player will see (filtered)                |
+| Moderator Note | [string](../parameters.md#string) | :material-close:{ title="This parameter is not required." .dd-popup popup-content="This parameter is not required." }                                                                                                                                                                                    | "No note provided" | What other moderators will see when looking at the bans  |
 
 
 

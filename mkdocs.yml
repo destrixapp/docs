@@ -1,9 +1,9 @@
 site_name: Destrix
 site_description: Destrix is a developer-focused admin system on Roblox, making it easier for developers who want a flexible and non-disruptive admin/moderation system in their game, for free.
 site_url: https://docs.destrix.app
-repo_url: https://github.com/DestrixApp
-repo_name: Destrix
-edit_uri: https://github.com/DestrixApp/docs/blob/main/docs/
+repo_url: https://github.com/destrixapp/destrix
+repo_name: destrixapp/destrix
+edit_uri: https://github.com/destrixapp/docs/blob/main/docs/
 docs_dir: "docs"
 # view_uri: /docs/docs/docs
 extra_javascript:
@@ -159,6 +159,7 @@ nav:
     - Misc:
       # - Categories: Commands/categories.md
       - Rules: commands/rules.md
+      - Shortcut Commands: commands/shortcut-commands.md
   - DAX:
     - About: DAX/v1/about.md
     - Introduction:
@@ -349,8 +350,9 @@ extra_css:
 
 theme:
   name: material
-  logo: https://cdn.discordapp.com/attachments/786817739867947009/1164107525692592179/destrix-anim-docs.gif?ex=6542029e&is=652f8d9e&hm=038b2bd9942d2507f16d69bc1e7d371e34ba11b89e15c32e6804a8eed58af5dd&
-  favicon: https://docs.destrix.app/favicon.ico
+  # logo: https://cdn.discordapp.com/attachments/786817739867947009/1164107525692592179/destrix-anim-docs.gif?ex=6542029e&is=652f8d9e&hm=038b2bd9942d2507f16d69bc1e7d371e34ba11b89e15c32e6804a8eed58af5dd&
+  logo: https://docs.destrix.app/favicon.ico
+  favicon: https://docs.destrix.app/cdn/Destrix.png
   language: en
   custom_dir: overrides
 
@@ -362,6 +364,7 @@ theme:
     # - navigation.instant
     # - navigation.instant.prefetch
     # - navigation.instant.progress
+    - navigation.instant.preview
     - navigation.sections
     - navigation.top
     - content.code.copy
@@ -400,7 +403,8 @@ theme:
       Utility: material/lightbulb
       Moderation: material/block-helper
       Software: material/cog
-      Contact: fontawesome/solid/phone
+      Contact: fontawesome/solid/flag
+      Report: fontawesome/solid/flag
       Fun: fontawesome/solid/fire-flame-curved
       Standard: material/calendar
       Cosmetic: octicons/sparkle-fill-16
@@ -493,8 +497,6 @@ theme:
 
 
 
-### Example Configuration ###
-
 # Custom Homepage Elements
 home_cover_image: https://docs.destrix.app/cdn/logo.png # This path starts at your root mkdocs directory.
 home_cover_image_black: https://docs.destrix.app/cdn/logo-black.png # This path starts at your root mkdocs directory.
@@ -547,7 +549,7 @@ home_button6_url: plus/    # This path starts at your root mkdocs directory.
 home_button6_theme: md-button # Options: "md-button", "md-button md-button--primary"
 home_button6_icon: custom      # Options: "people", "gear", "image"
 home_button6_blurb: |         # Short description of this button / section.
-  Whether your a player or a developer — plus has you covered — level up your game in every game Destrix is in. With new commands and early access all for a cheap price.
+  Whether you're a player or a developer — plus has you covered — level up your game in every game Destrix is in. With new commands and early access all for a cheap price.
 
 home_button_news_name: News   # Comment this parameter out to remove the button.
 home_button_news_url: blog/    # This path starts at your root mkdocs directory.
