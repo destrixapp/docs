@@ -334,13 +334,13 @@ plugins:
       # authors_file: "{blog}/.authors.yml"
   - tags
       # tags_file: misc/tags.md
-  - git-committers:
-      repository: DestrixApp/docs
-      branch: main
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-      fallback_to_build_date: true
+  # - git-committers:
+  #     repository: DestrixApp/docs
+  #     branch: main
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: timeago
+  #     fallback_to_build_date: true
   - meta
 # tags plugin seems to be removing the search tool somehow.
 # EDIT 13/11/23: This seems to be fixed now.
