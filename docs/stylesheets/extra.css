@@ -288,6 +288,14 @@
   background-color: #57ff81 !important;
 }
 
+.md-nav__link.nav-plus-hover:hover {
+  color: #57ff81 !important;
+}
+
+.md-nav__link.nav-plus-hover:hover .md-status--plus:after {
+  background-color: #57ff81 !important;
+}
+
 .md-tabs[hidden] {
   transition: transform 0ms .1s,opacity .1s !important;
 }
@@ -303,3 +311,4 @@
 .md-draft {
   border-radius: 0.25em !important;
 }
+

@@ -16,4 +16,4 @@ Miscellaneous rules about commands.
 
 ## Hyphens
 
-Hypehns, when used in commands, do not count. They are skipped, and are only displayed as a method to help the readability of commands. For example `/server-lock` will be parsed as `/serverlock`, and achieve the same effect.
+Hyphens in commands are purely for readability and do not affect the command's functionality. For example `/server-lock` will be parsed as `/serverlock`, and achieve the same effect.

@@ -350,3 +350,28 @@ document.addEventListener("DOMContentLoaded", function() {
 //             };
 //         };
 // }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var nav_links = document.querySelectorAll('.md-nav__link');
+
+    nav_links.forEach(function(nav_link) {
+        if (nav_link.querySelector('.md-status--plus')) {
+            nav_link.classList.add('nav-plus-hover');
+        }
+    });
+
+    var mws = document.querySelector('.md-copyright');
+
+    mws.childNodes.forEach(function(node) {
+        if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('Made with')) {
+            node.textContent = 'Documentation generated with ';
+        }
+    });
+
+    var mwl = madeWithPart.querySelector('a[href="https://squidfunk.github.io/mkdocs-material/"]');
+    if (mwl) {
+        mwl.textContent = 'Material for MkDocs Insiders';
+        mwl.href = 'https://squidfunk.github.io/mkdocs-material/';
+    }
+});
+
